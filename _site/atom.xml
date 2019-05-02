@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Olá! Eu sou o Guilherme Teixeira.</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2019-05-02T16:38:25-03:00</updated>
+ <id>http://localhost:4000</id>
+ <author>
+   <name>Guilherme Teixeira</name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>Phantom</title>
+   <link href="http://localhost:4000/development/design/2016/02/20/phantom-jekyll-template.html"/>
+   <updated>2016-02-20T19:15:00-02:00</updated>
+   <id>http://localhost:4000/development/design/2016/02/20/phantom-jekyll-template</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Rescue Themes</title>
+   <link href="http://localhost:4000/development/design/2016/02/20/rescue-themes.html"/>
+   <updated>2016-02-20T13:56:00-02:00</updated>
+   <id>http://localhost:4000/development/design/2016/02/20/rescue-themes</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Weathercast</title>
+   <link href="http://localhost:4000/development/2016/02/20/weathercast.html"/>
+   <updated>2016-02-20T13:56:00-02:00</updated>
+   <id>http://localhost:4000/development/2016/02/20/weathercast</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Bloc Jams Angular</title>
+   <link href="http://localhost:4000/development/2016/02/20/bloc-jams-angular.html"/>
+   <updated>2016-02-20T12:15:00-02:00</updated>
+   <id>http://localhost:4000/development/2016/02/20/bloc-jams-angular</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+
+</feed>
