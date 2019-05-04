@@ -16,5 +16,11 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
-
 .vscode/
+
+### Jekyll ###
+_site
+.sass-cache
+.jekyll-metadata
+Gemfile.lock
+
