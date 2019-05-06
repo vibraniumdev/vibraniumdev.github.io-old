@@ -5,17 +5,34 @@
     <description>Graduando em Linguística pela UFSCar e desenvolvedor web (em versão beta)</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 May 2019 10:02:58 -0300</pubDate>
-    <lastBuildDate>Mon, 06 May 2019 10:02:58 -0300</lastBuildDate>
+    <pubDate>Mon, 06 May 2019 11:36:12 -0300</pubDate>
+    <lastBuildDate>Mon, 06 May 2019 11:36:12 -0300</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>Dotfiles (Linux)</title>
+        <description>
+</description>
+        <pubDate>Mon, 06 May 2019 08:30:00 -0300</pubDate>
+        <link>http://localhost:4000/dotfiles/2019/05/06/linux-dotfiles.html</link>
+        <guid isPermaLink="true">http://localhost:4000/dotfiles/2019/05/06/linux-dotfiles.html</guid>
+        
+        <category>Dotfiles</category>
+        
+        <category>Linux</category>
+        
+        
+        <category>dotfiles</category>
+        
+      </item>
     
       <item>
         <title>SongCrawler</title>
         <description>
 </description>
         <pubDate>Mon, 06 May 2019 06:35:00 -0300</pubDate>
-        <link>http://localhost:4000/web/scraping/2019/05/06/phantom-jekyll-template.html</link>
-        <guid isPermaLink="true">http://localhost:4000/web/scraping/2019/05/06/phantom-jekyll-template.html</guid>
+        <link>http://localhost:4000/web/scraping/2019/05/06/songcrawler.html</link>
+        <guid isPermaLink="true">http://localhost:4000/web/scraping/2019/05/06/songcrawler.html</guid>
         
         <category>WebScraping</category>
         
@@ -48,27 +65,6 @@
         <category>development</category>
         
         <category>design</category>
-        
-      </item>
-    
-      <item>
-        <title>Weathercast</title>
-        <description>
-</description>
-        <pubDate>Sat, 20 Feb 2016 13:56:00 -0200</pubDate>
-        <link>http://localhost:4000/development/2016/02/20/weathercast.html</link>
-        <guid isPermaLink="true">http://localhost:4000/development/2016/02/20/weathercast.html</guid>
-        
-        <category>JavaScript</category>
-        
-        <category>AngularJS</category>
-        
-        <category>API</category>
-        
-        <category>Sass</category>
-        
-        
-        <category>development</category>
         
       </item>
     

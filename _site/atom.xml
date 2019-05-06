@@ -4,7 +4,7 @@
  <title>Guilherme Teixeira.</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2019-05-06T10:02:58-03:00</updated>
+ <updated>2019-05-06T11:36:12-03:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Guilherme Teixeira</name>
@@ -13,10 +13,19 @@
 
  
  <entry>
+   <title>Dotfiles (Linux)</title>
+   <link href="http://localhost:4000/dotfiles/2019/05/06/linux-dotfiles.html"/>
+   <updated>2019-05-06T08:30:00-03:00</updated>
+   <id>http://localhost:4000/dotfiles/2019/05/06/linux-dotfiles</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
    <title>SongCrawler</title>
-   <link href="http://localhost:4000/web/scraping/2019/05/06/phantom-jekyll-template.html"/>
+   <link href="http://localhost:4000/web/scraping/2019/05/06/songcrawler.html"/>
    <updated>2019-05-06T06:35:00-03:00</updated>
-   <id>http://localhost:4000/web/scraping/2019/05/06/phantom-jekyll-template</id>
+   <id>http://localhost:4000/web/scraping/2019/05/06/songcrawler</id>
    <content type="html">
 </content>
  </entry>
@@ -26,15 +35,6 @@
    <link href="http://localhost:4000/development/design/2016/02/20/rescue-themes.html"/>
    <updated>2016-02-20T13:56:00-02:00</updated>
    <id>http://localhost:4000/development/design/2016/02/20/rescue-themes</id>
-   <content type="html">
-</content>
- </entry>
- 
- <entry>
-   <title>Weathercast</title>
-   <link href="http://localhost:4000/development/2016/02/20/weathercast.html"/>
-   <updated>2016-02-20T13:56:00-02:00</updated>
-   <id>http://localhost:4000/development/2016/02/20/weathercast</id>
    <content type="html">
 </content>
  </entry>
