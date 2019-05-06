@@ -1,13 +1,13 @@
 ---
 layout: inner
 position: left
-title: 'Phantom'
-date: 2016-02-20 21:15:00
-categories: development design
-tags: Jekyll Sass Bootstrap
-featured_image: '/img/posts/04_phantom-jekyll-1130x864-2x.png'
-project_link: 'https://github.com/jamigibbs'
+title: 'SongCrawler'
+date: 2019-05-06 09:35:00
+categories: web scraping
+tags: WebScraping WebCrawler Python
+featured_image: 'img/posts/5_songcrawler.png'
+project_link: 'https://github.com/guiemi/SongCrawler'
 button_icon: 'flask'
-button_text: 'Visit Project'
-lead_text: "A minimalist Jekyll theme that you're looking at it right now"
+button_text: 'Visitar projeto'
+lead_text: "Um webcrawler que exibe uma lista de canções de um determinado artista."
 ---

@@ -4,7 +4,7 @@
  <title>Guilherme Teixeira.</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2019-05-04T11:25:02-03:00</updated>
+ <updated>2019-05-06T10:02:58-03:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Guilherme Teixeira</name>
@@ -13,10 +13,10 @@
 
  
  <entry>
-   <title>Phantom</title>
-   <link href="http://localhost:4000/development/design/2016/02/20/phantom-jekyll-template.html"/>
-   <updated>2016-02-20T19:15:00-02:00</updated>
-   <id>http://localhost:4000/development/design/2016/02/20/phantom-jekyll-template</id>
+   <title>SongCrawler</title>
+   <link href="http://localhost:4000/web/scraping/2019/05/06/phantom-jekyll-template.html"/>
+   <updated>2019-05-06T06:35:00-03:00</updated>
+   <id>http://localhost:4000/web/scraping/2019/05/06/phantom-jekyll-template</id>
    <content type="html">
 </content>
  </entry>
