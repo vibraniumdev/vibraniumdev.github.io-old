@@ -22,6 +22,8 @@ twitter_username: 'guiemiquestion'
 github_username: 'guiemi'
 medium_username: 'medium.com/@guiemi'
 linkedin_username: 'guiemi'
+quora_username: 'Guilherme-Teixeira'
+lastfm_username: 'guirgo'
 
 # Build settings
 markdown: kramdown
@@ -33,7 +35,7 @@ plugins:
 paginate: 10
 footer_text: '© 2019 Guilherme Teixeira'
 admin_name: 'Guilherme Teixeira'
-google_analytics: "UA-9999999-99" # Update with your own tracking ID
+google_analytics: "UA-139424409-1" # Update with your own tracking ID
 enable_contact: false
 
 #### Phantom Navigation menu
