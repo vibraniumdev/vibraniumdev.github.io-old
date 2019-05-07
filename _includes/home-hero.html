@@ -1,54 +1,71 @@
 <div class="container">
 
-  <div class="row">
+    <div class="row">
 
-    <div class="col-md-12">
+        <div class="col-md-12">
 
-      <div class="hero-container">
+            <div class="hero-container">
 
-        <div class="hero-content">
+                <div class="hero-content">
 
-          {% if site.title != '' %}
-          <h1 class="text-center">{{site.title}}</h1>
-          {% endif %}
+                    {% if site.title != '' %}
+                    <h1 class="text-center">{{site.title}}</h1>
+                    {% endif %}
 
-          {% if site.description != '' or site.enable_contact == true %}
-          <p class="text-center">
-            {% if site.description != '' %}
-            {{site.description}}
-            {% endif %}
+                    {% if site.description != '' or site.enable_contact == true %}
+                    <p class="text-center">
+                        {% if site.description != '' %}
+                        {{site.description}}
+                        {% endif %}
 
-            {% if site.enable_contact == true %}
-            {% include contact.html %}
-            {% include contact-modal.html %}
-            {% endif %}
-          </p>
-          {% endif %}
+                        {% if site.enable_contact == true %}
+                        {% include contact.html %}
+                        {% include contact-modal.html %}
+                        {% endif %}
+                    </p>
+                    {% endif %}
 
-          <div class="hero-buttons">
-            {% if site.github_username != '' %}
-              <a href="https://github.com/{{ site.github_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-github fa-lg"></i>Github</button></a>
-            {% endif %}
-            {% if site.medium_username != '' %}
-              <a href="https://{{ site.medium_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-medium fa-lg"></i>Medium</button></a>
-            {% endif %}
-            {% if site.linkedin_username != '' %}
-            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}"><button class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-lg"></i>LinkedIn</button></a>
-            {% endif %}
-            
+                    <div class="hero-buttons">
+                        
+                        {% if site.github_username != '' %}
+                        <a href="https://github.com/{{ site.github_username }}"><button
+                                class="btn btn-default btn-lg"><i class="fa fa-github fa-lg"></i>GitHub</button></a>
+                        {% endif %}
 
-          </div>
+                        {% if site.linkedin_username != '' %}
+                        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}"><button
+                                class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-lg"></i>LinkedIn</button></a>
+                        {% endif %}
+
+
+                        {% if site.medium_username != '' %}
+                        <a href="https://{{ site.medium_username }}"><button class="btn btn-default btn-lg"><i
+                                    class="fa fa-medium fa-lg"></i>Medium</button></a>
+                        {% endif %}
+
+                        <!-- {% if site.quora_username != '' %}
+                        <a href="https://pt.quora.com/profile/{{ site.quora_username }}"><button
+                                class="btn btn-default btn-lg"><i class="fa fa-quora fa-lg"  aria-hidden="true"></i>Quora</button></a>
+                        {% endif %}
+
+                        {% if site.lastfm_username != '' %}
+                        <a href="https://www.last.fm/pt/user/{{ site.lastfm_username }}"><button
+                                class="btn btn-default btn-lg"><i class="fa fa-lastfm fa-lg"></i>Last.fm</button></a>
+                        {% endif %} -->
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <a class="section-jump text-center" href="#portfolio">
+                <i class="fa fa-angle-down fa-3x"></i>
+            </a>
 
         </div>
 
-      </div>
-
-      <a class="section-jump text-center" href="#portfolio">
-        <i class="fa fa-angle-down fa-3x"></i>
-      </a>
-
     </div>
-
-  </div>
 
 </div>
