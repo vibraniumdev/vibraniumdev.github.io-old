@@ -1,0 +1,13 @@
+---
+layout: inner
+position: right
+title: 'MotoBoy App'
+date: 2016-02-20 14:15:00
+categories: Development Django
+tags: JavaScript CSS Python Django
+featured_image: 'img/posts/7_motoboy-app.png'
+project_link: 'https://github.com/jamigibbs/bloc-jams-angular'
+button_icon: 'github'
+button_text: 'Visitar MotoBoy App'
+lead_text: 'Um app feito para cadastro de Motoboys'
+---
