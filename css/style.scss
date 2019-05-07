@@ -61,18 +61,18 @@ a {
 }
 
 button.btn, input.btn {
-  padding: 12px 35px;
+  padding: 1px 30px;
   margin: 2em 0.5em;
-  border: solid 1px #d5e0e7;
+  border: solid 0px #d5e0e7;
   border-radius: 4px;
   color: #2E4453;
   font-weight: 600;
   &:hover, &.btn-default:hover {
     background-color: white;
-    border: solid 1px #b0c5d2;
+    border: solid 0px #b0c5d2;
     -moz-box-shadow: 0 1px 0 #b0c5d2;
     -webkit-box-shadow: 0 1px 0 #b0c5d2;
-    box-shadow: 0 1px 0 #b0c5d2;
+    box-shadow: 0 0px 0 #b0c5d2;
   }
   i {
     padding-right: 0.5em;
