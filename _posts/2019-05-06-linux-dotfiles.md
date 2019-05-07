@@ -3,7 +3,7 @@ layout: inner
 position: right
 title: 'Dotfiles (Linux)'
 date: 2019-05-06 11:30:00
-categories: dotfiles
+categories:
 tags: Dotfiles Linux
 featured_image: 'img/posts/6_linux_dotfiles.png'
 project_link: 'https://github.com/guiemi/dotfiles#dotfiles'
