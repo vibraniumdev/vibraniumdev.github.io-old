@@ -4,7 +4,7 @@
  <title>Guilherme Teixeira</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2019-05-07T11:14:40-03:00</updated>
+ <updated>2019-05-07T16:31:01-03:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Guilherme Teixeira</name>
@@ -14,36 +14,36 @@
  
  <entry>
    <title>Dotfiles (Linux)</title>
-   <link href="http://localhost:4000/dotfiles/2019/05/06/linux-dotfiles.html"/>
+   <link href="http://localhost:4000/2019/05/06/linux-dotfiles.html"/>
    <updated>2019-05-06T08:30:00-03:00</updated>
-   <id>http://localhost:4000/dotfiles/2019/05/06/linux-dotfiles</id>
+   <id>http://localhost:4000/2019/05/06/linux-dotfiles</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>SongCrawler</title>
-   <link href="http://localhost:4000/web/scraping/2019/05/06/songcrawler.html"/>
+   <link href="http://localhost:4000/webscraping/2019/05/06/songcrawler.html"/>
    <updated>2019-05-06T06:35:00-03:00</updated>
-   <id>http://localhost:4000/web/scraping/2019/05/06/songcrawler</id>
+   <id>http://localhost:4000/webscraping/2019/05/06/songcrawler</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>MinimalList</title>
-   <link href="http://localhost:4000/to-do/lists/2016/02/20/minimallist.html"/>
+   <link href="http://localhost:4000/django/2016/02/20/minimallist.html"/>
    <updated>2016-02-20T13:56:00-02:00</updated>
-   <id>http://localhost:4000/to-do/lists/2016/02/20/minimallist</id>
+   <id>http://localhost:4000/django/2016/02/20/minimallist</id>
    <content type="html">
 </content>
  </entry>
  
  <entry>
    <title>MotoBoy App</title>
-   <link href="http://localhost:4000/development/django/2016/02/20/motoboy-app.html"/>
+   <link href="http://localhost:4000/django/2016/02/20/motoboy-app.html"/>
    <updated>2016-02-20T12:15:00-02:00</updated>
-   <id>http://localhost:4000/development/django/2016/02/20/motoboy-app</id>
+   <id>http://localhost:4000/django/2016/02/20/motoboy-app</id>
    <content type="html">
 </content>
  </entry>
