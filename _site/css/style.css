@@ -6078,7 +6078,7 @@ button.btn, input.btn {
     padding: 10px 0; }
     @media only screen and (max-width: 768px) {
       .site-footer p {
-        text-align: center; } }
+        text-align: left; } }
   .site-footer .section-jump {
     float: right; }
     @media only screen and (max-width: 768px) {
