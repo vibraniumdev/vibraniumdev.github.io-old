@@ -5831,7 +5831,7 @@ h1, h2, h3, h4, h5, h6 {
   .container {
     width: 1200px; } }
 body {
-  background-color: #e9edf0;
+  background-color: white;
   -webkit-font-smoothing: antialiased; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -5876,8 +5876,8 @@ button.btn, input.btn {
 
 .main {
   background-color: white;
-  border-left: solid 1px #cedfea;
-  border-right: solid 1px #cedfea; }
+  border-left: solid 0px #cedfea;
+  border-right: solid 0px #cedfea; }
   .main.container {
     padding: 0; }
 

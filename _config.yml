@@ -39,7 +39,7 @@ google_analytics: "UA-139424409-1" # Update with your own tracking ID
 enable_contact: false
 
 #### Phantom Navigation menu
-enable_nav: true
+enable_nav: false
 nav_item:
   - { url: '/', text: 'Página Inicial' }
   - { url: '/about', text: 'Sobre' }
