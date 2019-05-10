@@ -55,7 +55,7 @@ p {
 a {
   @include transition(color .2s ease-in-out);
   &:hover {
-    // color: #FF5B33;
+    color: #d5e0e7;
     text-decoration: none;
   }
 }
@@ -108,7 +108,7 @@ button.btn-hero {
 .section-jump {
   position: relative;
   top: 0;
-  color: #C8D7E1;
+  color: #333333;
   margin: 0 auto;
   display: table;
   @include transition(top .2s ease-in);
