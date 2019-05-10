@@ -55,7 +55,7 @@ p {
 a {
   @include transition(color .2s ease-in-out);
   &:hover {
-    color: #FF5B33;
+    // color: #FF5B33;
     text-decoration: none;
   }
 }
@@ -68,6 +68,7 @@ button.btn, input.btn {
   color: #2E4453;
   font-weight: 600;
   &:hover, &.btn-default:hover {
+    color: #b0c5d2;
     background-color: white;
     border: solid 1px #b0c5d2;
     -moz-box-shadow: 0 1px 0 #b0c5d2;
@@ -81,6 +82,18 @@ button.btn, input.btn {
     @include horizontal-align;
     margin-bottom: 0.5em;
   }
+}
+
+button.btn-hero {
+    background-color: white;
+    border: solid 1px white;
+    &:hover, &.btn-default:hover {
+        background-color: white;
+        border: solid 1px white;
+        -moz-box-shadow: 0 1px 0 #b0c5d2;
+        -webkit-box-shadow: 0 3px 0 #b0c5d2;
+        box-shadow: 0 0px 0 #b0c5d2;
+    }
 }
 
 .main {
@@ -378,7 +391,7 @@ pre {
     .highlight .cs { color: #8f5902; font-style: italic } /* Comment.Special */
     .highlight .gd { color: #a40000 } /* Generic.Deleted */
     .highlight .ge { color: #000000; font-style: italic } /* Generic.Emph */
-    .highlight .gr { color: #ef2929 } /* Generic.Error */
+    .highlight .gr { color: #ef2929 } /* Generic.Errorhttps://open.spotify.com/user/juzao/playlist/4uIIJS1Hzjj3pMyOQ9tuYr?si=CsbnqEVKRGGAMaT_5ZZ2LA/
     .highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
     .highlight .gi { color: #00A000 } /* Generic.Inserted */
     .highlight .go { color: #000000; font-style: italic } /* Generic.Output */
