@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Olá, meu nome é Guilherme Teixeira"
+title: "Guilherme Teixeira"
 email: 'guiemi.teixeira@gmail.com'
-description: "Meu nome é Guilherme Teixeira." 
-quick_bio: "Graduando em Linguística pela UFSCar e desenvolvedor web."
+description: "Graduando em Linguística pela UFSCar e desenvolvedor web." 
+quick_bio: ""
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://guiemi.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 'guiemiquestion'
@@ -33,7 +33,7 @@ plugins:
   - jekyll-paginate
 
 ### Phantom settings
-paginate: 10
+paginate: 5
 footer_text: 'Jami Gibbs'
 admin_name: 'Guilherme Teixeira'
 google_analytics: "UA-139424409-1" # Update with your own tracking ID
