@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: "Guilherme Teixeira"
 email: 'guiemi.teixeira@gmail.com'
-description: "Graduando em Linguística pela UFSCar e desenvolvedor web." 
+description: "Graduando em Linguística pela UFSCar e desenvolvedor web" 
 quick_bio: ""
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://guiemi.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
