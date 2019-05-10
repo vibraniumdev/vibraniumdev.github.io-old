@@ -19,7 +19,7 @@ Temporary Items
 .vscode/
 
 ### Jekyll ###
-_site
+_site*
 .sass-cache
 .jekyll-metadata
 Gemfile.lock
