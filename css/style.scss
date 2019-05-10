@@ -83,6 +83,18 @@ button.btn, input.btn {
   }
 }
 
+button.btn-hero {
+    background-color: white;
+    border: solid 1px white;
+    &:hover, &.btn-default:hover {
+        background-color: white;
+        border: solid 1px #b0c5d2;
+        -moz-box-shadow: 0 1px 0 #b0c5d2;
+        -webkit-box-shadow: 0 1px 0 #b0c5d2;
+        box-shadow: 0 0px 0 #b0c5d2;
+    }
+}
+
 .main {
   background-color: white;
 //   border-left: solid 0px #cedfea;
