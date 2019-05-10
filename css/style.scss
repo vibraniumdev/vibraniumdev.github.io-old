@@ -55,7 +55,7 @@ p {
 a {
   @include transition(color .2s ease-in-out);
   &:hover {
-    color: #FF5B33;
+    // color: #FF5B33;
     text-decoration: none;
   }
 }
