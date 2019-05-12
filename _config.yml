@@ -16,7 +16,7 @@
 title: "Guilherme Teixeira"
 email: 'guiemi.teixeira@gmail.com'
 description: "Graduando em Linguística pela UFSCar e desenvolvedor web" 
-quick_bio: ""
+quick_bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum vel sem id hendrerit. Vivamus ac neque nibh. Integer bibendum at justo sit amet ultrices. Nam id felis vitae mauris consectetur maximus eu et magna. Praesent consequat ex at ipsum tempor mollis. Nunc venenatis elementum enim. Vestibulum rutrum in est vel viverra. Suspendisse eget pulvinar arcu. Donec tincidunt finibus auctor. Pellentesque mollis purus a leo placerat, vitae lacinia risus ultricies. Vivamus venenatis iaculis sapien, at maximus mi placerat eleifend. Sed sit amet elit at purus ornare tempor. Cras ultrices eu purus at semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://guiemi.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 'guiemiquestion'
