@@ -10,5 +10,5 @@ project_link: 'https://github.com/guiemi/SongCrawler#songcrawler-'
 # button_icon: 'flask'
 button_icon: 'github'
 button_text: 'SongCrawler'
-lead_text: "Um webcrawler que exibe uma lista de canções de um determinado artista."
+lead_text: "A webcrawler that shows a list of songs of a given artist."
 ---

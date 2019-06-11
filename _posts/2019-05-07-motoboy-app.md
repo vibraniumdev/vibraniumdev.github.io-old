@@ -9,5 +9,6 @@ featured_image: 'img/posts/7_motoboy-app.png'
 project_link: 'https://github.com/guiemi/motoboy-app'
 button_icon: 'github'
 button_text: 'MotoBoy App'
-lead_text: 'Um app feito para cadastro de Motoboys'
+lead_text: 'An app made to help registering motorcycle delivery boys'
+
 ---
