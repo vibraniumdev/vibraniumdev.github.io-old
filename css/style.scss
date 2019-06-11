@@ -131,7 +131,7 @@ button.btn-hero {
 }
 
 .hero-content {
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
   display: table;
   @include bp-medium {
@@ -339,7 +339,7 @@ button.btn-hero {
     }
   }
   .section-jump {
-    float: right;
+    //float: right;
     @include bp-xsmall {
       float: none;
     }

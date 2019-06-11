@@ -16,7 +16,11 @@
 title: "Guilherme Teixeira"
 email: 'guiemi.teixeira@gmail.com'
 description: "Desenvolvedor web e graduando em Linguística pela UFSCar" 
-quick_bio: ""
+
+quick_bio: "Hello, my name is Guilherme Teixeira. I'm a beginner-level developer, and a linguistics undergraduate student based in São Paulo, Brazil. I love computers, inline-skating, and I love to read about linguistics and science in general, science fiction, and fantasy literature. I also enjoy watching NBA on TV in the spare time.
+
+I'm currently learning Python (and Django) and JavaScript (and Vue.js) too. I'm also studying NLP (Natural Language Processing) in the college. I hope to know a bit more about Machine Learning and Formal Syntax as well in the near future."
+
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://guiemi.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 'guiemiquestion'
