@@ -5,7 +5,7 @@ permalink: /about/
 ---
 ## A quick bio
 
-Hello, my name is Guilherme Teixeira. I'm a Computational Linguistics intern, a developer, and a linguistics undergraduate student based in São Carlos, Brazil. 
+Hello, my name is Guilherme. I'm a Computational Linguistics intern, a developer, and a linguistics undergraduate student based in São Carlos, Brazil. 
 
 I love computers and inline-skating since the childhood; and I love to read about linguistics and science in general. I love to read science fiction, and fantasy literature too. I also enjoy watching NBA on TV in the spare time.
 
