@@ -23,7 +23,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://guiemi.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 'guiemiquestion'
 github_username: 'guiemi'
-medium_username: 'guiemi'
+medium_username: 'blacktech'
 linkedin_username: 'guiemi'
 quora_username: 'Guilherme-Teixeira'
 lastfm_username: 'guirgo'
