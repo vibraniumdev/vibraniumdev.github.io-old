@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-<h1>Novo teste 7: cache</h1>
+<h1>Novo teste 10: sem cache</h1>
 
 <main>
     <div class="container">
@@ -15,17 +15,12 @@ permalink: /projects/
                     {% if repository.fork == false %}
                         <h3 class="title">{{ repository.name }}</h3>
                         <p>{{ repository.description }}</p>
-                        <a href="{{repository.html_url}}" class="project-link">
+                        <!-- <a href="{{repository.html_url}}" class="project-link">
                             <button class="btn btn-default btn-lg"><i class="fa fa-github fa-lg"> {{ repository.name }} </i>
-                        </a>
-                        </button>
+                            </button>
+                        </a> -->
                     {% endif %}
                 {% endfor %}
-
-                <!-- {% for post in paginator.posts %}
-                {% include tile.html %}
-                {% endfor %} -->
-
                 {% include pagination.html %}
 
             </div>
