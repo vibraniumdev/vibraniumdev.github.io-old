@@ -33,6 +33,7 @@ markdown: kramdown
 # theme: phantom # Uncomment once published to RubyGems
 plugins:
   - jekyll-paginate
+  - jekyll-get-json
 
 ### Phantom settings
 paginate: 5
