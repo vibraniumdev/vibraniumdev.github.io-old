@@ -38,4 +38,4 @@ nav_item:
 jekyll_get_json:
   - data: repos
     json: 'https://api.github.com/users/guiemi/repos'
-  # - cache: true
+  - cache: true
