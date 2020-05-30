@@ -46,3 +46,4 @@ enable_nav: true
 nav_item:
   # - { url: '/', text: 'Página Inicial' }
   - { url: '/about', text: 'Sobre' }
+  - { url: '/projects', text: 'Projects' }
