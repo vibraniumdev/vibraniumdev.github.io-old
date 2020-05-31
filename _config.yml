@@ -38,6 +38,6 @@ nav_item:
 jekyll_get_json:
   - data: repos
     # json: "9d71a8c4106f4ea74ef9:f9ff9a14fad8c26a809624c6bd2007690311b4af https://api.github.com/guiemi/repos"  # Pattern 1
-    json: 9d71a8c4106f4ea74ef9:f9ff9a14fad8c26a809624c6bd2007690311b4af "https://api.github.com/guiemi/repos"  # Pattern 2
+    # json: 9d71a8c4106f4ea74ef9:f9ff9a14fad8c26a809624c6bd2007690311b4af "https://api.github.com/guiemi/repos"  # Pattern 2
     
-    # json: 'https://api.github.com/users/guiemi/repos'  # Deprecated?
+    json: 'https://api.github.com/users/guiemi/repos'  # Deprecated?
