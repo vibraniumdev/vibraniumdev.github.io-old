@@ -31,8 +31,8 @@ enable_contact: false
 enable_nav: true
 nav_item:
   # - { url: '/', text: 'Página Inicial' }
-  - { url: '/about', text: 'Sobre' }
   - { url: '/projects', text: 'Projects' }
+  - { url: '/about', text: 'Sobre' }
 
 #### Jekyll Get Json
 jekyll_get_json:
