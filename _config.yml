@@ -37,7 +37,7 @@ nav_item:
 #### Jekyll Get Json
 jekyll_get_json:
   - data: repos
-    json: curl https://api.github.com/users/guiemi/repos
+    # json: curl -u guiemi:e701e932bf114c6b3bea3bfb25eb29b9080e0b67 https://api.github.com/users/guiemi/repos
     # json: "9d71a8c4106f4ea74ef9:f9ff9a14fad8c26a809624c6bd2007690311b4af https://api.github.com/guiemi/repos"  # Pattern 1 | didn't work
     # json: 9d71a8c4106f4ea74ef9:f9ff9a14fad8c26a809624c6bd2007690311b4af "https://api.github.com/guiemi/repos"  # Pattern 2 | didn't work
     # json: curl -u 9d71a8c4106f4ea74ef9:f9ff9a14fad8c26a809624c6bd2007690311b4af https://api.github.com/guiemi/repos  # Pattern 3 | didn't work
