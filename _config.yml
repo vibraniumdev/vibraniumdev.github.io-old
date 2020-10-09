@@ -7,11 +7,11 @@ quick_bio: ""
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://guiemi.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 'guiemiquestion'
+twitter_username: 'vibraniumdev'
 github_username: 'guiemi'
 medium_username: 'blacktech'
 linkedin_username: 'guiemi'
-quora_username: 'Guilherme-Teixeira'
+# quora_username: 'Guilherme-Teixeira'
 lastfm_username: 'guirgo'
 
 # Build settings
@@ -33,7 +33,7 @@ enable_nav: true
 nav_item:
   # - { url: '/', text: 'Página Inicial' }
   - { url: '/projects', text: 'Projects' }
-  - { url: '/about', text: 'Sobre' }
+  - { url: '/about', text: 'About' }
 
 #### Jekyll Get Json
 jekyll_get_json:
