@@ -5,6 +5,7 @@ module.exports = {
     description: `A minimal blog starter built with Gatsbyjs. The needed Gatsby files are included.`,
     author: `@niklasmtj`,
   },
+  pathPrefix: "/vibraniumdev.github.io",    
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
