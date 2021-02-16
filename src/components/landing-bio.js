@@ -1,30 +1,6 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import styled from "@emotion/styled"
-
-const Container = styled.div`
-  text-align: center;
-`
-
-const OuterContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  height: 78vh;
-`
-
-const Description = styled.p`
-  padding: 0;
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
-`
-
-const NameHeader = styled.h1`
-  font-size: 3.5rem;
-  margin-bottom: 0;
-`
+import * as S from "./landing-bio.styles"
 
 const LandingBio = () => (
   <StaticQuery
@@ -39,24 +15,25 @@ const LandingBio = () => (
       }
     `}
     render={(data) => (
-      <OuterContainer>
-        <Container>
-          <NameHeader>{data.site.siteMetadata.title}</NameHeader>
-          <Description>{data.site.siteMetadata.subtitle}</Description>
-        </Container>
-      </OuterContainer>
+      <S.OuterContainer>
+        <S.Container>
+          <S.NameHeader>{data.site.siteMetadata.title}</S.NameHeader>
+          <S.Description>{data.site.siteMetadata.subtitle}</S.Description>
+          <p>(Currently under construction)</p>
+        </S.Container>
+      </S.OuterContainer>
     )}
   />
 )
 
-NameHeader.propTypes = {
-  siteTitle: PropTypes.string,
-  subtitle: PropTypes.string,
-}
+// NameHeader.propTypes = {
+//   siteTitle: PropTypes.string,
+//   subtitle: PropTypes.string,
+// }
 
-NameHeader.defaultProps = {
-  siteTitle: ``,
-  subtitle: ``,
-}
+// NameHeader.defaultProps = {
+//   siteTitle: ``,
+//   subtitle: ``,
+// }
 
 export default LandingBio

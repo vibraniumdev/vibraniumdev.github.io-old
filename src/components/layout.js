@@ -8,26 +8,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import styled from "@emotion/styled"
 
 import Header from "./header"
 import "./layout.css"
-
-const Content = styled.div`
-  margin: 0 auto;
-  max-width: 860px;
-  padding: 0 1.0875rem 1rem;
-  padding-top: 0;
-`
-
-const GatsbyLink = styled.a`
-  margin-left: 5px;
-`
-
-const Footer = styled.footer`
-  display: flex;
-  justify-content: center;
-`
+import * as S from './layout.styles';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -43,16 +27,15 @@ const Layout = ({ children }) => (
     render={(data) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
-        <Content>
+        <S.Content>
           <main>{children}</main>
-          <Footer>
+          <S.Footer>
             <p>
-              © {new Date().getFullYear()}, Built with
-              {` `}
+              © {new Date().getFullYear()}, Made with love and
             </p>
-            <GatsbyLink href="https://www.gatsbyjs.org">Gatsby</GatsbyLink>
-          </Footer>
-        </Content>
+            <S.GatsbyLink href="https://www.gatsbyjs.org">Gatsby</S.GatsbyLink>
+          </S.Footer>
+        </S.Content>
       </>
     )}
   />
