@@ -4,6 +4,7 @@ date: "2019-03-17"
 draft: false
 path: "/blog/example-title"
 ---
+
 # H1
 
 ## H2
@@ -32,14 +33,11 @@ Paragraph
 
 ```javascript
 const foo = bar
-console.log(foo);
+console.log(foo)
 ```
 
 ---
 
-| Hello | World |
-|-------|------ |
-| Foo   | Bar   |
-
-
-
+| Hello |  World |
+| ----- | ------ |
+| Foo   | Bar    |
