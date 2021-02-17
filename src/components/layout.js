@@ -31,7 +31,7 @@ const Layout = ({ children }) => (
           <main>{children}</main>
           <S.Footer>
             <p>
-              © {new Date().getFullYear()}, Made with love and
+              © {new Date().getFullYear()}, Made with &#128153;  and
             </p>
             <S.GatsbyLink href="https://www.gatsbyjs.org">Gatsby</S.GatsbyLink>
           </S.Footer>
