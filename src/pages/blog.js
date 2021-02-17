@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import * as S from './blog.styles'
 
 
-const IndexPage = ({ data }) => {
+const Blog = ({ data }) => {
   return (
     <Layout>
       <SEO title="Blog" />
@@ -42,7 +42,7 @@ const IndexPage = ({ data }) => {
   )
 }
 
-export default IndexPage
+export default Blog
 
 export const query = graphql`
   query {
