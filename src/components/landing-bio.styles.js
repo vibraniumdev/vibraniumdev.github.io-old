@@ -20,5 +20,9 @@ export const Description = styled.p`
 
 export const NameHeader = styled.h1`
   font-size: 3.5rem;
-  margin-bottom: 0;
+  margin-bottom: 1.5rem;
+`
+
+export const ItalicParagraph = styled.p`
+  font-style: italic;
 `

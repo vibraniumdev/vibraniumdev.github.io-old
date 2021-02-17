@@ -19,7 +19,7 @@ const LandingBio = () => (
         <S.Container>
           <S.NameHeader>{data.site.siteMetadata.title}</S.NameHeader>
           <S.Description>{data.site.siteMetadata.subtitle}</S.Description>
-          <p>(Currently under construction)</p>
+          <S.ItalicParagraph>(Currently under construction)</S.ItalicParagraph>
         </S.Container>
       </S.OuterContainer>
     )}
