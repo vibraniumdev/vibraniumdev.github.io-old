@@ -7,7 +7,7 @@ const Header = () => (
     <S.Content>
       <p>
         <S.HomeLink to="/">Home</S.HomeLink>
-        <S.NavLink to="/blog"><del>Blog</del></S.NavLink>
+        <S.NavLink to="#"><del>Blog</del></S.NavLink>
         <S.GitHubLink href="https://github.com/vibraniumdev/">GitHub</S.GitHubLink>
         <S.NavLink to="/about">About</S.NavLink>
       </p>
