@@ -18,6 +18,7 @@
     "gatsby-plugin-fontawesome-css": "^1.0.0",
     "gatsby-plugin-manifest": "^2.4.17",
     "gatsby-plugin-netlify": "^2.3.10",
+    "gatsby-plugin-nprogress": "^2.10.0",
     "gatsby-plugin-offline": "^3.2.16",
     "gatsby-plugin-react-helmet": "^3.3.9",
     "gatsby-plugin-sharp": "^2.6.17",

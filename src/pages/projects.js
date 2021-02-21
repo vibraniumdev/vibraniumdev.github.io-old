@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 
 import Layout from "../components/layout"
+import ProjectCard from "../components/projectCard"
 import SEO from "../components/seo"
 
 // import styled from "@emotion/styled"
@@ -13,20 +14,22 @@ import SEO from "../components/seo"
 
 const Projects = () => {
   const [reposList, setReposList] = useState()
+  const [isLoading, setIsLoading] = useState(false)
   useEffect(() => {
+    setIsLoading(true)
     // get data from GitHub api
     fetch(`https://api.github.com/users/vibraniumdev/repos`)
       .then((response) => response.json()) // parse JSON from request
       .then((resultData) => {
         setReposList(resultData)
+        setIsLoading(false)
       }) // set data for the number of stars
   }, [])
 
   return (
     <Layout>
       <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
-      <h1>Fetched Projects From GitHub's API</h1>
-      <div>{reposList && reposList.map((repo) => <div>{repo.full_name}</div>)}</div>
+      <ProjectCard isLoading={isLoading} reposList={reposList} />
     </Layout>
   )
 }
