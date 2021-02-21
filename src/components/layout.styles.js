@@ -37,5 +37,5 @@ export const Footer = styled.footer`
   justify-content: center;
 `
 export const Main = styled.main`
-  /* min-height: calc(100vh - 88.2px - 56.2px); */
+  min-height: calc(100vh - 88.2px - 56.2px);
 `
