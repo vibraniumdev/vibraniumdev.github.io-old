@@ -10,13 +10,6 @@ const Header = () => (
         <S.NavLink to="#">
           <del>Blog</del>
         </S.NavLink>
-        <S.GitHubLink
-          href="https://github.com/vibraniumdev/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </S.GitHubLink>
         <S.NavLink to="/about">About</S.NavLink>
       </p>
     </S.Content>
