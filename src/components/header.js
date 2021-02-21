@@ -10,6 +10,7 @@ const Header = () => (
         <S.NavLink to="#">
           <del>Blog</del>
         </S.NavLink>
+        <S.NavLink to="/projects">Projects</S.NavLink>
         <S.NavLink to="/about">About</S.NavLink>
       </p>
     </S.Content>
