@@ -17,18 +17,24 @@ const About = () => (
     <AboutContent>
       <h1>About</h1>
       <p>
-        Hello, my name is Guilherme Teixeira. I'm a software developer, and a
-        linguistics undergraduate student based in São Carlos, Brazil.
+        Hello, my name is Guilherme Teixeira. I'm a{" "}
+        <strong>software developer</strong>, and a
+        <strong> linguistics undergraduate student</strong> based in São Carlos,
+        Brazil.
       </p>
       <p>
-        I love computers and inline-skating since the childhood; and I love to
-        read about linguistics and science in general. I love to read science
-        fiction, and fantasy literature too. I also enjoy watching NBA.
+        I love computers, music, inline-skating, and basketball since I was a
+        kid; and I love to read about <strong>linguistics</strong> and{" "}
+        <strong>science</strong>. I love to read science fiction, and fantasy
+        literature too. I also enjoy watching NBA.
       </p>
       <p>
-        I'm currently improving my JavaScript and React skills in my job as a
-        front-end developer. In the college, my main goal is to develop research
-        on Generative Grammar (aka Chomskyan Syntax) and Language Acquisition.
+        I'm currently improving my <strong>JavaScript</strong> and
+        <strong> ReactJS </strong> skills at my job as a{" "}
+        <strong>front-end developer</strong>. In the college, my main goal is to
+        develop research on <strong>Generative Grammar</strong> (aka Chomskyan
+        Syntax) and
+        <strong> Language Acquisition</strong>.
       </p>
     </AboutContent>
   </Layout>
