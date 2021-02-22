@@ -35,6 +35,11 @@ export const Card = styled.div`
   p {
     color: #707070;
   }
+
+  :hover {
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.31);
+    transition-duration: 0.2s;
+  }
 `
 
 export const Content = styled.div`
