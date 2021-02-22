@@ -43,13 +43,20 @@ export const Card = styled.div`
 `
 
 export const Content = styled.div`
-  padding: 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  height: 75%;
+
+  h4, p {
+    margin-bottom: 0.5rem;
+    height: max-content;
+  }
 `
 
 export const Stats = styled.div`
   display: flex;
   align-items: center;
   padding: 0.5rem;
+  height: 25%;
 
   div {
     display: flex;
@@ -70,6 +77,7 @@ export const Stats = styled.div`
     span {
       color: #000;
       margin-left: 0.5rem;
+      margin: 0.9rem;
     }
   }
 `
