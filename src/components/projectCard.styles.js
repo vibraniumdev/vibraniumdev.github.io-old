@@ -2,26 +2,29 @@ import styled from "@emotion/styled"
 
 export const Wrapper = styled.div`
   padding: 2rem 0;
-`
-
-export const Container = styled.div`
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 0.5rem auto;
   width: 90%;
-
-  @media (min-width: 601px) {
+  
+  /* @media (min-width: 601px) {
     width: 90%;
   }
-
+  
   @media (min-width: 993px) {
     width: 80%;
-  }
-`
+  } */
+
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+  `
+
 
 export const Card = styled.div`
-  padding: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
   background: #fff;
-  width: 100%;
   overflow: hidden;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
 
@@ -35,7 +38,7 @@ export const Card = styled.div`
 `
 
 export const Content = styled.div`
-  padding: 1rem 0;
+  padding: 0.5rem 0.5rem;
 `
 
 export const Stats = styled.div`
@@ -45,7 +48,7 @@ export const Stats = styled.div`
 
   div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     &:first-child {
       margin-right: 0.5rem;
     }
@@ -54,9 +57,14 @@ export const Stats = styled.div`
       margin: 0;
     }
 
+    .icon {
+      margin: 0;
+      height: auto;
+    }
+
     span {
       color: #000;
-      /* margin-left: 0.5rem; */
+      margin-left: 0.5rem;
     }
   }
 `

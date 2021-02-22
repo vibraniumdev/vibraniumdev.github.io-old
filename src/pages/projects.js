@@ -18,7 +18,7 @@ const Projects = () => {
   useEffect(() => {
     setIsLoading(true)
     // get data from GitHub api
-    fetch(`https://api.github.com/users/vibraniumdev/repos`)
+    fetch(`https://api.github.com/users/vibraniumdev/repos?sort=updated&direction=desc`)
       .then((response) => response.json()) // parse JSON from request
       .then((resultData) => {
         setReposList(resultData)
