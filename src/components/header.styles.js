@@ -31,6 +31,11 @@ export const NavLink = styled(Link)`
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+  &.active {
+    color: #6c757d;
+    /* text-decoration: underline; */
+  }
 `
 
 export const GitHubLink = styled.a`
@@ -61,6 +66,11 @@ export const GitHubLink = styled.a`
 
 export const HomeLink = styled(NavLink)`
   margin-left: 0;
+
+  &.active {
+    color: #6c757d;
+    /* text-decoration: underline; */
+  }
 `
 
 export const SiteHeader = styled.header`

@@ -6,12 +6,18 @@ const Header = () => (
   <S.SiteHeader>
     <S.Content>
       <p>
-        <S.HomeLink to="/">Home</S.HomeLink>
+        <S.HomeLink to="/" activeClassName="active">
+          Home
+        </S.HomeLink>
         <S.NavLink to="#">
           <del>Blog</del>
         </S.NavLink>
-        <S.NavLink to="/projects">Projects</S.NavLink>
-        <S.NavLink to="/about">About</S.NavLink>
+        <S.NavLink to="/projects" activeClassName="active">
+          Projects
+        </S.NavLink>
+        <S.NavLink to="/about" activeClassName="active">
+          About
+        </S.NavLink>
       </p>
     </S.Content>
   </S.SiteHeader>
