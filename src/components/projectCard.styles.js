@@ -5,21 +5,21 @@ export const Wrapper = styled.div`
   max-width: 1280px;
   margin: 0.5rem auto;
   width: 90%;
-  
-  /* @media (min-width: 601px) {
-    width: 90%;
-  }
-  
-  @media (min-width: 993px) {
-    width: 80%;
-  } */
 
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
-  
-  `
 
+  @media (max-width: 1000px) {
+    width: 90%;
+    grid-template-columns: 3fr;
+  }
+
+  @media (min-width: 1001px) and (max-width: 1500px) {
+    width: 90%;
+    grid-template-columns: 2fr 2fr;
+  }
+`
 
 export const Card = styled.div`
   padding: 0.5rem;
