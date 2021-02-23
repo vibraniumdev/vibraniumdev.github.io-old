@@ -21,7 +21,8 @@ export const Wrapper = styled.div`
   }
 `
 
-export const Card = styled.div`
+export const Card = styled.a`
+  text-decoration: none;
   padding: 0.5rem;
   margin: 0.5rem;
   background: #fff;
