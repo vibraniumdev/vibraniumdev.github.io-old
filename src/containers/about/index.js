@@ -1,1 +1,1 @@
-import About from './about'
+import About from "./about"

@@ -5,7 +5,6 @@ import {
   faGithub,
   faLinkedin,
   faTwitter,
-  faTwitterSquare,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons"
 import {} from "@fortawesome/free-regular-svg-icons"

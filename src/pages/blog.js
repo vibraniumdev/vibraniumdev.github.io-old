@@ -1,1 +1,1 @@
-export {default} from '../containers/blog/blog'
+export { default } from "../containers/blog/blog"

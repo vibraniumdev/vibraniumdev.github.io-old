@@ -1,1 +1,1 @@
-export { default } from '../containers/404/404'
+export { default } from "../containers/404/404"

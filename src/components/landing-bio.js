@@ -26,14 +26,4 @@ const LandingBio = () => (
   />
 )
 
-// NameHeader.propTypes = {
-//   siteTitle: PropTypes.string,
-//   subtitle: PropTypes.string,
-// }
-
-// NameHeader.defaultProps = {
-//   siteTitle: ``,
-//   subtitle: ``,
-// }
-
 export default LandingBio

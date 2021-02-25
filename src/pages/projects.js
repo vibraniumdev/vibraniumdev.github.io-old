@@ -1,1 +1,1 @@
-export { default } from '../containers/projects/projects'
+export { default } from "../containers/projects/projects"

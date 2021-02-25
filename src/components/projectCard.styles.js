@@ -47,7 +47,8 @@ export const Content = styled.div`
   padding: 0.5rem 0.5rem 0 0.5rem;
   height: 75%;
 
-  h4, p {
+  h4,
+  p {
     margin-bottom: 0.5rem;
     height: max-content;
   }
