@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect } from "react"
 
 import Layout from "../../components/layout"
 import ProjectCard from "../../components/projectCard"
@@ -10,7 +10,7 @@ const Projects = () => {
 
   useEffect(() => {
     fetchProjects()
-  }, [])
+  }, [fetchProjects])
 
   return (
     <Layout>

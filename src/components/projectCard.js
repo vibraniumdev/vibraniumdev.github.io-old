@@ -1,10 +1,10 @@
 import React from "react"
-import { Wrapper, Content, Stats, Container, Card } from "./projectCard.styles"
+import { Wrapper, Content, Stats, Card } from "./projectCard.styles"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCode } from "@fortawesome/free-solid-svg-icons"
 
 const ProjectCard = ({ reposList, isLoading }) => (
-  <Wrapper as={Container}>
+  <Wrapper>
     {isLoading && <p>Loading...</p>}
     {reposList &&
       !isLoading &&
