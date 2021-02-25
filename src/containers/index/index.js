@@ -1,1 +1,0 @@
-import IndexPage from './indexPage'
