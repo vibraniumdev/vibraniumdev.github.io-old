@@ -30,7 +30,7 @@ const Projects = () => {
 
   useEffect(() => {
     fetchProjects()
-  }, [fetchProjects])
+  }, [])
 
   return (
     <Layout>

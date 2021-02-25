@@ -2,12 +2,11 @@ import React from "react"
 import { Wrapper, Content, Stats, Container, Card } from "./projectCard.styles"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCode } from "@fortawesome/free-solid-svg-icons"
-import { Link } from 'gatsby'
 
 const ProjectCard = ({ reposList, isLoading }) => (
   <Wrapper as={Container}>
     {isLoading && <p>Loading...</p>}
-    {reposList &&
+    {reposList && !isLoading &&
       reposList.map(({ name, description, language, html_url }) => (
         <Card href={html_url}>
           <Content>
