@@ -1,7 +1,7 @@
 ---
 title: "Second Title"
 date: "2019-03-18"
-draft: false
+draft: true
 path: "/blog/second-title"
 ---
 

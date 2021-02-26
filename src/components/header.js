@@ -9,8 +9,8 @@ const Header = () => (
         <S.HomeLink to="/" activeClassName="active">
           Home
         </S.HomeLink>
-        <S.NavLink to="#">
-          <del>Blog</del>
+        <S.NavLink to="/blog">
+          Blog
         </S.NavLink>
         <S.NavLink to="/projects" activeClassName="active">
           Projects

@@ -1,7 +1,7 @@
 ---
 title: "Code Example"
 date: "2019-06-06"
-draft: false
+draft: true
 path: "/blog/code-example"
 ---
 
