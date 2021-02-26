@@ -50,7 +50,8 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "develop": "gatsby clean && gatsby develop"
+    "develop": "gatsby develop",
+    "develop-clean": "gatsby clean && gatsby develop"
   },
   "repository": {
     "type": "git",

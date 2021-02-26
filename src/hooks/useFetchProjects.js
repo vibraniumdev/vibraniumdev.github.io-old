@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const useFetchProjects = () => {
+const UseFetchProjects = () => {
   const [reposList, setReposList] = useState()
   const [isLoading, setIsLoading] = useState(false)
 
@@ -13,11 +13,15 @@ const useFetchProjects = () => {
       .then((response) => response.json()) // parse JSON from request
       .then((resultData) => {
         setReposList(resultData)
-        setIsLoading(false)
       })
+    setIsLoading(false)
   }
 
-  return { fetchProjects, reposList, isLoading }
+  return {
+    fetchProjects,
+    reposList,
+    isLoading,
+  }
 }
 
-export default useFetchProjects
+export default UseFetchProjects

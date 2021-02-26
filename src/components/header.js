@@ -4,7 +4,7 @@ import React from "react"
 import * as S from "./header.styles"
 const Header = () => (
   <S.SiteHeader>
-    <S.Content>
+    <S.Content aria-current>
       <p>
         <S.HomeLink to="/" activeClassName="active">
           Home

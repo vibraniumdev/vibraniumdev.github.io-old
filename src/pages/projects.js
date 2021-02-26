@@ -1,35 +1,35 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect } from "react"
 
 import Layout from "../components/layout"
 import ProjectCard from "../components/projectCard"
 import SEO from "../components/seo"
-
-// import styled from "@emotion/styled"
-
-// export const AboutContent = styled.div`
-//   margin: 0 auto;
-//   max-width: 860px;
-//   padding: 1.45rem 1.0875rem;
-// `
+import useFetchProjects from "../hooks/useFetchProjects"
+import UseFetchLearningCenterProjects from "../hooks/useFetchLearningCenterProjects"
 
 const Projects = () => {
-  const [reposList, setReposList] = useState()
-  const [isLoading, setIsLoading] = useState(false)
+  const { fetchProjects, reposList, isLoading } = useFetchProjects()
+  const {
+    fetchLearningCenterProjects,
+    learningCenterReposList,
+    isLearningCenterLoading,
+  } = UseFetchLearningCenterProjects()
+
+  // useEffect(() => {
+  //   fetchProjects()
+  // }, [])
+
   useEffect(() => {
-    setIsLoading(true)
-    // get data from GitHub api
-    fetch(`https://api.github.com/users/vibraniumdev/repos?sort=updated&direction=desc`)
-      .then((response) => response.json()) // parse JSON from request
-      .then((resultData) => {
-        setReposList(resultData)
-        setIsLoading(false)
-      }) // set data for the number of stars
+    fetchLearningCenterProjects()
   }, [])
 
   return (
     <Layout>
       <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
-      <ProjectCard isLoading={isLoading} reposList={reposList} />
+      {/* <ProjectCard isLoading={isLoading} reposList={reposList} /> */}
+      <ProjectCard
+        isLoading={isLearningCenterLoading}
+        reposList={learningCenterReposList}
+      />
     </Layout>
   )
 }

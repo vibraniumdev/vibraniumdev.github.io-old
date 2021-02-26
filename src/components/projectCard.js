@@ -9,7 +9,7 @@ const ProjectCard = ({ reposList, isLoading }) => (
     {reposList &&
       !isLoading &&
       reposList.map(({ name, description, language, html_url }) => (
-        <Card href={html_url}>
+        <Card aria-current href={html_url}>
           <Content>
             <h4>{name}</h4>
             <p>{description}</p>
