@@ -9,7 +9,7 @@ const Header = () => (
         <S.HomeLink to="/" activeClassName="active">
           Home
         </S.HomeLink>
-        <S.NavLink to="/blog">
+        <S.NavLink to="/blog" activeClassName="active">
           Blog
         </S.NavLink>
         <S.NavLink to="/projects" activeClassName="active">
