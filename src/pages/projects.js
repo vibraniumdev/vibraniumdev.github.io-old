@@ -1,35 +1,31 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 
 import Layout from "../components/layout"
 import ProjectCard from "../components/projectCard"
 import SEO from "../components/seo"
 import useFetchProjects from "../hooks/useFetchProjects"
-import UseFetchLearningCenterProjects from "../hooks/useFetchLearningCenterProjects"
 
 const Projects = () => {
-  const { fetchProjects, reposList, isLoading } = useFetchProjects()
-  const {
-    fetchLearningCenterProjects,
-    learningCenterReposList,
-    isLearningCenterLoading,
-  } = UseFetchLearningCenterProjects()
 
-  // useEffect(() => {
-  //   fetchProjects()
-  // }, [])
+  const {
+    fetchProjects,
+    reposList,
+    isLoading,
+    learningCenterReposList,
+  } = useFetchProjects()
 
   useEffect(() => {
-    fetchLearningCenterProjects()
+    fetchProjects()
   }, [])
+
+  const combinedRepos = [...reposList, ...learningCenterReposList]
+  console.clear()
+  console.dir(combinedRepos)
 
   return (
     <Layout>
       <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
-      {/* <ProjectCard isLoading={isLoading} reposList={reposList} /> */}
-      <ProjectCard
-        isLoading={isLearningCenterLoading}
-        reposList={learningCenterReposList}
-      />
+      <ProjectCard isLoading={isLoading} reposList={combinedRepos} />
     </Layout>
   )
 }
