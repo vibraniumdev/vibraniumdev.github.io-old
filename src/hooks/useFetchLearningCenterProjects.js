@@ -7,7 +7,9 @@ const UseFetchLearningCenterProjects = () => {
   const fetchLearningCenterProjects = () => {
     setIsLearningCenterLoading(true)
 
-    fetch(`https://api.github.com/orgs/guilherme-learning-center/repos`)
+    fetch(
+      `https://api.github.com/orgs/guilherme-learning-center/repos?sort=updated&direction=desc`
+    )
       .then((response) => response.json())
       .then((resultData) => {
         setLearningCenterReposList(resultData)
