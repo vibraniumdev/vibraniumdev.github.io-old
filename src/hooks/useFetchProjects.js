@@ -6,13 +6,12 @@ const UseFetchProjects = () => {
 
   const [learningCenterReposList, setLearningCenterReposList] = useState()
 
-  const fetchProjects = async () => {
+  async function fetchProjects() {
     setIsLoading(true)
-    // get data from GitHub api
     await fetch(
       `https://api.github.com/users/vibraniumdev/repos?sort=updated&direction=desc`
     )
-      .then((response) => response.json()) // parse JSON from request
+      .then((response) => response.json())
       .then((resultData) => {
         setReposList(resultData)
       })

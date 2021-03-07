@@ -10,12 +10,12 @@ export const Wrapper = styled.div`
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
 
-  @media (max-width: 1000px) {
+  @media (max-width: 700px) {
     width: 90%;
     grid-template-columns: 3fr;
   }
 
-  @media (min-width: 1001px) and (max-width: 1500px) {
+  @media (min-width: 701px) and (max-width: 1000px) {
     width: 90%;
     grid-template-columns: 2fr 2fr;
   }
