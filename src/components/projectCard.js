@@ -5,7 +5,6 @@ import { faCode } from "@fortawesome/free-solid-svg-icons"
 
 const ProjectCard = ({ reposList, isLoading }) => (
   <Wrapper>
-    {isLoading && <p>Loading...</p>}
     {reposList &&
       !isLoading &&
       reposList.map(({ name, description, language, html_url }) => (
