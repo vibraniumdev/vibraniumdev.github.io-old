@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect } from "react"
 
 import Layout from "../components/layout"
 import ProjectCard from "../components/projectCard"
@@ -16,7 +16,7 @@ const Projects = () => {
 
   useEffect(() => {
     fetchProjects()
-  }, [])
+  }, [fetchProjects])
 
   // const combinedRepos = [...reposList, ...learningCenterReposList]
   // console.clear()
