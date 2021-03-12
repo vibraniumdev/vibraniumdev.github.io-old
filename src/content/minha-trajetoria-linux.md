@@ -1,7 +1,7 @@
 ---
 title: "Minha história no Linux"
 date: "2018-10-22"
-draft: false
+draft: true 
 path: "/blog/minha-trajetoria-linux"
 ---
 

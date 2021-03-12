@@ -18,14 +18,14 @@ const Projects = () => {
     fetchProjects()
   }, [fetchProjects])
 
-  // const combinedRepos = [...reposList, ...learningCenterReposList]
-  // console.clear()
-  // console.dir(combinedRepos)
+  console.clear()
+  const combinedRepos = {...reposList, ...learningCenterReposList}
+  console.dir(combinedRepos)
 
   return (
     <Layout>
       <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
-      <ProjectCard isLoading={isLoading} reposList={reposList} />
+      <ProjectCard isLoading={isLoading} reposList={learningCenterReposList} />
     </Layout>
   )
 }

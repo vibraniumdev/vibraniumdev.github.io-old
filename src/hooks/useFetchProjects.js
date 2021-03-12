@@ -2,9 +2,9 @@ import { useState } from "react"
 
 const UseFetchProjects = () => {
   const [reposList, setReposList] = useState()
+  const [learningCenterReposList, setLearningCenterReposList] = useState()
   const [isLoading, setIsLoading] = useState(false)
 
-  const [learningCenterReposList, setLearningCenterReposList] = useState()
 
   async function fetchProjects() {
     setIsLoading(true)
@@ -16,7 +16,7 @@ const UseFetchProjects = () => {
         setReposList(resultData)
       })
 
-    fetch(
+    await fetch(
       `https://api.github.com/orgs/guilherme-learning-center/repos?sort=updated&direction=desc`
     )
       .then((response) => response.json())
