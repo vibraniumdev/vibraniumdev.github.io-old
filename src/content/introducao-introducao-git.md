@@ -1,7 +1,7 @@
 ---
 title: "Introdução à Introdução Ao Git"
 date: "2019-06-17"
-draft: false
+draft: true 
 path: "/blog/introducao-introducao-git"
 ---
 
