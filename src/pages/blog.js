@@ -4,41 +4,13 @@ import { css } from "@emotion/react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-
-import styled from "@emotion/styled"
-
-export const Content = styled.div`
-  margin: 0 auto;
-  max-width: 860px;
-  padding: 1.45rem 1.0875rem;
-`
-
-export const ArticleDate = styled.h5`
-  display: inline;
-  color: #606060;
-`
-
-export const MarkerHeader = styled.h3`
-  display: inline;
-  border-radius: 1em 0 1em 0;
-  background-image: linear-gradient(
-    -100deg,
-    rgba(255, 250, 150, 0.15),
-    rgba(255, 250, 150, 0.8) 100%,
-    rgba(255, 250, 150, 0.25)
-  );
-`
-
-export const ReadingTime = styled.h5`
-  display: inline;
-  color: #606060;
-`
+import * as S from './blog.styles'
 
 const Blog = ({ data }) => {
   return (
     <Layout>
       <SEO title="Blog" />
-      <Content>
+      <S.Content>
         <h1>Blog</h1>
         {data.allMarkdownRemark.edges
           .filter(({ node }) => {
@@ -55,16 +27,16 @@ const Blog = ({ data }) => {
                   color: inherit;
                 `}
               >
-                <MarkerHeader>{node.frontmatter.title}</MarkerHeader>
+                <S.MarkerHeader>{node.frontmatter.title}</S.MarkerHeader>
               </Link>
               <div>
-                <ArticleDate>{node.frontmatter.date}</ArticleDate>
-                <ReadingTime> - {node.fields.readingTime.text}</ReadingTime>
+                <S.ArticleDate>{node.frontmatter.date}</S.ArticleDate>
+                <S.ReadingTime> - {node.fields.readingTime.text}</S.ReadingTime>
               </div>
               <p>{node.excerpt}</p>
             </div>
           ))}
-      </Content>
+      </S.Content>
     </Layout>
   )
 }
