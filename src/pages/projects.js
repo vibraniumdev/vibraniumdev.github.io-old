@@ -11,21 +11,19 @@ const Projects = () => {
     fetchProjects,
     reposList,
     isLoading,
-    learningCenterReposList,
   } = useFetchProjects()
 
   useEffect(() => {
     fetchProjects()
-  }, [fetchProjects])
+  }, [])
 
   console.clear()
-  const combinedRepos = {...reposList, ...learningCenterReposList}
-  console.dir(combinedRepos)
+  console.dir(reposList)
 
   return (
     <Layout>
       <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
-      <ProjectCard isLoading={isLoading} reposList={learningCenterReposList} />
+      <ProjectCard isLoading={isLoading} reposList={reposList} />
     </Layout>
   )
 }

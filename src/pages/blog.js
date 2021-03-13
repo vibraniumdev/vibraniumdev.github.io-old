@@ -4,7 +4,7 @@ import { css } from "@emotion/react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import * as S from './blog.styles'
+import * as S from "../pagesStyles/blog.styles";
 
 const Blog = ({ data }) => {
   return (
