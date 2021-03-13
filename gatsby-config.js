@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Guilherme Teixeira`,
+    title: `vibranium.dev`,
     subtitle: `Software developer && linguist`,
-    description: `A minimal personal website made with love and Gatsby`,
-    author: `@vibraniumdev`,
+    description: `Site pessoal onde escrevo textos sem bibliografia, reflexões sobre tecnologia, música, linguística. Meu ponto de vista sobre o cotidiano e sobre a existência.`,
+    author: `Guilherme Teixeira`,
     siteUrl: `https://vibranium.dev`,
   },
   plugins: [
@@ -116,14 +116,14 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Guilherme Teixeira Site's RSS Feed",
+            title: "Blog do Guilherme Teixeira",
             // optional configuration to insert feed reference in pages:
             // if `string` is used, it will be used to create RegExp and then test if pathname of
             // current page satisfied this regular expression;
             // if not provided or `undefined`, all pages will have feed reference inserted
             match: "^/content/",
             // optional configuration to specify external rss feed, such as feedburner
-            link: "https://feeds.feedburner.com/gatsby/blog",
+            link: "https://feeds.feedburner.com/vibranium-dev",
           },
         ],
       },
