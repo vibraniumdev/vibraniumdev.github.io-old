@@ -15,26 +15,24 @@ const About = () => (
   <Layout>
     <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
     <AboutContent>
-      <h1>About</h1>
+      <h1>Sobre mim</h1>
       <p>
-        Hello, my name is Guilherme Teixeira. I'm a{" "}
-        <strong>software developer</strong>, and a
-        <strong> linguistics undergraduate student</strong> based in São Carlos,
-        Brazil.
+        Meu nome é Guilherme Teixeira. Sou{" "}
+        <strong>desenvolvedor</strong> e{" "}
+        <strong> graduando em linguística</strong>.
       </p>
       <p>
-        I love computers, music, inline-skating, and basketball since I was a
-        kid; and I love to read about <strong>linguistics</strong> and{" "}
-        <strong>science</strong>. I love to read science fiction, and fantasy
-        literature too. I also enjoy watching NBA.
+        Amo computadores, música, patins e basquete desde a infância; e adoro
+        ler sobre <strong>linguística</strong> e <strong>ciência</strong>. Também gosto de ler ficção científica e ficção fantástica.
       </p>
       <p>
-        I'm currently improving my <strong>JavaScript</strong> and
-        <strong> ReactJS </strong> skills at my job as a{" "}
-        <strong>front-end developer</strong>. In the college, my main goal is to
-        develop research on <strong>Generative Grammar</strong> (aka Chomskyan
-        Syntax) and
-        <strong> Language Acquisition</strong>.
+        Atualmente estou aprimorando meus conhecimentos em <strong>JavaScript</strong>, em especial
+        <strong> ReactJS </strong> e <strong>GatsbyJS</strong> no meu trabalho como {" "}
+        <strong>desenvolvedor front-end</strong>. 
+      </p>
+      <p>
+        Na faculdade, meus interesses principais são a <strong>Sintaxe Gerativa</strong> (aka Sintaxe Chomskyana) e a
+        <strong> Aquisição de Linguagem</strong>.
       </p>
     </AboutContent>
   </Layout>
