@@ -32,6 +32,19 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
+  const { createFilePath } = require(`gatsby-source-filesystem`)
+  exports.onCreateNode = ({ node, actions, getNode }) => {
+    const { createNodeField } = actions
+    if (node.internal.type === `MarkdownRemark`) {
+      const value = createFilePath({ node, getNode })
+      createNodeField({
+        name: `slug`,
+        node,
+        value,
+      })
+    }
+  }
+
   return graphql(`
     {
       allMarkdownRemark {

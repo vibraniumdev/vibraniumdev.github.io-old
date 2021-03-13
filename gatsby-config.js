@@ -4,10 +4,13 @@ module.exports = {
     subtitle: `Software developer && linguist`,
     description: `A minimal personal website made with love and Gatsby`,
     author: `@vibraniumdev`,
+    siteUrl: `https://vibranium.dev`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-fontawesome-css`,
+    `gatsby-plugin-feed`,
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
