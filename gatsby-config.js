@@ -77,7 +77,7 @@ module.exports = {
               siteMetadata {
                 title
                 description
-                siteUrl
+                siteUrl/blog
                 site_url: siteUrl
               }
             }
