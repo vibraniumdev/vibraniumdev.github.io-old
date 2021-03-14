@@ -6,19 +6,11 @@ import SEO from "../components/seo"
 import useFetchProjects from "../hooks/useFetchProjects"
 
 const Projects = () => {
-
-  const {
-    fetchProjects,
-    reposList,
-    isLoading,
-  } = useFetchProjects()
+  const { fetchProjects, reposList, isLoading } = useFetchProjects()
 
   useEffect(() => {
     fetchProjects()
   }, [])
-
-  console.clear()
-  console.dir(reposList)
 
   return (
     <Layout>
