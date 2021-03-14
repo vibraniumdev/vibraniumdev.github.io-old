@@ -5,6 +5,7 @@ module.exports = {
     description: `Site pessoal onde escrevo textos sem bibliografia, reflexões sobre tecnologia, música, linguística. Meu ponto de vista sobre o cotidiano e sobre a existência.`,
     author: `Guilherme Teixeira`,
     siteUrl: `https://vibranium.dev`,
+    blogUrl: `/blog`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -77,7 +78,8 @@ module.exports = {
               siteMetadata {
                 title
                 description
-                siteUrl/blog
+                siteUrl
+                blogUrl
                 site_url: siteUrl
               }
             }
@@ -90,7 +92,10 @@ module.exports = {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  url:
+                    site.siteMetadata.siteUrl +
+                    site.siteMetadata.blogUrl +
+                    edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   custom_elements: [{ "content:encoded": edge.node.html }],
                 })
