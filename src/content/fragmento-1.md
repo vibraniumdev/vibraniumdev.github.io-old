@@ -1,5 +1,5 @@
 ---
-	title: "Fragmento 1: música islandesa"
+title: "Fragmento 1: música islandesa"
 date: "2021-03-12"
 draft: false
 path: "/blog/fragmento-1"
