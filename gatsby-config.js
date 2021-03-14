@@ -99,7 +99,7 @@ module.exports = {
                   guid:
                     site.siteMetadata.siteUrl +
                     site.siteMetadata.blogUrl +
-                    +edge.node.fields.slug,
+                    edge.node.fields.slug,
                   custom_elements: [{ "content:encoded": edge.node.html }],
                 })
               })
