@@ -1,5 +1,9 @@
 # vibranium.dev
 
+
+
+![home-screenshot](https://github.com/vibraniumdev/vibraniumdev.github.io/blob/master/media/home-screenshot.png)
+
 ## Roadmap
 
 ### Funcionalidades
@@ -11,4 +15,6 @@
 
 - [ ] Fazer ambas listas de repositório ficarem ordenadas por 'last modified'
 - [ ] Tornar todos os componentes responsivos
+
+
 
