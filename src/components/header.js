@@ -7,16 +7,16 @@ const Header = () => (
     <S.Content aria-current>
       <p>
         <S.HomeLink to="/" activeClassName="active">
-          Home
+          Bruxa Keka
         </S.HomeLink>
         <S.NavLink to="/blog" activeClassName="active">
-          Blog
+          Voldemort
         </S.NavLink>
         <S.NavLink to="/projects" activeClassName="active">
           Projetos
         </S.NavLink>
         <S.NavLink to="/about" activeClassName="active">
-          Sobre
+          Sonserina
         </S.NavLink>
       </p>
     </S.Content>
