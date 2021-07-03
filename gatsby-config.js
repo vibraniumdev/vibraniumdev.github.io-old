@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Guilherme Teixeira`,
-    subtitle: `Desenvolvedor e linguista`,
+    subtitle: `Front-end developer and linguist`,
     description: `Site pessoal onde escrevo textos sem bibliografia, reflexões sobre tecnologia, música, linguística. Meu ponto de vista sobre o cotidiano e sobre a existência.`,
     author: `Guilherme Teixeira`,
     siteUrl: `https://vibranium.dev`,
