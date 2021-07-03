@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import styled from "@emotion/styled"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 const Content = styled.div`
   margin: 0 auto;
@@ -54,7 +54,7 @@ export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <SEO
+      <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />

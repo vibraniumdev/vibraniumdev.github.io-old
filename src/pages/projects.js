@@ -2,7 +2,7 @@ import React, { useEffect } from "react"
 
 import Layout from "../components/layout"
 import ProjectCard from "../components/projectCard"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import useFetchProjects from "../hooks/useFetchProjects"
 
 const Projects = () => {
@@ -14,7 +14,7 @@ const Projects = () => {
 
   return (
     <Layout>
-      <SEO title="Projects" keywords={[`gatsby`, `application`, `react`]} />
+      <Seo title="Projects" keywords={[`gatsby`, `application`, `react`]} />
       <ProjectCard isLoading={isLoading} reposList={reposList} />
     </Layout>
   )

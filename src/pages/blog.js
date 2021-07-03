@@ -3,13 +3,13 @@ import { Link, graphql } from "gatsby"
 import { css } from "@emotion/react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import * as S from "../pagesStyles/blog.styles";
 
 const Blog = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Blog" />
+      <Seo title="Blog" />
       <S.Content>
         <h1>Blog</h1>
         {data.allMarkdownRemark.edges

@@ -1,13 +1,13 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 
 import { AboutContent } from "../pagesStyles/about.styles"
 
 const About = () => (
   <Layout>
-    <SEO
+    <Seo
       title="About"
       keywords={[`javascript`, `programming`, `react`, `linguistics`]}
     />
