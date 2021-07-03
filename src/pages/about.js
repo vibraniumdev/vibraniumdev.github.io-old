@@ -3,30 +3,41 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { AboutContent } from '../pagesStyles/about.styles';
+import { AboutContent } from "../pagesStyles/about.styles"
 
 const About = () => (
   <Layout>
     <SEO title="About" keywords={[`gatsby`, `application`, `react`]} />
     <AboutContent>
-      <h1>Sobre mim</h1>
+      <h1>About me</h1>
       <p>
-        Meu nome é Guilherme Teixeira. Sou{" "}
-        <strong>desenvolvedor</strong> e{" "}
-        <strong> graduando em linguística</strong>.
+        Meu nome é Guilherme Teixeira, desenvolvedor front-end e graduando em
+        Linguística.
       </p>
       <p>
         Amo computadores, música, patins e basquete desde a infância; e adoro
-        ler sobre <strong>linguística</strong> e <strong>ciência</strong>. Também gosto de ler ficção científica e ficção fantástica.
+        ler sobre linguística e ciência. Também gosto de ler ficção científica e
+        ficção fantástica.
       </p>
       <p>
-        Atualmente estou aprimorando meus conhecimentos em <strong>JavaScript</strong>, em especial
-        <strong> ReactJS </strong> e <strong>GatsbyJS</strong> no meu trabalho como {" "}
-        <strong>desenvolvedor front-end</strong>. 
+        Desde a infância sou fascinado por computadores, música, patins,
+        snowboarding e basquete.
       </p>
       <p>
-        Na faculdade, meus interesses principais são a <strong>Sintaxe Gerativa</strong> (aka Sintaxe Chomskyana) e a
-        <strong> Aquisição de Linguagem</strong>.
+        Embora minha trajetória na tecnologia tenha se iniciado há quase 10
+        anos, meus primeiros passos no desenvolvimento de software foram dados
+        em 2017, quando comecei a aprender Python. Entre 2018 e 2019 trabalhei
+        com Python como estagiário, até que tive a oportunidade de ingressar
+        como estagiário em Linguística Computacional, para aliar meus
+        conhecimentos de Python e NLP. Em 2020, decidi mudar de carreira e ir
+        trabalhar com desenvolvimento Front-End. Atualmente, em meu trabalho
+        como desenvolvedor, estou aprimorando meus
+        conhecimentos sobre JavaScript, em especial em ReactJS, GatsbyJS e
+        NextJS, além de obviamente HTML e CSS e seus derivados.
+      </p>
+      <p>
+        Na universidade, meu principal interesse é a linguística teórica, sobretudo nos tópicos relacionados a Epistemologia e
+        Filosofia Analítica, Sintaxe Gerativa, Semântica Formal e Aquisição de Linguagem.
       </p>
     </AboutContent>
   </Layout>
