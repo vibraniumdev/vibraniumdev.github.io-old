@@ -7,6 +7,10 @@ module.exports = {
     siteUrl: `https://vibranium.dev`,
     blogUrl: `/blog`,
   },
+  flags: {
+    DEV_SSR: true,
+  },
+
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-fontawesome-css`,
