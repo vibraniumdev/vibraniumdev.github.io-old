@@ -50,7 +50,7 @@ const MarkdownContent = styled.div`
   }
 `
 
-export default ({ data }) => {
+const BlogPost = ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
@@ -87,3 +87,4 @@ export const pageQuery = graphql`
     }
   }
 `
+export default BlogPost

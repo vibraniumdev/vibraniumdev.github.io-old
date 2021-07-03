@@ -4,7 +4,7 @@ const useFetchProjects = () => {
   const [reposList, setReposList] = useState()
   const [isLoading, setIsLoading] = useState(false)
 
-  async function fetchProjects() {
+  const fetchProjects = async () => {
     setIsLoading(true)
     await fetch(
       `https://api.github.com/users/vibraniumdev/repos?sort=updated&direction=desc`

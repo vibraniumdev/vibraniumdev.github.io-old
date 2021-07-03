@@ -8,7 +8,7 @@ module.exports = {
     blogUrl: `/blog`,
   },
   flags: {
-    DEV_SSR: true,
+    DEV_SSR: false,
   },
 
   plugins: [
