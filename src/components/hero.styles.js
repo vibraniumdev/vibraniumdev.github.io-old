@@ -1,11 +1,15 @@
 import styled from "@emotion/styled"
 
 export const Container = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
   text-align: center;
   padding: 1rem 0;
 
   svg {
-    margin: 0 1.5rem;
+    margin: 0 1.25rem;
     padding: 0;
     font-size: 1.5rem;
 
@@ -16,8 +20,3 @@ export const Container = styled.div`
   }
 `
 
-export const OuterContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`
