@@ -6,6 +6,9 @@ import {
   faLinkedin,
   faTwitter,
   faInstagram,
+  faTwitch,
+  faDev,
+  faHackerrank,
 } from "@fortawesome/free-brands-svg-icons"
 import {} from "@fortawesome/free-regular-svg-icons"
 
@@ -20,35 +23,35 @@ const Hero = () => (
       <FontAwesomeIcon icon={faGithub} />
     </a>
     <a
+      href="https://www.twitch.tv/guilhermestreams/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FontAwesomeIcon icon={faTwitch} />
+    </a>
+    <a href="https://dev.to/guiemi" target="_blank" rel="noopener noreferrer">
+      <FontAwesomeIcon icon={faDev} />
+    </a>
+    <a
+      href="https://www.hackerrank.com/guiemi_teixeira"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FontAwesomeIcon icon={faHackerrank} />
+    </a>
+    <a
       href="https://www.linkedin.com/in/guiemi/"
       target="_blank"
       rel="noopener noreferrer"
     >
       <FontAwesomeIcon icon={faLinkedin} />
     </a>
-
     <a
-      href="https://medium.com/@guiemi"
+      href="https://medium.com/blacktech"
       target="_blank"
       rel="noopener noreferrer"
     >
       <FontAwesomeIcon icon={faMedium} />
-    </a>
-    
-    <a
-      href="https://twitter.com/vibraniumdev"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <FontAwesomeIcon icon={faTwitter} />
-    </a>
-
-    <a
-      href="https://www.instagram.com/violaodeinverno/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <FontAwesomeIcon icon={faInstagram} />
     </a>
   </S.Container>
 )
