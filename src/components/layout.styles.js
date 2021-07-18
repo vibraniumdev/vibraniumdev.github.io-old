@@ -8,6 +8,7 @@ export const Content = styled.div`
 
   @media (max-width: 75vh) {
     width: auto;
+    padding: unset;
   }
 `
 
@@ -21,4 +22,7 @@ export const GatsbyLink = styled.a`
 
 export const Main = styled.main`
   min-height: calc(100vh - 88.2px - 56.2px);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 `
