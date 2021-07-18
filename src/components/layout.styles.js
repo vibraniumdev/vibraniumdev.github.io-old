@@ -11,14 +11,14 @@ export const Content = styled.div`
   }
 `
 
-export const GatsbyLink = styled.a`
-  margin-left: 5px;
-`
-
 export const Footer = styled.footer`
   display: flex;
   justify-content: center;
 `
+export const GatsbyLink = styled.a`
+  margin-left: 0.4rem;
+`
+
 export const Main = styled.main`
   min-height: calc(100vh - 88.2px - 56.2px);
 `
