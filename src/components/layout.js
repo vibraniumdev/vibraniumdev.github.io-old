@@ -22,7 +22,8 @@ const Layout = ({ children }) => (
         <Header siteTitle={data.site.siteMetadata.title} />
         <S.Main>{children}</S.Main>
         <S.Footer>
-          <p>© {new Date().getFullYear()}, made with &#x1F5A4; and</p>
+          <span>© {new Date().getFullYear()}, made with &#x1F5A4; and</span>
+          {' '}
           <S.GatsbyLink href="https://www.gatsbyjs.org">GatsbyJS</S.GatsbyLink>
         </S.Footer>
       </S.Content>
