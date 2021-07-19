@@ -4,8 +4,6 @@ import {
   faMedium,
   faGithub,
   faLinkedin,
-  faTwitter,
-  faInstagram,
   faTwitch,
   faDev,
   faHackerrank,
