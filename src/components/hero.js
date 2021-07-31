@@ -7,6 +7,7 @@ import {
   faTwitch,
   faDev,
   faHackerrank,
+  faMastodon,
 } from "@fortawesome/free-brands-svg-icons"
 import {} from "@fortawesome/free-regular-svg-icons"
 
@@ -50,6 +51,13 @@ const Hero = () => (
       rel="noopener noreferrer"
     >
       <FontAwesomeIcon icon={faMedium} />
+    </a>
+    <a
+      target="_blank"
+      rel="me noopener noreferrer"
+      href="https://fosstodon.org/@gui"
+    >
+      <FontAwesomeIcon icon={faMastodon} />
     </a>
   </S.Container>
 )
