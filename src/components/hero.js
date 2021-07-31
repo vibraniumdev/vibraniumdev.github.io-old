@@ -8,6 +8,7 @@ import {
   faDev,
   faHackerrank,
   faMastodon,
+  faGoodreads,
 } from "@fortawesome/free-brands-svg-icons"
 import {} from "@fortawesome/free-regular-svg-icons"
 
@@ -59,6 +60,14 @@ const Hero = () => (
     >
       <FontAwesomeIcon icon={faMastodon} />
     </a>
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://www.goodreads.com/guiemi"
+    >
+      <FontAwesomeIcon icon={faGoodreads} />
+    </a>
+ 
   </S.Container>
 )
 
