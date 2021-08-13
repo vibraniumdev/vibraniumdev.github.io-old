@@ -15,6 +15,9 @@ const Header = () => (
         <S.NavLink to="/projects" activeClassName="active">
           Projects
         </S.NavLink>
+        <S.NavLink to="/learning" activeClassName="active">
+          Learning
+        </S.NavLink>
         <S.NavLink to="/about" activeClassName="active">
           About
         </S.NavLink>

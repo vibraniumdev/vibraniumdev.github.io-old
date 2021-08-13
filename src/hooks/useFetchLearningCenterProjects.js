@@ -4,11 +4,11 @@ const UseFetchLearningCenterProjects = () => {
   const [learningCenterReposList, setLearningCenterReposList] = useState()
   const [isLearningCenterLoading, setIsLearningCenterLoading] = useState(false)
 
-  const fetchLearningCenterProjects = () => {
+  const fetchLearningCenterProjects = async () => {
     setIsLearningCenterLoading(true)
 
-    fetch(
-      `https://api.github.com/orgs/guilherme-learning-center/repos?sort=updated&direction=desc`
+    await fetch(
+      `https://api.github.com/orgs/divertimentos/repos?sort=updated&direction=desc`
     )
       .then((response) => response.json())
       .then((resultData) => {
