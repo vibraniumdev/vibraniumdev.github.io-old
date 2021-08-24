@@ -56,7 +56,7 @@ const Hero = () => (
     <a
       target="_blank"
       rel="me noopener noreferrer"
-      href="https://fosstodon.org/@gui"
+      href="https://mastodon.com.br/@gui"
     >
       <FontAwesomeIcon icon={faMastodon} />
     </a>
