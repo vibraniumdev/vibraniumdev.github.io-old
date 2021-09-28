@@ -27,7 +27,7 @@ const About = () => (
       <p>
         Currently I am a front-end developer at Printi, the biggest online
         printing company in Brazil. I'm constantly improving my knowledge about
-        HTML, CSS, and JavaScript, as well as ReactJS, NextJS and GatsbyJS.
+        JavaScript, CSS, and HTML, as well as ReactJS, NextJS and GatsbyJS.
       </p>
       <p>
         As a college student, my topics of interest are theoretical linguistics,
@@ -35,8 +35,8 @@ const About = () => (
         Philosophy, and Language Acquisition.
       </p>
       <p>
-        I love computers, progressive metal, rollerblades, and Basketball since
-        the childhood. I also enjoy reading about science fiction, fantasy, and
+        I love computers, Progressive Metal, rollerblades, and Basketball since
+        I was a kid. I also enjoy reading about science fiction, fantasy, and
         philosophy. When I grew older, I've found out that I also love science
         and grammar, so I decided to join a bachelor degree called Linguistics,
         which is the field of study that has language as its main scientific
