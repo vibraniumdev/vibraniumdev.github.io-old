@@ -21,7 +21,7 @@ const About = () => (
         I've made my first steps into software development in 2017 when I
         started learning Python in the college. Less than one year later, I was
         already working as a Python software development intern. After that I
-        took the oportunity to work as a computational linguist (NLP) intern. In
+        took the opportunity to work as a computational linguist (NLP) intern. In
         2020, I accepted the challenge of starting over.
       </p>
       <p>
