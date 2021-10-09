@@ -36,14 +36,9 @@ export const NavLink = styled(Link)`
     color: #6c757d;
     /* text-decoration: underline; */
   }
-`
 
-export const HomeLink = styled(NavLink)`
-  margin-left: 0;
-
-  &.active {
-    color: #6c757d;
-    /* text-decoration: underline; */
+  :nth-child(1) {
+    margin-left: 0;
   }
 `
 
