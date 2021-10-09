@@ -9,7 +9,7 @@ export const Content = styled.div`
 
 export const NavLink = styled(Link)`
   color: black;
-  margin-left: 15px;
+  margin-left: 1rem;
   text-decoration: none;
   display: inline-block;
   position: relative;
@@ -19,7 +19,7 @@ export const NavLink = styled(Link)`
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 0.125rem;
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
