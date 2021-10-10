@@ -6,9 +6,9 @@ const Header = () => (
   <S.SiteHeader>
     <S.Content aria-current>
       <p>
-        <S.HomeLink to="/" activeClassName="active">
+        <S.NavLink to="/" activeClassName="active">
           Home
-        </S.HomeLink>
+        </S.NavLink>
         <S.NavLink to="/blog" activeClassName="active">
           Blog
         </S.NavLink>
