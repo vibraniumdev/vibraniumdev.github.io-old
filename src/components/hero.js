@@ -29,7 +29,7 @@ const Hero = () => (
     >
       <FontAwesomeIcon icon={faTwitch} />
     </a>
-    <a href="https://dev.to/guiemi" target="_blank" rel="noopener noreferrer">
+    <a href="https://dev.to/guiteixeira" target="_blank" rel="noopener noreferrer">
       <FontAwesomeIcon icon={faDev} />
     </a>
     <a
