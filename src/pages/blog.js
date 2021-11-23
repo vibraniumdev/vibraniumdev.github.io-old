@@ -4,7 +4,7 @@ import { css } from "@emotion/react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
-import * as S from "../pagesStyles/blog.styles";
+import * as S from "../pagesStyles/blog.styles"
 
 const Blog = ({ data }) => {
   return (
@@ -27,7 +27,7 @@ const Blog = ({ data }) => {
                   color: inherit;
                 `}
               >
-                <S.MarkerHeader>{node.frontmatter.title}</S.MarkerHeader>
+                <S.SimpleHeader>{node.frontmatter.title}</S.SimpleHeader>
               </Link>
               <div>
                 <S.ArticleDate>{node.frontmatter.date}</S.ArticleDate>

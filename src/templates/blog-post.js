@@ -20,6 +20,10 @@ const MarkedHeader = styled.h1`
     rgba(144, 224, 239, 0.25)
   );
 `
+const SimpleHeader = styled.h1`
+  display: inline;
+  border-radius: 1em 0 1em 0;
+`
 
 const HeaderDate = styled.h4`
   margin-top: 1rem;
@@ -59,7 +63,7 @@ const BlogPost = ({ data }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <Content>
-        <MarkedHeader>{post.frontmatter.title}</MarkedHeader>
+        <SimpleHeader>{post.frontmatter.title}</SimpleHeader>
         <HeaderDate>
           {post.frontmatter.date} - {post.fields.readingTime.text}
         </HeaderDate>

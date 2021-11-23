@@ -22,6 +22,29 @@ export const MarkerHeader = styled.h3`
   );
 `
 
+export const SimpleHeader = styled.h3`
+  display: inline;
+  border-radius: 1em 0 1em 0;
+  transition: 0.4s ease-out;
+
+  &.active {
+    color: #6c757d;
+    :after {
+      transform: scaleX(1);
+    }
+  }
+
+  :hover {
+    color: #6c757d;
+    transition: 0.1s ease-in;
+
+    :after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+`
+
 export const ReadingTime = styled.h5`
   display: inline;
   color: #606060;
