@@ -44,7 +44,7 @@ const Hero = () => (
       <FontAwesomeIcon icon={faHackerrank} />
     </a>
     <a
-      href="www.linkedin.com/in/guiatf"
+      href="https://www.linkedin.com/in/guiatf"
       target="_blank"
       rel="noopener noreferrer"
     >
