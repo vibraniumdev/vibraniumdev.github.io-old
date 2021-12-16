@@ -29,7 +29,11 @@ const Hero = () => (
     >
       <FontAwesomeIcon icon={faTwitch} />
     </a>
-    <a href="https://dev.to/guiteixeira" target="_blank" rel="noopener noreferrer">
+    <a
+      href="https://dev.to/guiteixeira"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <FontAwesomeIcon icon={faDev} />
     </a>
     <a
@@ -40,7 +44,7 @@ const Hero = () => (
       <FontAwesomeIcon icon={faHackerrank} />
     </a>
     <a
-      href="https://www.linkedin.com/in/guiemi/"
+      href="www.linkedin.com/in/guiatf"
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -67,7 +71,6 @@ const Hero = () => (
     >
       <FontAwesomeIcon icon={faGoodreads} />
     </a>
- 
   </S.Container>
 )
 
