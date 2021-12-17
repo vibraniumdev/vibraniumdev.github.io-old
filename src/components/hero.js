@@ -10,7 +10,6 @@ import {
   faMastodon,
   faGoodreads,
 } from "@fortawesome/free-brands-svg-icons"
-import {} from "@fortawesome/free-regular-svg-icons"
 
 import * as S from "./hero.styles"
 const Hero = () => (
