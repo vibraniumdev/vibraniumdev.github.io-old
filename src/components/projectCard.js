@@ -8,12 +8,13 @@ const ProjectCard = ({ reposList, isLoading }) => (
     {reposList &&
       !isLoading &&
       reposList.map(
-        ({ name, description, language, html_url, stargazers_count, fork }) => (
+        ({ name, description, language, html_url, stargazers_count, fork }, index) => (
           <S.Card
             aria-current
             rel="noopener noreferrer"
             target="_blank"
             href={html_url}
+            key={index}
           >
             <S.Content>
               {fork ? (
