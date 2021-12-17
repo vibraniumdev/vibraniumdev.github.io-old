@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from "react"
-import { Link } from "gatsby"
-import { css } from "@emotion/react"
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as S from "../pagesStyles/blog.styles"
@@ -33,25 +30,24 @@ const Blog = () => {
           {postList &&
             !isLoading &&
             postList.map(
-              ({
-                url,
-                title,
-                readable_publish_date,
-                reading_time_minutes,
-                description,
-              }) => (
-                <div>
-                  <Link
-                    to={url}
-                    css={css`
-                      text-decoration: none;
-                      color: inherit;
-                    `}
-                    target="_blank"
+              (
+                {
+                  url,
+                  title,
+                  readable_publish_date,
+                  reading_time_minutes,
+                  description,
+                },
+                index
+              ) => (
+                <div key={index}>
+                  <S.PostLink
+                    href={url}
                     rel="noopener noreferrer"
+                    target="_blank"
                   >
                     <S.SimpleHeader>{title}</S.SimpleHeader>
-                  </Link>
+                  </S.PostLink>
                   <div>
                     <S.ArticleDate>{readable_publish_date}</S.ArticleDate>
                     <S.ReadingTime>

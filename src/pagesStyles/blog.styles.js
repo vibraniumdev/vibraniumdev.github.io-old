@@ -49,3 +49,7 @@ export const ReadingTime = styled.h5`
   display: inline;
   color: #606060;
 `
+export const PostLink = styled.a`
+  text-decoration: none;
+  color: inherit;
+`

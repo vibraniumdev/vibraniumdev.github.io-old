@@ -15,7 +15,7 @@ export const NavLink = styled(Link)`
   position: relative;
   transition: 0.4s ease-out;
 
-  :nth-child(1) {
+  :nth-of-type(1) {
     margin-left: 0;
   }
 
