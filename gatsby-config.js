@@ -16,6 +16,15 @@ module.exports = {
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-postcss`,
     {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `dimgray`,
+        // Disable the loading spinner.
+        showSpinner: true,
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown-pages`,
