@@ -1,4 +1,5 @@
 import { useState } from "react"
+import * as NProgress from "nprogress"
 
 const useFetchProjects = () => {
   const [reposList, setReposList] = useState()
@@ -6,6 +7,8 @@ const useFetchProjects = () => {
 
   const fetchProjects = async () => {
     setIsLoading(true)
+    NProgress.start()
+
     await fetch(
       `https://api.github.com/users/vibraniumdev/repos?sort=updated&direction=desc`
     )
@@ -15,6 +18,7 @@ const useFetchProjects = () => {
       })
 
     setIsLoading(false)
+    NProgress.done()
   }
 
   return {

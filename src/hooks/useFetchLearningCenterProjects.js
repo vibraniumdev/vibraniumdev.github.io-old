@@ -1,10 +1,12 @@
 import { useState } from "react"
+import * as NProgress from "nprogress"
 
 const UseFetchLearningCenterProjects = () => {
   const [learningCenterReposList, setLearningCenterReposList] = useState()
   const [isLearningCenterLoading, setIsLearningCenterLoading] = useState(false)
 
   const fetchLearningCenterProjects = async () => {
+    NProgress.start()
     setIsLearningCenterLoading(true)
 
     await fetch(
@@ -15,6 +17,7 @@ const UseFetchLearningCenterProjects = () => {
         setLearningCenterReposList(resultData)
       })
     setIsLearningCenterLoading(false)
+    NProgress.done()
   }
 
   return {

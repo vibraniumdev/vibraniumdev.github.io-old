@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as S from "../pagesStyles/blog.styles"
+import * as NProgress from "nprogress"
 
 const Blog = () => {
   const [postList, setPostList] = useState([])
@@ -10,6 +11,7 @@ const Blog = () => {
   useEffect(() => {
     const fetchPosts = async () => {
       setIsLoading(true)
+      NProgress.start()
       await fetch(`https://dev.to/api/articles/latest?username=guiteixeira`)
         .then((response) => response.json())
         .then((resultData) => {
@@ -17,6 +19,7 @@ const Blog = () => {
         })
 
       setIsLoading(false)
+      NProgress.done()
     }
     fetchPosts()
   }, [])
