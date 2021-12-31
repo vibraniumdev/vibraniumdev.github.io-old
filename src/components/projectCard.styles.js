@@ -34,7 +34,7 @@ export const Card = styled.a`
   }
 
   p {
-    color: #707070;
+    color: #696969;
   }
 
   :hover {
