@@ -10,7 +10,7 @@ const useFetchProjects = () => {
     NProgress.start()
 
     await fetch(
-      `https://api.github.com/users/vibraniumdev/repos?sort=updated&direction=desc`
+      `https://api.github.com/users/ggteixeira/repos?sort=updated&direction=desc`
     )
       .then((response) => response.json())
       .then((resultData) => {

@@ -1,6 +1,6 @@
-# vibranium.dev
+# ggteixeira.dev
 
-![home-screenshot](https://github.com/vibraniumdev/vibraniumdev.github.io/blob/master/media/website-screenshot-home-desktop.png)
+![home-screenshot](https://github.com/ggteixeira/ggteixeira.github.io/blob/master/media/website-screenshot-home-desktop.png)
 
 ## Roadmap
 

@@ -15,7 +15,7 @@ import * as S from "./hero.styles"
 const Hero = () => (
   <S.Container>
     <a
-      href="https://github.com/vibraniumdev/"
+      href="https://github.com/ggteixeira/"
       target="_blank"
       rel="noopener noreferrer"
     >
