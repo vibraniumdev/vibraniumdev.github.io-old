@@ -1,4 +1,4 @@
-# ggteixeira.dev
+# guiteixeira.dev
 
 ![home-screenshot](https://github.com/ggteixeira/ggteixeira.github.io/blob/master/media/website-screenshot-home-desktop.png)
 
