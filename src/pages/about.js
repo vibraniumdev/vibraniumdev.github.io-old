@@ -15,7 +15,7 @@ const About = () => (
       <h1>About me</h1>
       <p>
         Hello! My name is Guilherme Teixeira. I'm a front-end developer and an
-        undergraduate Linguistics student.
+        undergraduate Linguistics student based in Brazil.
       </p>
       <p>
         I've made my first steps into software development in 2017 when I
@@ -25,8 +25,8 @@ const About = () => (
         2020, I accepted the challenge of starting over.
       </p>
       <p>
-        Currently I am a front-end developer at Printi, the biggest online
-        printing company in Brazil. I'm constantly improving my knowledge about
+        Currently I am a front-end developer at Printi, one of the biggest online
+        printing companies in Latin America. I'm constantly improving my knowledge about
         JavaScript, CSS, and HTML, as well as ReactJS, NextJS and GatsbyJS.
       </p>
       <p>
