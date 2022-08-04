@@ -2,6 +2,7 @@ import React, { useState } from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import TextCollapse from "../components/text-collapse"
 
 import { AboutContent } from "../pagesStyles/about.styles"
 import { Collapse, ListItemText } from "@mui/material"
@@ -26,17 +27,7 @@ const About = () => {
         <h1>About me</h1>
         <h2> Backstory </h2>
         <h2> Other Interesting Facts </h2>
-        <S.TitleContainer onClick={handleClick}>
-          <S.FlexTitle>Coding-Related</S.FlexTitle>
-          {/* <ListItemText> */}
-          {isCollapseOpen ? (
-            <ExpandLess />
-          ) : (
-            <ExpandMore onClick={handleClick} />
-          )}
-          {/* </ListItemText> */}
-        </S.TitleContainer>
-        <Collapse in={isCollapseOpen} timeout="auto" unmountOnExit>
+        <TextCollapse title="Coding-Related">
           <ul>
             <li>
               I'm a keyboard person. I use keyboard shortcuts for pretty
@@ -49,10 +40,9 @@ const About = () => {
               I use Linux since 2011 and started to switch between Linux and
               MacOS in 2018
             </li>
-            <li></li>
           </ul>
-        </Collapse>
-        <p>
+        </TextCollapse>
+       <p>
           I've made my first steps into programming back in 2007, when I learned
           to build first websites using HTML and CSS. But it was only in 2016
           when I decided to study nonstop until I could call myself a
