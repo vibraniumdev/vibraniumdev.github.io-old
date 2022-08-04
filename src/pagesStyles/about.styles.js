@@ -12,14 +12,18 @@ export const TitleContainer = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  /* border: red solid 1px; */
   margin-bottom: 1rem;
+
+  svg {
+    :hover {
+      color: #6c757d;
+      transition: 0.1s ease-in;
+    }
+  }
 `
 
 export const FlexTitle = styled.h3`
   display: inline;
-  /* border: blue solid 1px; */
-  /* border-radius: 1em 0 1em 0; */
   transition: 0.4s ease-out;
   margin-bottom: 0;
   cursor: pointer;

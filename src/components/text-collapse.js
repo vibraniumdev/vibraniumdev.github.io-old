@@ -1,12 +1,9 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 import * as S from "../pagesStyles/about.styles"
-import ExpandLess from "@mui/icons-material/ExpandLess"
-import ExpandMore from "@mui/icons-material/ExpandMore"
-import { Collapse, ListItemText } from "@mui/material"
-
+import { ExpandLess, ExpandMore } from "@mui/icons-material"
+import { Collapse } from "@mui/material"
 
 const TextCollapse = ({ title, children }) => {
-  const teste = "teste"
   const [isCollapseOpen, setIsCollapseOpen] = useState(true)
 
   const handleClick = () => {
