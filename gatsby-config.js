@@ -15,6 +15,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-material-ui`,
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
