@@ -1,25 +1,22 @@
-import React, { useState } from "react"
+import React from "react"
 import * as S from "../pagesStyles/about.styles"
-import { ExpandLess, ExpandMore } from "@mui/icons-material"
-import { Collapse } from "@mui/material"
+import ExpandMore from "@mui/icons-material/ExpandMore"
+import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material"
 
-const TextCollapse = ({ title, children }) => {
-  const [isCollapseOpen, setIsCollapseOpen] = useState(true)
-
-  const handleClick = () => {
-    setIsCollapseOpen(!isCollapseOpen)
-  }
-
+const TextCollapse = ({ title, children, expanded }) => {
   return (
-    <>
-      <S.TitleContainer onClick={handleClick}>
+    <Accordion
+      defaultExpanded={expanded}
+      sx={{
+        border: "none",
+        boxShadow: "none",
+      }}
+    >
+      <AccordionSummary expandIcon={<ExpandMore />}>
         <S.FlexTitle>{title}</S.FlexTitle>
-        {isCollapseOpen ? <ExpandLess /> : <ExpandMore onClick={handleClick} />}
-      </S.TitleContainer>
-      <Collapse in={isCollapseOpen} timeout="auto" unmountOnExit>
-        {children}
-      </Collapse>
-    </>
+      </AccordionSummary>
+      <AccordionDetails>{children}</AccordionDetails>
+    </Accordion>
   )
 }
 
