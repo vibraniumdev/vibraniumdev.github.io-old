@@ -3,27 +3,37 @@ import React from "react"
 
 import * as S from "./header.styles"
 const Header = () => (
-  <S.SiteHeader>
-    <S.Content aria-current>
-      <p>
-        <S.NavLink to="/" activeClassName="active">
-          Home
-        </S.NavLink>
+  <S.NavBar>
+    <S.NavLinks>
+      <S.NavItem>
+        <S.NavLinkBrand className="brand" to="/" activeClassName="active">
+          Guilherme Teixeira
+        </S.NavLinkBrand>
+      </S.NavItem>
+    </S.NavLinks>
+    <S.NavLinks>
+      <S.NavItem>
         <S.NavLink to="/blog" activeClassName="active">
-          Blog
+          Articles
         </S.NavLink>
+      </S.NavItem>
+      <S.NavItem>
         <S.NavLink to="/projects" activeClassName="active">
           Projects
         </S.NavLink>
+      </S.NavItem>
+      <S.NavItem>
         <S.NavLink to="/learning" activeClassName="active">
           Learning
         </S.NavLink>
+      </S.NavItem>
+      <S.NavItem>
         <S.NavLink to="/about" activeClassName="active">
           About
         </S.NavLink>
-      </p>
-    </S.Content>
-  </S.SiteHeader>
+      </S.NavItem>
+    </S.NavLinks>
+  </S.NavBar>
 )
 
 Header.propTypes = {

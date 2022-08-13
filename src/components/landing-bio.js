@@ -8,19 +8,26 @@ const LandingBio = () => (
       query LandingSiteTitleQuery {
         site {
           siteMetadata {
+            greeting
             title
             subtitle
+            description
+            comma
           }
         }
       }
     `}
     render={(data) => (
-      <S.OuterContainer>
-        <S.Container>
-          <S.NameHeader>{data.site.siteMetadata.title}</S.NameHeader>
-          <S.Description>{data.site.siteMetadata.subtitle}</S.Description>
-        </S.Container>
-      </S.OuterContainer>
+      <S.Content>
+        <S.GreetingTitleCommaContainer>
+          <S.GreetingTitleComma>
+            {data.site.siteMetadata.greeting}
+            {data.site.siteMetadata.title}
+            <S.GrayStyle>{data.site.siteMetadata.comma}</S.GrayStyle>
+          </S.GreetingTitleComma>
+          <S.Subtitle>{data.site.siteMetadata.subtitle}</S.Subtitle>
+        </S.GreetingTitleCommaContainer>
+      </S.Content>
     )}
   />
 )
