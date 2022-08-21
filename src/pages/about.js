@@ -4,19 +4,27 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import TextCollapse from "../components/text-collapse"
 
-import { AboutContent } from "../pagesStyles/about.styles"
+import * as S from "../pagesStyles/about.styles"
 const About = () => (
   <Layout>
     <Seo
       title="About"
       keywords={[`javascript`, `programming`, `react`, `linguistics`]}
     />
-    <AboutContent>
+    <S.AboutContent>
+      <h1>About Me</h1>
       <h2>Who I Am</h2>
-      <TextCollapse title="Short Bio">
+      <TextCollapse startsExpanded title="Short Bio">
+        <p>
+          {" "}
+          I am Front-End Developer currently focused on building ReactJS and
+          NextJS applications.{" "}
+        </p>
+      </TextCollapse>
+      <TextCollapse title="Backstory">
         <p>
           I've made my first steps into programming back in 2007, when I learned
-          to build first websites using HTML and CSS. But it was only in 2016
+          to build my first websites using HTML and CSS. But it was only in 2016
           when I decided to study nonstop until I could call myself a
           programmer. I started learning Python, R, and Prolog in the college.
           Less than one year later, I was already doing undergraduate research
@@ -106,12 +114,29 @@ const About = () => (
         <ul>
           <li>
             I'm a keyboard person. I use keyboard shortcuts for pretty
-            everything in my workflow, including browsing the web.
+            everything in my workflow, including browsing the web
           </li>
-          <li>I am a touch typist. I usually average 70-80 words per minute</li>
           <li>
-            I use Linux since 2011 and started to switch between Linux and MacOS
-            in 2018
+            I am a touch typist, averaging +70 WPM{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              to="https://www.keybr.com/profile/y450zlb"
+            >
+              according to keybr
+            </a>
+          </li>
+          <li>
+            I am a proud Linux user since 2011. In 2018 I bought a MacBook, and
+            since then I switch between Arch Linux, macOS and Linux Mint. You
+            can check out more details about that journey{" "}
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              to="https://dev.to/guiteixeira/minha-historia-no-linux-17e8"
+            >
+              by reading this article written in 2018
+            </a>
           </li>
         </ul>
       </TextCollapse>
@@ -151,25 +176,27 @@ const About = () => (
         <ul>
           <li>
             When I was a kid I was capable of read/write/pronounce words — and
-            even sentences — backwards. Such an useless skill.
+            even sentences — backwards. Turned out to be such an useless skill.
           </li>
           <li>
-            When I was a kid, my favorite books used to be the Listel's Phone
-            Directory, the Brazilian Portuguese dictionary, and the
-            English-Portuguese dictionary
+            When I was a kid, my favorite books were the Listel's Phone
+            Directory (better known as the "Páginas Amarelas"), the Brazilian
+            Portuguese dictionary, and the English-Portuguese dictionary
           </li>
           <li>
             {" "}
-            According to my mom, I taught myself to read before I was 4 years
-            old{" "}
+            According to my mom, I taught myself to read before completing 4
+            years of age{" "}
           </li>
           <li> I'm also a self-taught english speaker </li>
           <li> My favorite videogames are the Metal Gear series </li>
           <li>
-            I've been an Android user from 2010 to 2020, when I switched to iOS.
-            I used custom ROMs in all of them. The iPhone turned me into a
-            person who pays less attention to and spends less time with the
-            smartphone, which was the main goal. It's been a relief since then.
+            I used to be an Android enthusiast from 2010 to 2020, when I
+            switched to iOS just for the sake of trying. I used custom ROMs in
+            almost all devices I owned during all that time. After giving iOS a
+            try, I realized that the iPhone made me become a person person who
+            pays less attention to — and spends less time with — the smartphone,
+            which was the main goal. It's been a relief since then.
           </li>
         </ul>
       </TextCollapse>
@@ -197,8 +224,15 @@ const About = () => (
             books.{" "}
           </li>
           <li>
-            Usually I don't watch movies and TV series, except when my
-            girlfriend insists
+            Usually I don't watch movies and TV series. There are a few
+            exceptions listed{" "}
+            <a
+              href="https://www.tvtime.com/en/user/62634214/profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              here in TV Time
+            </a>
           </li>
           <li>
             I love writing just for the pleasure of it. I have tons of
@@ -220,7 +254,7 @@ const About = () => (
       <br />
       <br />
       <h2>What I Use</h2>
-      <TextCollapse expanded title="Gear">
+      <TextCollapse startsExpanded title="Gear">
         <ul>
           <li>
             {" "}
@@ -260,35 +294,57 @@ const About = () => (
             </a>
           </li>
           <li> External monitor: Dell SE2216H, 21.5", 1920x1080 </li>
+          <li>
+            {" "}
+            Headphones:{" "}
+            <a
+              href="https://edifier.com.br/headphone-bluetooth-over-ear-edifier-w820bt.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Edifier W820BT
+            </a>
+          </li>
+          <li>
+            {" "}
+            Earphones:{" "}
+            <a
+              href="https://kz-audio.com/kz-zs10-pro.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              KZ ZS10 PRO
+            </a>
+          </li>
+          <li>
+            Smartphone:{" "}
+            <a
+              href="https://support.apple.com/kb/SP820?locale=pt_BR"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              iPhone SE (2nd generation)
+            </a>
+          </li>
         </ul>
       </TextCollapse>
 
       <TextCollapse title="Software">
         <ul>
-          <li> Operating System: Pop!_OS with Gnome </li>
+          <li> Main Operating System: Linux Mint</li>
+          <li> Secondary Operating System: Arch Linux</li>
+          <li> Fallback Operating System: macOS Monterey</li>
           <li> Terminal: Kitty </li>
-          <li> Shell: Fish </li>
-          <li>
-            {" "}
-            Browser: Firefox Developer Edition
-            <ul>
-              <li>
-                Extensions:
-                <ul>
-                  <li>Vimium</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
+          <li> Shell: Zsh </li>
+          <li> Browser: Firefox Developer Edition</li>
           <li> Note-taking: Simplenote and Notion </li>
-          <li> Text Editor: Neovim (LunarVim) </li>
-          <li> Plugins (diferentes dos padrão) </li>
-          <li> Tema: </li>
-          <li> Fonte: </li>
+          <li> Code Editor: Neovim (LunarVim) </li>
+          <li> Theme: onenord </li>
+          <li> Fonte: JetBrains Mono (Nerd Font Patched) </li>
           <li> To-do Lists: Todoist </li>
-          <li> Time tracking: Clockify and Pomodone </li>
+          <li> E-mail: Mailspring </li>
+          <li> Time-Tracking: Clockify and Pomodone </li>
           <li> Journalling: Journey </li>
-          <li> Git: mostly vanilla alongside GitKraken </li>
         </ul>
       </TextCollapse>
 
@@ -325,7 +381,7 @@ const About = () => (
       </TextCollapse>
       <br />
 
-      <TextCollapse title="Other Links" startsOpen>
+      <TextCollapse startsExpanded title="Other Links">
         <ul>
           <li>
             <a
@@ -337,9 +393,27 @@ const About = () => (
               Strava{" "}
             </a>
           </li>
+          <li>
+            <a
+              href="https://www.keybr.com/profile/y450zlb"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              keybr.com
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.tvtime.com/en/user/62634214/profile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              TV Time
+            </a>
+          </li>
         </ul>
       </TextCollapse>
-    </AboutContent>
+    </S.AboutContent>
   </Layout>
 )
 

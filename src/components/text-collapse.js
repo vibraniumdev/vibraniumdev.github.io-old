@@ -3,14 +3,14 @@ import * as S from "../pagesStyles/about.styles"
 import ExpandMore from "@mui/icons-material/ExpandMore"
 import { Accordion, AccordionSummary, AccordionDetails } from "@mui/material"
 
-const TextCollapse = ({ title, children, expanded }) => {
+const TextCollapse = ({ title, children, startsExpanded }) => {
   return (
     <Accordion
-      defaultExpanded={expanded}
       sx={{
         border: "none",
         boxShadow: "none",
       }}
+      defaultExpanded={startsExpanded}
     >
       <AccordionSummary expandIcon={<ExpandMore />}>
         <S.FlexTitle>{title}</S.FlexTitle>

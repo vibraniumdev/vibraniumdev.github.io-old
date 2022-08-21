@@ -1,12 +1,11 @@
 import styled from "@emotion/styled"
 
-const AboutContent = styled.div`
+export const AboutContent = styled.div`
   margin: 0 auto;
   max-width: 860px;
   width: 100%;
   padding: 1.45rem 1.0875rem;
 `
-export { AboutContent }
 
 export const TitleContainer = styled.div`
   display: flex;
