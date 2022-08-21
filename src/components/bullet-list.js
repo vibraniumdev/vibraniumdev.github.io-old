@@ -1,30 +1,29 @@
-import React from "react"
+import React, { Fragment } from "react"
 
 const BulletList = ({ topicList }) => {
-  return (
-    <ul>
-      {topicList.map(({ category, name, link, subcategory }) => (
-        <>
-          <li>
-            {category}:{" "}
-            <a href={link} target="_blank" rel="noopener noreferrer">
-              {name}
-            </a>
-          </li>
-          {subcategory &&
-            subcategory.map(({ name, link }) => {
-              return (
-                <ul>
-                  <a target="_blank" rel="noopener noreferrer" href={link}>
-                    <li>{name}</li>
-                  </a>
-                </ul>
-              )
-            })}
-        </>
-      ))}
-    </ul>
-  )
+  return topicList.map(({ category, name, link, subcategory }) => (
+    <Fragment key={`${name}-${Math.floor(Math.random() * 100)}`}>
+      <ul>
+        <li>
+          <span>{category}</span>
+          {category && <span>: </span>}
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            {name}
+          </a>
+        </li>
+      </ul>
+      {subcategory &&
+        subcategory.map(({ name, link }) => {
+          return (
+            <ul key={`${name}-${Math.floor(Math.random() * 100)}`}>
+              <a target="_blank" rel="noopener noreferrer" href={link}>
+                <li>{name}</li>
+              </a>
+            </ul>
+          )
+        })}
+    </Fragment>
+  ))
 }
 
 export default BulletList
