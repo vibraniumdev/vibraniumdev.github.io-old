@@ -33,6 +33,31 @@ const About = () => {
       category: "Browser",
       name: "Firefox Developer Edition",
       link: "https://www.mozilla.org/en-US/firefox/developer/",
+      subcategory: [
+        { name: "Vimium", link: "https://github.com/philc/vimium" },
+        {
+          name: "uBlock Origin",
+          link: "https://github.com/gorhill/uBlock#ublock-origin",
+        },
+        {
+          name: "React Developer Tools",
+          link: "https://addons.mozilla.org/en-US/firefox/addon/react-devtools/",
+        },
+        {
+          name: "Auto Tab Discard",
+          link: "https://add0n.com/tab-discard.html",
+        },
+        { name: "Bitwarden", link: "https://bitwarden.com/download/" },
+        { name: "Clockify", link: "https://clockify.me/apps" },
+        {
+          name: "Multi-Account Containers",
+          link: "https://github.com/mozilla/multi-account-containers#readme",
+        },
+        {
+          name: "Tweak New Twitter",
+          link: "https://github.com/insin/tweak-new-twitter/",
+        },
+      ],
     },
     {
       category: "Note-taking",
