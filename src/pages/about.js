@@ -73,20 +73,46 @@ const About = () => {
       category: "Code Editor",
       name: "Neovim (LunarVim)",
       link: "https://www.lunarvim.org/",
+      subcategory: [
+        {
+          name: "Indent Blankline",
+          link: "https://github.com/lukas-reineke/indent-blankline.nvim",
+        },
+        {
+          name: "Onenord Theme",
+          link: "https://github.com/rmehri01/onenord.nvim",
+        },
+        {
+          name: "LunarVimColorschemes",
+          link: "https://github.com/LunarVim/Colorschemes",
+        },
+        {
+          name: "Everforest Theme",
+          link: "https://github.com/sainnhe/everforest",
+        },
+        {
+          name: "Dracula Theme",
+          link: "https://github.com/Mofiqul/dracula.nvim",
+        },
+        {
+          name: "Gruvbox Theme",
+          link: "https://github.com/ellisonleao/gruvbox.nvim",
+        },
+        {
+          name: "Persistence",
+          link: "https://github.com/folke/persistence.nvim",
+        },
+        { name: "Surround", link: "https://github.com/tpope/vim-surround" },
+      ],
     },
     {
-      category: "Theme",
-      name: "onenord",
-      link: "https://github.com/rmehri01/onenord.nvim",
-    },
-    {
-      category: "Fonte",
+      category: "Main Font",
       name: "JetBrains Mono",
       link: "https://github.com/JetBrains/JetBrainsMono",
     },
     { category: "To-do Lists", name: "Todoist", link: "https://todoist.com/" },
     {
-      category: "E-mail",
+      category: "E-mail client",
       name: "Mailspring",
       link: "https://github.com/Foundry376/Mailspring",
     },
