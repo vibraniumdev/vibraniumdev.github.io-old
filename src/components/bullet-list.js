@@ -11,17 +11,17 @@ const BulletList = ({ topicList }) => {
             {name}
           </a>
         </li>
+        {subcategory &&
+          subcategory.map(({ name, link }) => {
+            return (
+              <ul key={`${name}-${Math.floor(Math.random() * 100)}`}>
+                <a target="_blank" rel="noopener noreferrer" href={link}>
+                  <li>{name}</li>
+                </a>
+              </ul>
+            )
+          })}
       </ul>
-      {subcategory &&
-        subcategory.map(({ name, link }) => {
-          return (
-            <ul key={`${name}-${Math.floor(Math.random() * 100)}`}>
-              <a target="_blank" rel="noopener noreferrer" href={link}>
-                <li>{name}</li>
-              </a>
-            </ul>
-          )
-        })}
     </Fragment>
   ))
 }

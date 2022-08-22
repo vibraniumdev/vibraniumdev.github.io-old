@@ -27,13 +27,6 @@ const About = () => {
       <S.AboutContent>
         <h1>About Me</h1>
         <h2>Who I Am</h2>
-        <TextCollapse title="Short Bio">
-          <p>
-            {" "}
-            I am Front-End Developer currently focused on building ReactJS and
-            NextJS applications.{" "}
-          </p>
-        </TextCollapse>
         <TextCollapse title="Backstory">
           <p>
             I've made my first steps into programming back in 2007, when I
