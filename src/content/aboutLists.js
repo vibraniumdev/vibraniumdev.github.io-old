@@ -33,13 +33,13 @@ export const otherFactsList = [
 ]
 export const nerdyAndGeekyFactsList = [
   {
+    name: "According to my mom, I taught myself to read before completing 4 years of age",
+  },
+  {
     name: "When I was a kid I was capable of read/write/pronounce words — and even sentences — backwards. Turned out to be such an useless skill.",
   },
   {
-    name: 'When I was a kid, my favorite books were the Listel\'s Phone Directory (better known as the "Páginas Amarelas"), the Brazilian Portuguese dictionary, and the English-Portuguese dictionary',
-  },
-  {
-    name: "According to my mom, I taught myself to read before completing 4 years of age",
+    name: 'When I was a kid, my favorite books were the Listel\'s Phone Directory (better known as the "Páginas Amarelas"), the Brazilian Portuguese dictionary, and the Portuguese-English dictionary',
   },
   { name: "I'm also a self-taught english speaker" },
   { name: "My favorite videogames are the Metal Gear series" },
@@ -59,9 +59,9 @@ export const musicRelatedList = [
     name: "My favorite artists are Dream Theater, Angra, Oficina G3, Pearl Jam, and Kendrick Lamar",
   },
   {
-    name: "My favorite musical genres are Progressive Metal — and its subgenres — and rap. But I listen to any kind of music, though. Really.",
+    name: "According to Last.fm, my favorite musical genres are Progressive Metal — plus its subgenres — and Hip hop/Rap. But I enjoy any kind of music, though. Really.",
   },
-  { name: "I can play decently more than 10 different musical instruments." },
+  { name: "I can play decently about 10 different musical instruments." },
 ]
 export const codingRelatedList = [
   {
@@ -75,10 +75,10 @@ export const codingRelatedList = [
 
 export const studyLinguisticsList = [
   {
-    name: "I study Linguistics (undergraduate bachelor) at UFSCar, the Federal University of São Carlos, one of the most important universities in Brazil",
+    name: "Currently I am an undergraduate Linguistics student at UFSCar, the Federal University of São Carlos, one of the main universities in Brazil",
   },
   {
-    name: "As a student, my topics of interest are theoretical linguistics, mainly Generative Syntax, Formal Semantics, Epistemology, Analytic Philosophy, and Language Acquisition",
+    name: "As a student, my topics of interest are Epistemology of Science, Theoretical Linguistics, mainly Generative Syntax, Formal Semantics, Analytic Philosophy, and Language Acquisition",
   },
   {
     name: "The COVID pandemics messed up with everyone's plans, including mine. My current status is 99% linguist because the only thing left for me to accomplish within college is to finish writing the final paper required to obtain my degree",

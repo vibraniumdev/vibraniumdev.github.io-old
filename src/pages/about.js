@@ -122,16 +122,16 @@ const About = () => {
           <BulletList topicList={codingRelatedList} />
         </TextCollapse>
 
+        <TextCollapse title="Nerdy/Geeky Facts">
+          <BulletList topicList={nerdyAndGeekyFactsList} />
+        </TextCollapse>
+
         <TextCollapse title="Music-Related">
           <BulletList topicList={musicRelatedList} />
         </TextCollapse>
 
         <TextCollapse title="Fitness/Sports">
           <BulletList topicList={fitnessAndSportsList} />
-        </TextCollapse>
-
-        <TextCollapse title="Nerdy/Geeky Facts">
-          <BulletList topicList={nerdyAndGeekyFactsList} />
         </TextCollapse>
 
         <TextCollapse title="Other Facts">
