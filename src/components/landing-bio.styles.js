@@ -1,25 +1,36 @@
 import styled from "@emotion/styled"
 
-export const Container = styled.div`
+export const Content = styled.div`
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+`
+
+export const GreetingTitleCommaContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  max-width: 860px;
+  width: 100%;
+  padding: 1.45rem 1.0875rem;
+`
+export const GreetingTitleComma = styled.div`
+  font-size: 2.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1.5rem 0;
+  line-height: 120%;
   text-align: center;
 `
-
-export const OuterContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
+export const GrayStyle = styled.span`
+  color: #6c757d;
 `
 
-export const Description = styled.p`
-  padding: 0;
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
-`
-
-export const NameHeader = styled.h1`
-  font-size: 3.5rem;
-  margin-bottom: 1.5rem;
+export const Subtitle = styled.p`
+  font-size: 1.25rem;
+  color: #6c757d;
+  text-align: match-parent;
+  padding: auto;
 `
 
 export const ItalicParagraph = styled.p`

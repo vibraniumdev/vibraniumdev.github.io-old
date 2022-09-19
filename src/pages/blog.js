@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import * as S from "../pagesStyles/blog.styles"
-import * as NProgress from "nprogress"
+import NProgress from "nprogress"
 
 const Blog = () => {
   const [postList, setPostList] = useState([])

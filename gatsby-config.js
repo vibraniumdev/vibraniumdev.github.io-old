@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
-    title: `Guilherme Teixeira`,
-    subtitle: `Front-end developer`,
+    greeting: `Hello! `,
+    title: `My name is Guilherme Teixeira`,
+    subtitle: `and I am a Software Developer.`,
+    comma: `,`,
     description: `Site pessoal onde escrevo textos sem bibliografia, reflexões sobre tecnologia, música, linguística. Meu ponto de vista sobre o cotidiano e sobre a existência.`,
     author: `Guilherme Teixeira`,
-    siteUrl: `https://ggteixeira.dev`,
+    siteUrl: `https://guiteixeira.dev`,
     blogUrl: `/blog`,
   },
   flags: {
@@ -15,6 +17,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-material-ui`,
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
@@ -89,8 +92,10 @@ module.exports = {
           {
             site {
               siteMetadata {
+greeting
                 title
                 description
+                comma
                 siteUrl
                 blogUrl
                 site_url: siteUrl
