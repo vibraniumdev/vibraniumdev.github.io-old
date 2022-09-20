@@ -26,9 +26,9 @@ const Blog = () => {
 
   return (
     <Layout>
-      <Seo title="Blog" />
+      <Seo title="Articles" />
       <S.Content>
-        <h1>Blog</h1>
+        <h1>Articles</h1>
         <div>
           {postList &&
             !isLoading &&
