@@ -37,19 +37,6 @@ export const NavLink = styled(Link)`
   margin-left: 0.5rem;
   transition: 0.4s ease-out;
 
-  /* ::after { */
-  /*   position: absolute; */
-  /*   content: ""; */
-  /*   width: 100%; */
-  /*   height: 3px; */
-  /*   top: 100%; */
-  /*   left: 0; */
-  /*   background-color: #6c757d; */
-  /*   transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1); */
-  /*   transform: scalex(0); */
-  /*   transform-origin: right; */
-  /* } */
-
   &.active {
     color: #6c757d;
     :after {
