@@ -46,7 +46,7 @@ export const NavLink = styled(Link)`
 
   :hover {
     color: #6c757d;
-    transition: 0.4s ease-in;
+    transition: 0.2s ease-in;
 
     :after {
       transform: scalex(1);
@@ -59,6 +59,8 @@ export const NavLinkBrand = styled(NavLink)`
   :first-of-type {
     margin-left: 0.75rem;
   }
+
+  white-space: nowrap;
 `
 
 export const SiteHeader = styled.header`
