@@ -24,7 +24,7 @@ module.exports = {
         // Setting a color is optional.
         color: `dimgray`,
         // Disable the loading spinner.
-        showSpinner: true,
+        showSpinner: false,
       },
     },
     {

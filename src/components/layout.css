@@ -174,7 +174,7 @@ button:-moz-focusring {
 }
 
 fieldset {
-  border: 1px solid ;
+  border: 1px solid;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -578,13 +578,13 @@ ul li {
   padding-left: 0;
 }
 
-li>ol {
+li > ol {
   margin-left: 1.45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
 }
 
-li>ul {
+li > ul {
   margin-left: 1.45rem;
   margin-bottom: calc(1.45rem / 2);
   margin-top: calc(1.45rem / 2);
@@ -602,7 +602,7 @@ p *:last-child {
   margin-bottom: 0;
 }
 
-li>p {
+li > p {
   margin-bottom: calc(1.45rem / 2);
 }
 
@@ -655,8 +655,8 @@ th {
   padding-bottom: calc(0.725rem - 1px);
 }
 
-th:first-child,
-td:first-child {
+th:first-of-type,
+td:first-of-type {
   padding-left: 0;
 }
 

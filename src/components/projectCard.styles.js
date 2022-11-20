@@ -64,7 +64,7 @@ export const Stats = styled.div`
   div {
     display: flex;
     flex-direction: row;
-    &:first-child {
+    &:first-of-type {
       margin-right: 0.5rem;
     }
 
