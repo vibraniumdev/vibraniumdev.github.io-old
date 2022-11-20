@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faMedium,
@@ -54,9 +53,14 @@ const Hero = () => {
     <S.Container>
       {heroList.map((item) => {
         return (
-          <Link href={item.href} target="_blank" rel="noopener noreferrer">
+          <a
+            href={item.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={`${item.icon}-${Math.floor(Math.random() * 100)}`}
+          >
             <FontAwesomeIcon icon={item.icon} />
-          </Link>
+          </a>
         )
       })}
     </S.Container>

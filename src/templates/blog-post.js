@@ -10,16 +10,6 @@ const Content = styled.div`
   padding: 1.45rem 1.0875rem;
 `
 
-const MarkedHeader = styled.h1`
-  display: inline;
-  border-radius: 1em 0 1em 0;
-  background-image: linear-gradient(
-    -100deg,
-    rgba(144, 224, 239, 0.15),
-    rgba(144, 224, 239, 0.8) 100%,
-    rgba(144, 224, 239, 0.25)
-  );
-`
 const SimpleHeader = styled.h1`
   display: inline;
   border-radius: 1em 0 1em 0;
@@ -74,7 +64,7 @@ const BlogPost = ({ data }) => {
 }
 
 export const pageQuery = graphql`
-  query($path: String!) {
+  query ($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       excerpt(pruneLength: 160)

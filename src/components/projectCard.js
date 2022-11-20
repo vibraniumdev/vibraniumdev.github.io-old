@@ -8,7 +8,10 @@ const ProjectCard = ({ reposList, isLoading }) => (
     {reposList &&
       !isLoading &&
       reposList.map(
-        ({ name, description, language, html_url, stargazers_count, fork }, index) => (
+        (
+          { name, description, language, html_url, stargazers_count, fork },
+          index
+        ) => (
           <S.Card
             aria-current
             rel="noopener noreferrer"
@@ -28,11 +31,21 @@ const ProjectCard = ({ reposList, isLoading }) => (
             </S.Content>
             <S.Stats>
               <div>
-                <FontAwesomeIcon className="icon" icon={faCode} size="1x" fixedWidth />
+                <FontAwesomeIcon
+                  className="icon"
+                  icon={faCode}
+                  size="1x"
+                  fixedWidth
+                />
                 <span>{language}</span>
               </div>
               <div>
-                <FontAwesomeIcon className="icon" icon={faStar} size="1x" fixedWidth />
+                <FontAwesomeIcon
+                  className="icon"
+                  icon={faStar}
+                  size="1x"
+                  fixedWidth
+                />
                 <span>{stargazers_count}</span>
               </div>
             </S.Stats>

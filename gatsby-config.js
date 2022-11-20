@@ -24,7 +24,7 @@ module.exports = {
         // Setting a color is optional.
         color: `dimgray`,
         // Disable the loading spinner.
-        showSpinner: true,
+        showSpinner: false,
       },
     },
     {
@@ -69,7 +69,7 @@ module.exports = {
         mergeSecurityHeaders: true, // boolean to turn off the default security headers
         mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
         mergeCachingHeaders: true, // boolean to turn off the default caching headers
-        transformHeaders: (headers, path) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
+        transformHeaders: (headers) => headers, // optional transform for manipulating headers under each path (e.g.sorting), etc.
         generateMatchPathRewrites: true, // boolean to turn off automatic creation of redirect rules for client only paths
       },
     },
