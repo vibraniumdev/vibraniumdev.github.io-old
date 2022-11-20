@@ -156,6 +156,7 @@ select {
 button,
 html [type="button"] {
   -webkit-appearance: button;
+  appearance: button;
 }
 
 [type="button"]::-moz-focus-inner,
@@ -205,12 +206,14 @@ textarea {
 
 [type="search"] {
   -webkit-appearance: textfield;
+  appearance: textfield;
   outline-offset: -2px;
 }
 
 [type="search"]::-webkit-search-cancel-button,
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
+  appearance: none;
 }
 
 ::-webkit-input-placeholder {
@@ -220,6 +223,7 @@ textarea {
 
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
+  appearance: button;
   font: inherit;
 }
 

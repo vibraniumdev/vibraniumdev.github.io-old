@@ -14,7 +14,6 @@ const Learning = () => {
 
   useEffect(() => {
     fetchLearningCenterProjects()
-    console.log("Fetchouuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu!")
   }, [])
 
   return (
