@@ -9,6 +9,7 @@ const Projects = () => {
   const { fetchProjects, reposList, isLoading } = useFetchProjects()
 
   useEffect(() => {
+    console.log("Rodou o fetchProjects")
     fetchProjects()
   }, [])
 
