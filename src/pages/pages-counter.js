@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 
 import Layout from "../components/layout"
 import * as S from "../pagesStyles/pagesCounter.styles"
-import { Divider, Paper, Button, Card } from "@mui/material"
+import { Button, Card, TextField, Typography } from "@mui/material"
 
 const PagesCounter = () => {
   const [initialPage, setInitialPage] = useState(267) // deixar 0 como padrão
@@ -15,11 +15,7 @@ const PagesCounter = () => {
 
   const [percentageRead, setPercentageRead] = useState(0)
 
-  const handleInitialPage = ({ target: { value } }) => setInitialPage(value)
-
-  const handleLastPage = ({ target: { value } }) => setLastPage(value)
-
-  const handleCurrentPage = ({ target: { value } }) => setCurrentPage(value)
+  const [isResultsShown, setIsResultsShown] = useState(false)
 
   useEffect(() => {
     setTotalPagesToRead(lastPage - initialPage)
@@ -33,67 +29,86 @@ const PagesCounter = () => {
     setPercentageRead(((currentPage - initialPage) * 100) / totalPagesToRead)
   }, [pagesRead, lastPage, initialPage])
 
+  const alreadyRead = currentPage - initialPage
+  const totalPages = lastPage - initialPage
+
+  const handleInitialPage = ({ target: { value } }) => setInitialPage(value)
+
+  const handleLastPage = ({ target: { value } }) => setLastPage(value)
+
+  const handleCurrentPage = ({ target: { value } }) => {
+    setIsResultsShown(false)
+    setCurrentPage(value)
+  }
+
+  const handleShowResults = () => {
+    setIsResultsShown((currState) => !currState)
+    console.log("Clicou no botão")
+  }
+
   return (
     <Layout>
       <S.Content>
-        <Card sx={{ marginBottom: "1rem" }} variant="outlined">
-          <S.ContentColumn>
-            <S.NumberInput
-              type="number"
-              label="Página inicial"
-              onChange={handleInitialPage}
-              helperText={`Inserido: ${initialPage}`}
-              sx={{ marginRight: "1rem" }}
-            />
-            <S.NumberInput
-              type="number"
-              label="Página final"
-              onChange={handleLastPage}
-              helperText={`Inserido: ${lastPage}`}
-            />
-          </S.ContentColumn>
+        <S.ContentColumn>
+          <TextField
+            type="number"
+            label="Página inicial"
+            onChange={handleInitialPage}
+            helperText={`Inserido: ${initialPage}`}
+            sx={{ marginRight: "1rem" }}
+          />
+          <TextField
+            type="number"
+            label="Página final"
+            onChange={handleLastPage}
+            helperText={`Inserido: ${lastPage}`}
+          />
+        </S.ContentColumn>
+
+        <Card sx={{ marginBottom: "3rem" }} variant="outlined">
           <S.ContentRow>
-            <Paper elevation="3">
-              <S.PaperText paragraph variant="string">
+            <Card sx={{ marginBottom: "0rem" }} variant="outlined">
+              <Typography sx={{ padding: "1rem" }} paragraph variant="string">
                 Total a ser lido: {totalPagesToRead} páginas
-              </S.PaperText>
-            </Paper>
+              </Typography>
+            </Card>
           </S.ContentRow>
         </Card>
 
+        <S.ContentColumn>
+          <TextField
+            sx={{ marginRight: "1rem" }}
+            label="Última página lida"
+            onChange={handleCurrentPage}
+            fullWidth
+          />
+          <Button variant="contained" onClick={handleShowResults}>
+            Calcular
+          </Button>
+        </S.ContentColumn>
+
         <Card variant="outlined">
-          <S.ContentColumn>
-            <S.NumberInput
-              sx={{ marginRight: "1rem" }}
-              // helperText={`Página atual: ${currentPage || 0}`}
-              label="Última página lida"
-              onChange={handleCurrentPage}
-            />
-            {/* <Button size="large" variant="contained"> */}
-            {/*   Calcular */}
-            {/* </Button> */}
-          </S.ContentColumn>
           <S.ContentRow>
-            <Paper elevation="3">
-              <S.PaperText>Página atual: {currentPage || 0}</S.PaperText>
-            </Paper>
-          </S.ContentRow>
+            <Card sx={{ marginBottom: "1rem" }} variant="outlined">
+              <Typography sx={{ padding: "1rem" }} paragraph>
+                Página atual: {isResultsShown ? currentPage : "0"}
+              </Typography>
+            </Card>
 
-          <S.ContentRow>
-            <Paper sx={{ marginBottom: "1rem" }} elevation="3">
-              <S.PaperText>
-                Você já leu {currentPage - initialPage} das{" "}
-                {lastPage - initialPage} páginas (
-                {lastPage - initialPage - (currentPage - initialPage)}{" "}
+            <Card sx={{ marginBottom: "1rem" }} variant="outlined">
+              <Typography sx={{ padding: "1rem" }} paragraph>
+                Você já leu {isResultsShown ? alreadyRead : 0} das {totalPages}{" "}
+                páginas ({isResultsShown ? totalPages - alreadyRead : 0}{" "}
                 restantes)
-              </S.PaperText>
-            </Paper>
+              </Typography>
+            </Card>
 
-            <Paper sx={{ marginBottom: "1rem" }} elevation="3">
-              <S.PaperText>
-                Você já leu um total de {percentageRead.toFixed(2)}%
-              </S.PaperText>
-            </Paper>
+            <Card sx={{ marginBottom: "1rem" }} variant="outlined">
+              <Typography sx={{ padding: "1rem" }} paragraph>
+                Você já leu um total de{" "}
+                {isResultsShown ? percentageRead.toFixed(1) : 0}%
+              </Typography>
+            </Card>
           </S.ContentRow>
         </Card>
       </S.Content>
