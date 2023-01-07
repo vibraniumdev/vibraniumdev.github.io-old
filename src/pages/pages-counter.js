@@ -5,11 +5,11 @@ import * as S from "../pagesStyles/pagesCounter.styles"
 import { Button, Card, TextField, Typography } from "@mui/material"
 
 const PagesCounter = () => {
-  const [initialPage, setInitialPage] = useState(267) // deixar 0 como padrão
+  const [initialPage, setInitialPage] = useState(268) // deixar 0 como padrão
   const [lastPage, setLastPage] = useState(343)
 
   const [totalPagesToRead, setTotalPagesToRead] = useState(0)
-  const [pagesRead, setPagesRead] = useState(10)
+  // const [pagesRead, setPagesRead] = useState(10)
 
   const [currentPage, setCurrentPage] = useState(282)
 
@@ -21,13 +21,13 @@ const PagesCounter = () => {
     setTotalPagesToRead(lastPage - initialPage)
   }, [lastPage, initialPage])
 
-  useEffect(() => {
-    setPagesRead(totalPagesToRead - currentPage)
-  }, [currentPage, totalPagesToRead])
+  // useEffect(() => {
+  //   setPagesRead(totalPagesToRead - currentPage)
+  // }, [currentPage, totalPagesToRead])
 
   useEffect(() => {
     setPercentageRead(((currentPage - initialPage) * 100) / totalPagesToRead)
-  }, [pagesRead, lastPage, initialPage])
+  }, [currentPage, initialPage, totalPagesToRead])
 
   const alreadyRead = currentPage - initialPage
   const totalPages = lastPage - initialPage
