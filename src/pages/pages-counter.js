@@ -7,14 +7,10 @@ import { Button, Card, TextField, Typography } from "@mui/material"
 const PagesCounter = () => {
   const [initialPage, setInitialPage] = useState(268) // deixar 0 como padrão
   const [lastPage, setLastPage] = useState(343)
-
   const [totalPagesToRead, setTotalPagesToRead] = useState(0)
   // const [pagesRead, setPagesRead] = useState(10)
-
   const [currentPage, setCurrentPage] = useState(282)
-
   const [percentageRead, setPercentageRead] = useState(0)
-
   const [isResultsShown, setIsResultsShown] = useState(false)
 
   useEffect(() => {
