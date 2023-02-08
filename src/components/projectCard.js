@@ -1,31 +1,13 @@
-import React, { useEffect, useState, useRef } from "react"
+import React from "react"
 import * as S from "./projectCard.styles"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faCode, faStar } from "@fortawesome/free-solid-svg-icons"
-import useFetchLearningCenter from "../hooks/useFetchLearningCenterProjects"
 
-const ProjectCard = () => {
-  const {
-    fetchLearningCenterProjects,
-    learningCenterReposList,
-    isLearningCenterLoading,
-  } = useFetchLearningCenter()
-
-  const [reposList, setReposList] = useState([])
-
-  useEffect(() => {
-    console.log("Rodou o fetchLearningCenterProjects")
-    fetchLearningCenterProjects()
-  }, [])
-
-  useEffect(() => {
-    setReposList(learningCenterReposList)
-  }, [learningCenterReposList])
-
+const ProjectCard = ({ reposList, isLoading }) => {
   return (
     <S.Wrapper>
       {reposList &&
-        !isLearningCenterLoading &&
+        !isLoading &&
         reposList.map(
           (
             { name, description, language, html_url, stargazers_count, fork },

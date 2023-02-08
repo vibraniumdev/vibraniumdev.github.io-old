@@ -1,13 +1,13 @@
 import { useState } from "react"
 import NProgress from "nprogress"
 
-const useFetchProjects = () => {
+const UseFetchProjects = () => {
   const [reposList, setReposList] = useState()
   const [isLoading, setIsLoading] = useState(false)
 
   const fetchProjects = async () => {
-    setIsLoading(true)
     NProgress.start()
+    setIsLoading(true)
 
     await fetch(
       `https://api.github.com/users/ggteixeira/repos?sort=updated&direction=desc`
@@ -28,4 +28,4 @@ const useFetchProjects = () => {
   }
 }
 
-export default useFetchProjects
+export default UseFetchProjects
