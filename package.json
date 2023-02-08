@@ -31,7 +31,7 @@
     "gatsby-remark-prismjs": "^4.0.0",
     "gatsby-remark-reading-time": "^1.1.0",
     "gatsby-source-filesystem": "^3.0.0",
-    "gatsby-transformer-remark": "^3.0.0",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^3.0.0",
     "postcss": "^8.2.8",
     "prism-themes": "^1.4.0",
