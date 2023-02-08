@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react"
+import { theme } from "../theme/theme"
 
 import Layout from "../components/layout"
 import * as S from "../pagesStyles/pagesCounter.styles"
 import { Button, Card, TextField, Typography } from "@mui/material"
 
+import { ThemeProvider } from "@mui/material/styles"
+
 const PagesCounter = () => {
-  const [initialPage, setInitialPage] = useState(268) // deixar 0 como padrão
+  const [initialPage, setInitialPage] = useState(0)
   const [lastPage, setLastPage] = useState(343)
   const [totalPagesToRead, setTotalPagesToRead] = useState(0)
-  // const [pagesRead, setPagesRead] = useState(10)
   const [currentPage, setCurrentPage] = useState(282)
   const [percentageRead, setPercentageRead] = useState(0)
   const [isResultsShown, setIsResultsShown] = useState(false)
@@ -16,10 +18,6 @@ const PagesCounter = () => {
   useEffect(() => {
     setTotalPagesToRead(lastPage - initialPage)
   }, [lastPage, initialPage])
-
-  // useEffect(() => {
-  //   setPagesRead(totalPagesToRead - currentPage)
-  // }, [currentPage, totalPagesToRead])
 
   useEffect(() => {
     setPercentageRead(((currentPage - initialPage) * 100) / totalPagesToRead)
@@ -39,7 +37,6 @@ const PagesCounter = () => {
 
   const handleShowResults = () => {
     setIsResultsShown((currState) => !currState)
-    console.log("Clicou no botão")
   }
 
   return (
@@ -78,9 +75,15 @@ const PagesCounter = () => {
             onChange={handleCurrentPage}
             fullWidth
           />
-          <Button variant="contained" onClick={handleShowResults}>
-            Calcular
-          </Button>
+          <ThemeProvider theme={theme}>
+            <Button
+              color="primary"
+              variant="contained"
+              onClick={handleShowResults}
+            >
+              Calcular
+            </Button>
+          </ThemeProvider>
         </S.ContentColumn>
 
         <Card variant="outlined">
