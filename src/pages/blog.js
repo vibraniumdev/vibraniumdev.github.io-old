@@ -24,15 +24,16 @@ const Blog = () => {
     fetchPosts()
   }, [])
 
-  return (
-    <Layout>
-      <Seo title="Articles" />
-      <S.Content>
-        <h1>Articles</h1>
-        <div>
-          {postList &&
-            !isLoading &&
-            postList.map(
+  if (isLoading && !postList) {
+    return <h1>Estou carregandersons</h1>
+  } else {
+    return (
+      <Layout>
+        <Seo title="Articles" />
+        <S.Content>
+          <h1>Articles</h1>
+          <div>
+            {postList.map(
               (
                 {
                   url,
@@ -62,10 +63,11 @@ const Blog = () => {
                 </div>
               )
             )}
-        </div>
-      </S.Content>
-    </Layout>
-  )
+          </div>
+        </S.Content>
+      </Layout>
+    )
+  }
 }
 
 export default Blog

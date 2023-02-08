@@ -92,7 +92,7 @@ module.exports = {
           {
             site {
               siteMetadata {
-greeting
+                greeting
                 title
                 description
                 comma
