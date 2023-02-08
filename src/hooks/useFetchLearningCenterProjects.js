@@ -1,5 +1,5 @@
 import { useState } from "react"
-import * as NProgress from "nprogress"
+import NProgress from "nprogress"
 
 const UseFetchLearningCenterProjects = () => {
   const [learningCenterReposList, setLearningCenterReposList] = useState()

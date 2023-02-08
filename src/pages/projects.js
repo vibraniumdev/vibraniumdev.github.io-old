@@ -3,10 +3,10 @@ import React, { useEffect } from "react"
 import Layout from "../components/layout"
 import ProjectCard from "../components/projectCard"
 import Seo from "../components/seo"
-import useFetchProjects from "../hooks/useFetchProjects"
+import UseFetchProjects from "../hooks/useFetchProjects"
 
 const Projects = () => {
-  const { fetchProjects, reposList, isLoading } = useFetchProjects()
+  const { fetchProjects, reposList, isLoading } = UseFetchProjects()
 
   useEffect(() => {
     fetchProjects()
