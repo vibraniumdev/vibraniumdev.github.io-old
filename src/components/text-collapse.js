@@ -21,7 +21,13 @@ const TextCollapse = ({ title, children, startsExpanded }) => {
       >
         <S.FlexTitle>{title}</S.FlexTitle>
       </AccordionSummary>
-      <AccordionDetails>{children}</AccordionDetails>
+      <AccordionDetails
+        sx={{
+          padding: "0.5rem",
+        }}
+      >
+        {children}
+      </AccordionDetails>
     </Accordion>
   )
 }
