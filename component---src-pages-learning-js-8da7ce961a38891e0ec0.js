@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_starter_julia=self.webpackChunkgatsby_starter_julia||[]).push([[8],{7750:function(t,a,e){e.r(a);e(7294);var s=e(2684),n=e(4062),r=e(6179),u=e(3431);a.default=function(){return(0,u.jsx)(s.Z,null,(0,u.jsx)(r.Z,{title:"LearningCenter",keywords:["gatsby","application","react"]}),(0,u.jsx)(n.Z,null))}}}]);
-//# sourceMappingURL=component---src-pages-learning-js-8da7ce961a38891e0ec0.js.map
