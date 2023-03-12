@@ -1,4 +1,5 @@
 import React, { Fragment } from "react"
+import * as S from "./bullet-list.styles"
 
 const BulletList = ({ topicList }) => {
   return topicList.map(({ category, name, link, subcategory }) => (
@@ -7,9 +8,10 @@ const BulletList = ({ topicList }) => {
         <li>
           <span>{category}</span>
           {category && <span>: </span>}
-          <a href={link} target="_blank" rel="noopener noreferrer">
+
+          <S.Link href={link} target="_blank" rel="noopener noreferrer">
             {name}
-          </a>
+          </S.Link>
         </li>
         {subcategory &&
           subcategory.map(({ name, link }) => {
