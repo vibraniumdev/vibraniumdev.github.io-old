@@ -29,7 +29,7 @@ export const otherFactsList = [
       { name: "Fernando Pessoa (favorite poet)" },
     ],
   },
-  { name: "I'm agnostic/atheist" },
+  { name: "I'm an atheist" },
 ]
 export const nerdyAndGeekyFactsList = [
   {
