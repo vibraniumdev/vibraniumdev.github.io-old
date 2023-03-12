@@ -89,15 +89,16 @@ export const studyLinguisticsList = [
 ]
 export const gearList = [
   {
-    category: "Primary Laptop",
-    name: "Dell Inspiron 7572 (16GB RAM, 128GB SSD + 1TB HDD)",
-    link: "",
-  },
-  {
-    category: "Secondary Laptop",
-    name: "MacBook Air early-2015, 8GB RAM, 128GB",
+    category: "Primary Machine",
+    name: "MacBook Air M2 (2022) 16GB 256 SSD",
     link: "https://support.apple.com/kb/SP714?viewlocale=pt_BR&locale=en_KW",
   },
+  {
+    category: "Primary Machine",
+    name: "Dell Inspiron 7572 16GB RAM 128GB SSD + 1TB HDD)",
+    link: "",
+  },
+  ,
   {
     category: "Mouse",
     name: "Logitech MX Anywhere 2S",
@@ -143,8 +144,8 @@ export const softwareList = [
   },
   {
     category: "Fallback Operating System",
-    name: "macOS Monterey",
-    link: "https://www.apple.com/macos/monterey/",
+    name: "macOS Ventura",
+    link: "https://www.apple.com/macos/ventura/",
   },
   {
     category: "Terminal",

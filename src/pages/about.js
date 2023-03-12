@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import TextCollapse from "../components/text-collapse"
 import BulletList from "../components/bullet-list"
+
 import {
   softwareList,
   gearList,
@@ -25,8 +26,8 @@ const About = () => {
         keywords={[`javascript`, `programming`, `react`, `linguistics`]}
       />
       <S.AboutContent>
-        <h1>About Me</h1>
-        <h2>Who I Am</h2>
+        {/* <h1>About Me</h1> */}
+        <S.GraySubTitle>Who I Am</S.GraySubTitle>
         <TextCollapse title="Backstory">
           <p>
             I've made my first steps into programming back in 2007, when I
@@ -140,7 +141,7 @@ const About = () => {
 
         <br />
         <br />
-        <h2>What I Use</h2>
+        <S.GraySubTitle>What I Use</S.GraySubTitle>
         <TextCollapse title="Gear">
           <BulletList topicList={gearList} />
         </TextCollapse>
@@ -152,15 +153,15 @@ const About = () => {
         <br />
         <br />
 
-        <h2>What I Study</h2>
+        <S.GraySubTitle>What I Study</S.GraySubTitle>
         <TextCollapse title="Linguistics">
           <BulletList topicList={studyLinguisticsList} />
         </TextCollapse>
         <br />
 
-        <h2>What else</h2>
+        <S.GraySubTitle>What Else</S.GraySubTitle>
         <TextCollapse startsExpanded title="Other Links">
-          <BulletList topicList={otherLinks} />
+          <BulletList otherLinks topicList={otherLinks} />
         </TextCollapse>
       </S.AboutContent>
     </Layout>
