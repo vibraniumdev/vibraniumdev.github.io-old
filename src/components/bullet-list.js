@@ -4,7 +4,7 @@ import * as S from "./bullet-list.styles"
 const BulletList = ({ topicList }) => {
   return topicList.map(({ category, name, link, subcategory }) => (
     <Fragment key={`${name}-${Math.floor(Math.random() * 100)}`}>
-      <ul>
+      <S.ThinUl>
         <li>
           <span>{category}</span>
           {category && <span>: </span>}
@@ -23,7 +23,7 @@ const BulletList = ({ topicList }) => {
               </ul>
             )
           })}
-      </ul>
+      </S.ThinUl>
     </Fragment>
   ))
 }
