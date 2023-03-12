@@ -2,9 +2,9 @@ module.exports = {
   siteMetadata: {
     greeting: `Hello! `,
     title: `My name is Guilherme Teixeira`,
-    subtitle: `and I am a Software Developer.`,
+    subtitle: `and I'm a Software Developer.`,
     comma: `,`,
-    description: `Site pessoal onde escrevo textos sem bibliografia, reflexões sobre tecnologia, música, linguística. Meu ponto de vista sobre o cotidiano e sobre a existência.`,
+    description: `My personal website and blog`,
     author: `Guilherme Teixeira`,
     siteUrl: `https://guiteixeira.dev`,
     blogUrl: `/blog`,
