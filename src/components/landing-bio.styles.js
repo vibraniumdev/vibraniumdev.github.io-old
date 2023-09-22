@@ -14,7 +14,7 @@ export const GreetingTitleCommaContainer = styled.div`
   width: 100%;
   padding: 1.45rem 1.0875rem;
 `
-export const GreetingTitleComma = styled.div`
+export const GreetingTitleComma = styled.span`
   font-size: 2.5rem;
   width: 100%;
   margin-bottom: 1rem;
