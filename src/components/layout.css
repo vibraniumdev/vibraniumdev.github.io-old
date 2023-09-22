@@ -705,7 +705,8 @@ h4::selection,
 h5::selection,
 h6::selection,
 p::selection,
-a::selection {
+a::selection,
+span::selection {
   background: #fffa96cc;
 }
 
