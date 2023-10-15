@@ -38,7 +38,9 @@ const ProjectCard = ({ reposList, isLoading }) => {
                     size="1x"
                     fixedWidth
                   />
-                  <span>{language}</span>
+                  <span>{
+                  language === null ?'Unknow' : language }
+                  </span>
                 </div>
                 <div>
                   <FontAwesomeIcon
