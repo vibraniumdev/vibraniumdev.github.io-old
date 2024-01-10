@@ -18,7 +18,7 @@ export const GreetingTitleCommaContainer = styled.div`
 export const GreetingTitleComma = styled.span`
   align-self: center;
   font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   line-height: 120%;
   text-align: center;
   max-width: 768px;
@@ -29,11 +29,14 @@ export const GrayStyle = styled.span`
 `
 
 export const Subtitle = styled.p`
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #6c757d;
   text-align: match-parent;
   padding: auto;
+  align-self: center;
   margin-bottom: 1rem;
+  max-width: 384px;
+  width: 100%;
 `
 
 export const ItalicParagraph = styled.p`

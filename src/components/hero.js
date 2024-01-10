@@ -8,7 +8,6 @@ import {
   faDev,
   faMastodon,
   faGoodreads,
-  faTwitter,
 } from "@fortawesome/free-brands-svg-icons"
 
 import * as S from "./hero.styles"

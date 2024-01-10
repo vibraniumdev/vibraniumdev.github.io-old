@@ -17,6 +17,7 @@ export const Main = styled.main`
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  justify-content: flex-end;
 `
 
 export const Footer = styled.footer`

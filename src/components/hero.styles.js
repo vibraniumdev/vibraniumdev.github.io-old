@@ -2,7 +2,7 @@ import styled from "@emotion/styled"
 
 export const Container = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   align-content: flex-start;
   align-items: center;
@@ -17,10 +17,7 @@ export const Container = styled.div`
   height: calc(100vh - 30rem);
 
   svg {
-    // margin: 0 1.25rem;
-    margin-inline: 0.75rem;
-    padding: 0;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 
     :hover {
       color: #6c757d;
