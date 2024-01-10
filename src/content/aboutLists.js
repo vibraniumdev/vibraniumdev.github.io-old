@@ -21,7 +21,7 @@ export const nerdyAndGeekyFactsList = [
 
 export const musicRelatedList = [
   {
-    name: "My favorite music genre is progressive metal (and its sub-genres: djent, technical death metal, mathcore etc.), ",
+    name: "My favorite musical genre is progressive metal (and its sub-genres: djent, technical death metal, mathcore etc.), ",
   },
   {
     name: "My favorite artists and bands are Dream Theater, Angra, Oficina G3, Tesseract, and Kendrick Lamar.",
