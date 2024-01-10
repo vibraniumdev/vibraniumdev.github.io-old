@@ -5,6 +5,7 @@ export const Content = styled.div`
   display: flex;
   justify-content: center;
   align-content: center;
+  margin-bottom: 1rem;
 `
 
 export const GreetingTitleCommaContainer = styled.div`

@@ -12,6 +12,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 
 import * as S from "./hero.styles"
+import { faX } from "@fortawesome/free-solid-svg-icons"
 
 const heroList = [
   {
