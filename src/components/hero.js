@@ -39,10 +39,6 @@ const heroList = [
     icon: faMastodon,
   },
   {
-    href: "https://twitter.com/teixeiragg",
-    icon: faTwitter,
-  },
-  {
     href: "https://www.twitch.tv/guilhermestreams/",
     icon: faTwitch,
   },

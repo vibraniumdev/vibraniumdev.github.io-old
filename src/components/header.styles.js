@@ -2,14 +2,15 @@ import { Link } from "gatsby"
 import styled from "@emotion/styled"
 
 export const NavBar = styled.nav`
-  max-width: 860px;
+  max-width: 768px;
   display: flex;
   margin: auto;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 0.5rem;
+  padding: 1rem 0;
   text-align: center;
   align-content: center;
+  margin-bottom: 1rem;
 `
 
 export const NavLinks = styled.ul`
