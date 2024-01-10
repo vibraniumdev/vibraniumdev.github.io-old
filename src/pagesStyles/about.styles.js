@@ -5,9 +5,9 @@ const { palette } = theme
 
 export const AboutContent = styled.div`
   margin: 0 auto;
-  max-width: 860px;
+  max-width: 768px;
   width: 100%;
-  padding: 1.45rem 1.0875rem;
+  padding: 0.5rem;
 `
 
 export const TitleContainer = styled.div`
