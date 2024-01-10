@@ -2,13 +2,12 @@ import styled from "@emotion/styled"
 
 export const Wrapper = styled.div`
   padding: 2rem 0;
-  max-width: 1280px;
   margin: 0.5rem auto;
   width: 90%;
 
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 
   @media (max-width: 700px) {
     width: 90%;
@@ -17,7 +16,7 @@ export const Wrapper = styled.div`
 
   @media (min-width: 701px) and (max-width: 1000px) {
     width: 90%;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 2fr 2fr 2fr;
   }
 `
 
