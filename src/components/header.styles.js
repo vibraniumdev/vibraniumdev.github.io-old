@@ -20,7 +20,7 @@ export const NavLinks = styled.ul`
   list-style: none;
   text-align: center;
   margin: 0;
-  padding: 0.5rem;
+  padding: 0 0.25rem 0 0;
   :first-of-type {
     margin-left: 0rem;
     padding-left: 0rem;
@@ -28,6 +28,17 @@ export const NavLinks = styled.ul`
 `
 
 export const NavItem = styled.li`
+  text-align: center;
+  margin: auto;
+
+  &:nth-child(1) {
+    a {
+      margin-left: 0px;
+    }
+  }
+`
+
+export const NavItemBrand = styled.li`
   text-align: center;
   margin: auto;
 `

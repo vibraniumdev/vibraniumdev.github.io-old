@@ -5,11 +5,11 @@ import * as S from "./header.styles"
 const Header = () => (
   <S.NavBar>
     <S.NavLinks>
-      <S.NavItem>
+      <S.NavItemBrand>
         <S.NavLinkBrand className="brand" to="/" activeClassName="active">
           Guilherme Teixeira
         </S.NavLinkBrand>
-      </S.NavItem>
+      </S.NavItemBrand>
     </S.NavLinks>
     <S.NavLinks>
       <S.NavItem>
