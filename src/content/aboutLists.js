@@ -1,11 +1,13 @@
 // WHO I AM
 export const codingRelatedList = [
   {
-    name: "I'm a keyboard person. I use keyboard shortcuts, aliases and automations for pretty much everything in my workflow, including browsing the web",
+    name: "I am a keyboard-driven developer",
   },
-  { name: "I am a touch typist" },
   {
-    name: "I am a proud Linux user since 2011. Currently I switch between macOS for personal projects and studying, and Linux to work",
+    name: "I am a touch typist",
+  },
+  {
+    name: "I am a proud Linux user since 2011. Currently I switch between macOS Linux",
   },
 ]
 
@@ -13,7 +15,6 @@ export const nerdyAndGeekyFactsList = [
   {
     name: "According to my mom, I taught myself to read before I was 4 years old",
   },
-  { name: "My favorite video game is Metal Gear Solid 3" },
   {
     name: "When I was a kid I was capable of read and write backwards. Unfortunately it turned out to be a quite useless skill",
   },
@@ -21,20 +22,21 @@ export const nerdyAndGeekyFactsList = [
 
 export const musicRelatedList = [
   {
-    name: "My favorite musical genre is progressive metal (and its sub-genres: djent, technical death metal, mathcore etc.), ",
+    name: "My favorite musical genre is progressive metal",
   },
   {
-    name: "My favorite artists and bands are Dream Theater, Angra, Oficina G3, Tesseract, and Kendrick Lamar.",
-  },
-  {
-    name: "I can play decently (i.e. poorly) about 10 different musical instruments",
+    name: "I can play decently (i.e.: poorly) about 10 different musical instruments",
   },
 ]
 
 export const fitnessAndSportsList = [
-  { name: "I ride my bike almost every day" },
   {
-    name: "I also enjoy watching basketball",
+    category: "I ride my bike almost every day",
+    name: "check out my Strava profile",
+    link: "https://www.strava.com/athletes/73219146",
+  },
+  {
+    name: "I also enjoy watching NBA",
   },
 ]
 
@@ -43,32 +45,25 @@ export const otherFactsList = [
   {
     name: "I'm a digital minimalist",
   },
-
   {
-    name: "Usually I don't watch movies and TV series",
+    name: "Music is the only form of art I truly enjoy. I usually don't watch TV series or movies",
   },
-  {
-    name: "Music is the only form of art I truly enjoy. I don't watch TV Series or movies (except for when my girlfriend obliges me 😅)",
-  },
-  {
-    name: "My favorite novelists/poets are J.R.R. Tolkien, João Guimarães Rosa, and Fernando Pessoa",
-  },
-  { name: "I'm an atheist" },
 ]
 
 // WHAT I USE
 export const gearList = [
   {
     category: "Primary Machine",
-    name: "MacBook Air M2",
-    link: "https://support.apple.com/kb/SP714?viewlocale=pt_BR&locale=en_KW",
-  },
-  {
-    category: "Primary Machine",
     name: "Dell Inspiron 7572",
     link: "",
   },
-  ,
+
+  {
+    category: "Secondary Machine",
+    name: "MacBook Air M2",
+    link: "https://support.apple.com/kb/SP714?viewlocale=pt_BR&locale=en_KW",
+  },
+
   {
     category: "Mouse",
     name: "Logitech MX Anywhere 2S",
@@ -89,12 +84,12 @@ export const softwareList = [
   },
   {
     category: "Secondary OS",
-    name: "macOS Ventura",
+    name: "macOS",
     link: "https://www.apple.com/macos/ventura/",
   },
   {
     category: "Code Editor",
-    name: "Neovim (LazyVim)",
+    name: "Neovim",
     link: "https://www.lazyvim.org/",
   },
   {
@@ -128,11 +123,9 @@ export const softwareList = [
 // WHAT I STUDY
 export const studyLinguisticsList = [
   {
-    name: "As a linguist, my topics of interest are Epistemology of Science, Theoretical Linguistics, mainly Generative Syntax, Formal Semantics, Analytic Philosophy, and Language Acquisition",
+    name: "As a linguist, my topics of interest are Epistemology of Science, Generative Syntax, Formal Semantics, and Language Acquisition",
   },
 ]
 
 // WHAT ELSE
-export const otherLinks = [
-  { name: "Strava", link: "https://www.strava.com/athletes/73219146" },
-]
+export const otherLinks = []

@@ -27,19 +27,20 @@ const About = () => {
       />
       <S.AboutContent>
         <S.GraySubTitle>Who I Am</S.GraySubTitle>
-        <TextCollapse startsExpanded title="Coding-Related">
+
+        <TextCollapse startsExpanded title="Coding-Related Facts">
           <BulletList topicList={codingRelatedList} />
         </TextCollapse>
 
-        <TextCollapse title="Nerdy/Geeky Facts">
+        <TextCollapse title="Nerdy Facts">
           <BulletList topicList={nerdyAndGeekyFactsList} />
         </TextCollapse>
 
-        <TextCollapse title="Music-Related">
+        <TextCollapse title="Music Facts">
           <BulletList topicList={musicRelatedList} />
         </TextCollapse>
 
-        <TextCollapse title="Fitness/Sports">
+        <TextCollapse title="Sports Facts">
           <BulletList topicList={fitnessAndSportsList} />
         </TextCollapse>
 
