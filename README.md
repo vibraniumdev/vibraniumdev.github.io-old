@@ -1,15 +1,17 @@
-# guiteixeira.dev
+# My Personal Website (guiteixeira.dev)
+
+# Screenshot
 
 ![home-screenshot](media/website-screenshot-home-desktop.png)
 
 ## Roadmap
 
-### Funcionalidades
+### Functionalities
 
-- [x] Consumir a API do repositório de exercícios
+- [x] Fetch Divertimentos' API
 
-### Melhorias
+### Improvements
 
-- [x] Fazer ambas listas de repositório ficarem ordenadas por 'last modified'
-- [x] Tornar todos os componentes responsivos
-- [ ] Fazer os ícones do Hero serem um `grid` para que eles quebrem de forma organizada de acordo com o tamanho da tela. No desktop eles precisam ser apenas uma row; no mobile eles precisam ser duas rows.
+- [x] Make both repo lists sorted by 'last modified'
+- [x] Make all components responsive
+- [x] Turn all Hero items into a grid, so they break on smaller screens.
