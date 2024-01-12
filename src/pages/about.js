@@ -68,10 +68,10 @@ const About = () => {
         </TextCollapse>
         <br />
 
-        <S.GraySubTitle>What Else</S.GraySubTitle>
-        <TextCollapse title="Other Links">
-          <BulletList otherLinks topicList={otherLinks} />
-        </TextCollapse>
+        {/* <S.GraySubTitle>What Else</S.GraySubTitle> */}
+        {/* <TextCollapse title="Other Links"> */}
+        {/*   <BulletList otherLinks topicList={otherLinks} /> */}
+        {/* </TextCollapse> */}
       </S.AboutContent>
     </Layout>
   )
