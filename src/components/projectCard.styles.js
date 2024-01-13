@@ -27,24 +27,43 @@ export const Card = styled.a`
   background: #fff;
   overflow: hidden;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.25s;
 
   h4 {
     color: #212121;
+    transition: 0.25s;
   }
 
   p {
-    color: #696969;
+    opacity: 0.75;
+    transition: 0.25s;
   }
 
   :hover {
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.31);
-    transition-duration: 0.2s;
+
+    transition: 0.25s ease-in;
+    div > svg,
+    span,
+    p {
+      opacity: 1;
+      transition: 0.25s;
+    }
+
+    h4 {
+      transform: translate(1%);
+      transition: 0.25s;
+      opacity: 0.5;
+    }
   }
 `
 
 export const Content = styled.div`
-  padding: 0.5rem 0.5rem 0 0.5rem;
-  height: 75%;
+  padding: 0.25rem;
+  margin-bottom: 0.25rem;
 
   h4,
   p {
@@ -54,11 +73,11 @@ export const Content = styled.div`
 `
 
 export const Stats = styled.div`
+  padding: 0.25rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem;
-  height: 25%;
+  margin-bottom: 0.25rem;
 
   div {
     display: flex;
@@ -76,10 +95,12 @@ export const Stats = styled.div`
       height: auto;
     }
 
-    span {
-      color: #000;
+    span,
+    svg {
+      opacity: 0.75;
+      transition: 0.25s;
       margin-left: 0.5rem;
-      margin: 0.9rem;
+      font-size: 0.75rem;
     }
   }
 `
