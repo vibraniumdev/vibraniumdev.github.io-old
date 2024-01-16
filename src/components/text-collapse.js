@@ -23,7 +23,7 @@ const TextCollapse = ({ title, children, startsExpanded }) => {
       </AccordionSummary>
       <AccordionDetails
         sx={{
-          padding: "0.5rem",
+          padding: "0",
         }}
       >
         {children}

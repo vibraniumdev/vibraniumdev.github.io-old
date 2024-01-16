@@ -14,7 +14,6 @@ import {
   fitnessAndSportsList,
   nerdyAndGeekyFactsList,
   otherFactsList,
-  otherLinks,
 } from "../content/aboutLists"
 
 import * as S from "../pagesStyles/about.styles"

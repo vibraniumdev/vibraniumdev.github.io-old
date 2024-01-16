@@ -7,7 +7,7 @@ export const codingRelatedList = [
     name: "I am a touch typist",
   },
   {
-    name: "I am a proud Linux user since 2011. Currently I switch between macOS Linux",
+    name: "I am a proud Linux user since 2011. Currently I switch between macOS and Linux",
   },
 ]
 
@@ -25,7 +25,7 @@ export const musicRelatedList = [
     name: "My favorite musical genre is progressive metal",
   },
   {
-    name: "I can play decently (i.e.: poorly) about 10 different musical instruments",
+    name: "I can play decently (i.e., poorly) about 10 different musical instruments",
   },
 ]
 
@@ -53,13 +53,13 @@ export const otherFactsList = [
 // WHAT I USE
 export const gearList = [
   {
-    category: "Primary Machine",
+    category: "Work Machine",
     name: "Dell Inspiron 7572",
     link: "",
   },
 
   {
-    category: "Secondary Machine",
+    category: "Personal Machine",
     name: "MacBook Air M2",
     link: "https://support.apple.com/kb/SP714?viewlocale=pt_BR&locale=en_KW",
   },
@@ -71,8 +71,18 @@ export const gearList = [
   },
   {
     category: "Keyboard",
-    name: "Keychron K2 (Hot-Swappable) Wireless Mechanical Keyboard (Version 2)",
+    name: "Keychron K2 (V2)",
     link: "https://www.keychron.com/products/keychron-k2-hot-swappable-wireless-mechanical-keyboard",
+  },
+  {
+    category: "Primary Headphone",
+    name: "KZ ZS10 Pro X",
+    link: "https://kz-audio.com/kz-zs10-pro-x.html",
+  },
+  {
+    category: "Secondary Headphone",
+    name: "Edifier W820BT",
+    link: "https://edifier.com.br/headphone-bluetooth-over-ear-edifier-w820bt.html",
   },
 ]
 
