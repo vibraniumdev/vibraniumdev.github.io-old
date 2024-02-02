@@ -18,6 +18,7 @@ module.exports = {
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-postcss`,
     `gatsby-plugin-material-ui`,
+    `gatsby-plugin-dark-mode`,
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {

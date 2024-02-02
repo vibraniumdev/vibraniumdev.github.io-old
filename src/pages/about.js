@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import TextCollapse from "../components/text-collapse"
 import BulletList from "../components/bullet-list"
+import * as S from "../pagesStyles/about.styles"
 
 import {
   softwareList,
@@ -16,7 +17,6 @@ import {
   otherFactsList,
 } from "../content/aboutLists"
 
-import * as S from "../pagesStyles/about.styles"
 const About = () => {
   return (
     <Layout>
@@ -27,7 +27,7 @@ const About = () => {
       <S.AboutContent>
         <S.GraySubTitle>Who I Am</S.GraySubTitle>
 
-        <TextCollapse startsExpanded title="Coding-Related Facts">
+        <TextCollapse title="Coding-Related Facts">
           <BulletList topicList={codingRelatedList} />
         </TextCollapse>
 

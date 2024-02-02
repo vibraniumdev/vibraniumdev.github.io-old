@@ -2,6 +2,27 @@ import PropTypes from "prop-types"
 import React from "react"
 
 import * as S from "./header.styles"
+import { ThemeToggler } from "gatsby-plugin-dark-mode"
+
+const Toggler = () => {
+  return (
+    <ThemeToggler>
+      {({ theme, toggleTheme }) => (
+        <>
+          <label>
+            <input
+              type="checkbox"
+              onChange={(e) => toggleTheme(e.target.checked ? "dark" : "light")}
+              checked={theme === "dark"}
+            />{" "}
+            Dark mode
+          </label>
+        </>
+      )}
+    </ThemeToggler>
+  )
+}
+
 const Header = () => (
   <S.NavBar>
     <S.NavLinks>
@@ -31,6 +52,13 @@ const Header = () => (
         <S.NavLink to="/about" activeClassName="active">
           About
         </S.NavLink>
+      </S.NavItem>
+      <S.NavItem
+        style={{
+          marginLeft: "0.5rem",
+        }}
+      >
+        <Toggler />
       </S.NavItem>
     </S.NavLinks>
   </S.NavBar>
