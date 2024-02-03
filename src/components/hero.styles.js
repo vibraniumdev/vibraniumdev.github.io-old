@@ -15,8 +15,11 @@ export const Container = styled.div`
   text-align: center;
   padding: 1rem 0;
   height: calc(100vh - 30rem);
+  transition: 0.4s ease-out;
 
-  svg {
+  svg,
+  a {
+    transition: 0.4s ease-out;
     font-size: 1.75rem;
 
     :hover {

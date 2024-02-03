@@ -24,38 +24,37 @@ export const Card = styled.a`
   text-decoration: none;
   padding: 0.5rem;
   margin: 0.5rem;
-  background: #fff;
   overflow: hidden;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: 0.25s;
+  transition: 0.4s ease-out;
 
   h4 {
-    color: #212121;
-    transition: 0.25s;
+    transition: 0.4s ease-out;
   }
 
   p {
     opacity: 0.75;
-    transition: 0.25s;
+    transition: 0.4s ease-out;
   }
 
   :hover {
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.31);
 
-    transition: 0.25s ease-in;
+    transition: 0.4s ease-out;
     div > svg,
     span,
     p {
       opacity: 1;
-      transition: 0.25s;
+      transition: 0.4s ease-out;
     }
 
     h4 {
       transform: translate(1%);
-      transition: 0.25s;
+
+      transition: 0.4s ease-out;
       opacity: 0.5;
     }
   }
@@ -69,6 +68,8 @@ export const Content = styled.div`
   p {
     margin-bottom: 0.5rem;
     height: max-content;
+
+    transition: 0.1s ease-out;
   }
 `
 
@@ -98,7 +99,7 @@ export const Stats = styled.div`
     span,
     svg {
       opacity: 0.75;
-      transition: 0.25s;
+      transition: 0.4s ease-out;
       margin-left: 0.5rem;
       font-size: 0.75rem;
     }
