@@ -51,5 +51,6 @@ export const FlexTitle = styled.h3`
 
 export const GraySubTitle = styled.h2`
   color: orange;
-  color: ${palette.primary.main};
+  // color: ${palette.primary.main};
+  color: #6c757d;
 `
