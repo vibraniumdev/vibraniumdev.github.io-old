@@ -20,11 +20,11 @@ body {
   background-color: var(--white);
   color: var(--black);
 
-  transition: 0.4s ease-out;
+  /* transition: 0.4s ease-out; */
 
   h4,
   div {
-    transition: 0.4s ease-out;
+    /* transition: 0.4s ease-out; */
     color: var(--black);
   }
 }
@@ -41,7 +41,7 @@ body.dark {
   h2,
   h4,
   svg {
-    transition: 0.4s ease-out;
+    /* transition: 0.4s ease-out; */
     background-color: var(--black);
     color: var(--gray);
   }

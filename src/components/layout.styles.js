@@ -26,6 +26,6 @@ export const Footer = styled.footer`
 `
 
 export const GatsbyLink = styled.a`
-  transition: 0.4s ease-out;
+  // transition: 0.4s ease-out;
   margin-left: 0.4rem;
 `
