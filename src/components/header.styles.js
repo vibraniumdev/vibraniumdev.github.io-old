@@ -47,7 +47,7 @@ export const NavLink = styled(Link)`
   text-decoration: none;
   font-weight: 600;
   margin-left: 0.5rem;
-  transition: 0.4s ease-out;
+  // transition: 0.4s ease-out;
 
   &.active {
     color: #6c757d;

@@ -25,7 +25,7 @@ export const MarkerHeader = styled.h3`
 export const SimpleHeader = styled.h3`
   display: inline;
   border-radius: 1em 0 1em 0;
-  transition: 0.4s ease-out;
+  // transition: 0.4s ease-out;
 
   &.active {
     color: #6c757d;

@@ -29,15 +29,15 @@ export const Card = styled.a`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: 0.4s ease-out;
+  // transition: 0.4s ease-out;
 
   h4 {
-    transition: 0.4s ease-out;
+    // transition: 0.4s ease-out;
   }
 
   p {
     opacity: 0.75;
-    transition: 0.4s ease-out;
+    // transition: 0.4s ease-out;
   }
 
   :hover {
@@ -48,7 +48,7 @@ export const Card = styled.a`
     span,
     p {
       opacity: 1;
-      transition: 0.4s ease-out;
+      // transition: 0.4s ease-out;
     }
 
     h4 {
@@ -69,7 +69,7 @@ export const Content = styled.div`
     margin-bottom: 0.5rem;
     height: max-content;
 
-    transition: 0.1s ease-out;
+    // transition: 0.1s ease-out;
   }
 `
 
@@ -99,7 +99,7 @@ export const Stats = styled.div`
     span,
     svg {
       opacity: 0.75;
-      transition: 0.4s ease-out;
+      // transition: 0.4s ease-out;
       margin-left: 0.5rem;
       font-size: 0.75rem;
     }
