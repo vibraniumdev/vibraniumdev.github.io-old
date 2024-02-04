@@ -1,7 +1,4 @@
 import styled from "@emotion/styled"
-import { theme } from "../theme/theme"
-
-const { palette } = theme
 
 export const AboutContent = styled.div`
   margin: 0 auto;
@@ -51,6 +48,5 @@ export const FlexTitle = styled.h3`
 
 export const GraySubTitle = styled.h2`
   color: orange;
-  // color: ${palette.primary.main};
-  color: #6c757d;
+  color: ${theme.palette.primary.main};
 `

@@ -34,7 +34,9 @@ const Header = () => {
             About
           </S.NavLink>
         </S.NavItem>
-        <Switcher />
+        <S.NavItem>
+          <Switcher />
+        </S.NavItem>
       </S.NavLinks>
     </S.NavBar>
   )

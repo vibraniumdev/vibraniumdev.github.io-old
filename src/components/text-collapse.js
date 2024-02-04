@@ -10,6 +10,7 @@ const TextCollapse = ({ title, children, startsExpanded }) => {
         border: "none",
         boxShadow: "none",
         padding: "0",
+        border: "5px solid green",
       }}
       defaultExpanded={startsExpanded}
     >

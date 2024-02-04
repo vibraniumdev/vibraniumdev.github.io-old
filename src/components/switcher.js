@@ -26,13 +26,14 @@ function Switcher() {
         bgcolor: "background.default",
         color: "text.primary",
         borderRadius: 1,
-        p: 3,
+        marginLeft: "1rem",
+        p: 0.25,
       }}
     >
       {theme.palette.mode} mode
       <IconButton
-        sx={{ ml: 1 }}
         onClick={colorMode.toggleColorMode}
+        sx={{ ml: 1 }}
         color="inherit"
       >
         {theme.palette.mode === "dark" ? (
