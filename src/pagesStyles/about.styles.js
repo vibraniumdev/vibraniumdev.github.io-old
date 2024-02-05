@@ -11,19 +11,10 @@ export const AboutContent = styled.div`
 `
 
 export const TitleContainer = styled.div`
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
   cursor: pointer;
-
-  svg {
-    :hover {
-      color: #6c757d;
-      transition: 0.1s ease-in;
-    }
-  }
 `
 
 export const FlexTitle = styled.h3`

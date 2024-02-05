@@ -17,56 +17,66 @@ import {
 } from "../content/aboutLists"
 
 import * as S from "../pagesStyles/about.styles"
+import { Typography } from "@mui/material"
 const About = () => {
+  const YOE = new Date().getFullYear() - 2018 - 1
+  const frontendYOE = new Date().getFullYear() - 2020 - 1
+
   return (
     <Layout>
       <Seo
         title="About"
-        keywords={[`javascript`, `programming`, `react`, `linguistics`]}
+        keywords={[
+          `javascript`,
+          `programming`,
+          `react`,
+          `linguistics`,
+          `frontend`,
+        ]}
       />
       <S.AboutContent>
-        <S.GraySubTitle>Who I Am</S.GraySubTitle>
-
-        <TextCollapse startsExpanded title="Coding-Related Facts">
+        <S.TitleContainer>
+          <S.GraySubTitle>Who I Am</S.GraySubTitle>
+          <Typography>
+            I am a software developer based in Brazil, and I have been working
+            in the tech industry for about {YOE} years, {frontendYOE} of which
+            as a front-end developer. My ultimate goal is to help improve
+            people's lives around the globe through technology — and to try to
+            make the World a better place using the resources we have at hand
+            right now.
+          </Typography>
+        </S.TitleContainer>
+        <TextCollapse title="Coding-Related Facts">
           <BulletList topicList={codingRelatedList} />
         </TextCollapse>
-
         <TextCollapse title="Nerdy Facts">
           <BulletList topicList={nerdyAndGeekyFactsList} />
         </TextCollapse>
-
         <TextCollapse title="Music Facts">
           <BulletList topicList={musicRelatedList} />
         </TextCollapse>
-
         <TextCollapse title="Sports Facts">
           <BulletList topicList={fitnessAndSportsList} />
         </TextCollapse>
-
         <TextCollapse title="Other Facts">
           <BulletList topicList={otherFactsList} />
         </TextCollapse>
-
         <br />
         <br />
         <S.GraySubTitle>What I Use</S.GraySubTitle>
         <TextCollapse title="Gear">
           <BulletList topicList={gearList} />
         </TextCollapse>
-
         <TextCollapse title="Software">
           <BulletList topicList={softwareList} />
         </TextCollapse>
-
         <br />
         <br />
-
         <S.GraySubTitle>What I Study</S.GraySubTitle>
         <TextCollapse title="Linguistics">
           <BulletList topicList={studyLinguisticsList} />
         </TextCollapse>
         <br />
-
         {/* <S.GraySubTitle>What Else</S.GraySubTitle> */}
         {/* <TextCollapse title="Other Links"> */}
         {/*   <BulletList otherLinks topicList={otherLinks} /> */}
