@@ -8,7 +8,6 @@ const BulletList = ({ topicList }) => {
         <li>
           <span>{category}</span>
           {category && <span>: </span>}
-
           <S.Link href={link} target="_blank" rel="noopener noreferrer">
             {name}
           </S.Link>
