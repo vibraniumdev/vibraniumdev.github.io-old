@@ -133,7 +133,7 @@ export const softwareList = [
 // WHAT I STUDY
 export const studyLinguisticsList = [
   {
-    name: "As a theoretical linguist, my main interests are Generative Syntax, Formal Semantics, Analytic Philosophy, and Language Acquisition.",
+    name: "As a linguist, my main interests are Generative Syntax and Formal Semantics",
   },
 ]
 

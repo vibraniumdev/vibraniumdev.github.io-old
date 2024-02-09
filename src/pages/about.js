@@ -43,7 +43,7 @@ const About = () => {
             as a front-end developer. My ultimate goal is to help improve
             people's lives around the globe through technology — and to try to
             make the World a better place using the resources we have at hand
-            right now.
+            right now
           </Typography>
         </S.TitleContainer>
         <TextCollapse title="Coding-Related Facts">
