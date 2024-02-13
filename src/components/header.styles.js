@@ -36,6 +36,12 @@ export const NavItem = styled.li`
       margin-left: 0px;
     }
   }
+
+  &:nth-child(4) {
+    a {
+      margin-right: 0.25rem;
+    }
+  }
 `
 
 export const NavItemBrand = styled.li`

@@ -3,7 +3,7 @@ import styled from "@emotion/styled"
 export const Content = styled.div`
   margin: 0 auto;
   max-width: 768px;
-  padding: 1.45rem 1.0875rem;
+  padding-left: 0.75rem;
 `
 
 export const ArticleDate = styled.h5`
