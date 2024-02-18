@@ -1,7 +1,6 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
-  faMedium,
   faGithub,
   faLinkedin,
   faTwitch,
@@ -9,6 +8,8 @@ import {
   faMastodon,
   faGoodreads,
 } from "@fortawesome/free-brands-svg-icons"
+
+import { faBrain } from "@fortawesome/free-solid-svg-icons"
 
 import * as S from "./hero.styles"
 
@@ -18,16 +19,16 @@ const heroList = [
     icon: faLinkedin,
   },
   {
+    href: "https://github.com/divertimentos/",
+    icon: faBrain,
+  },
+  {
     href: "https://github.com/ggteixeira/",
     icon: faGithub,
   },
   {
     href: "https://dev.to/guiteixeira",
     icon: faDev,
-  },
-  {
-    href: "https://medium.com/blacktech",
-    icon: faMedium,
   },
   {
     href: "https://www.goodreads.com/guiemi",

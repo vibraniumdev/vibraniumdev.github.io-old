@@ -44,6 +44,8 @@ const About = () => {
             lives around the globe through technology — and to try to make the
             World a better place using the resources we have at hand right now
           </Typography>
+        </S.TitleContainer>
+        <S.TitleContainer>
           <TextCollapse title="Coding-Related Facts">
             <BulletList topicList={codingRelatedList} />
           </TextCollapse>
