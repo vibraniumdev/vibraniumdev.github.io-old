@@ -15,28 +15,28 @@ import * as S from "./hero.styles"
 
 const heroList = [
   {
-    href: "https://www.linkedin.com/in/guiatf",
-    icon: faLinkedin,
+    href: "https://github.com/ggteixeira/",
+    icon: faGithub,
   },
   {
     href: "https://github.com/divertimentos/",
     icon: faBrain,
   },
   {
-    href: "https://github.com/ggteixeira/",
-    icon: faGithub,
+    href: "https://www.linkedin.com/in/guiatf",
+    icon: faLinkedin,
   },
   {
     href: "https://dev.to/guiteixeira",
     icon: faDev,
   },
   {
-    href: "https://www.goodreads.com/guiemi",
-    icon: faGoodreads,
-  },
-  {
     href: "https://mastodon.com.br/@gui",
     icon: faMastodon,
+  },
+  {
+    href: "https://www.goodreads.com/guiemi",
+    icon: faGoodreads,
   },
   {
     href: "https://www.twitch.tv/guilhermestreams/",
