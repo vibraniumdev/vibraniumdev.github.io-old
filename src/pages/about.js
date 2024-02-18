@@ -44,42 +44,42 @@ const About = () => {
             lives around the globe through technology — and to try to make the
             World a better place using the resources we have at hand right now
           </Typography>
+          <TextCollapse title="Coding-Related Facts">
+            <BulletList topicList={codingRelatedList} />
+          </TextCollapse>
+          <TextCollapse title="Nerdy Facts">
+            <BulletList topicList={nerdyAndGeekyFactsList} />
+          </TextCollapse>
+          <TextCollapse title="Music Facts">
+            <BulletList topicList={musicRelatedList} />
+          </TextCollapse>
+          <TextCollapse title="Sports Facts">
+            <BulletList topicList={fitnessAndSportsList} />
+          </TextCollapse>
+          <TextCollapse title="Other Facts">
+            <BulletList topicList={otherFactsList} />
+          </TextCollapse>
+          <br />
+          <br />
+          <S.GraySubTitle>What I Use</S.GraySubTitle>
+          <TextCollapse title="Gear">
+            <BulletList topicList={gearList} />
+          </TextCollapse>
+          <TextCollapse title="Software">
+            <BulletList topicList={softwareList} />
+          </TextCollapse>
+          <br />
+          <br />
+          <S.GraySubTitle>What I Study</S.GraySubTitle>
+          <TextCollapse title="Linguistics">
+            <BulletList topicList={studyLinguisticsList} />
+          </TextCollapse>
+          <br />
+          {/* <S.GraySubTitle>What Else</S.GraySubTitle> */}
+          {/* <TextCollapse title="Other Links"> */}
+          {/*   <BulletList otherLinks topicList={otherLinks} /> */}
+          {/* </TextCollapse> */}
         </S.TitleContainer>
-        <TextCollapse title="Coding-Related Facts">
-          <BulletList topicList={codingRelatedList} />
-        </TextCollapse>
-        <TextCollapse title="Nerdy Facts">
-          <BulletList topicList={nerdyAndGeekyFactsList} />
-        </TextCollapse>
-        <TextCollapse title="Music Facts">
-          <BulletList topicList={musicRelatedList} />
-        </TextCollapse>
-        <TextCollapse title="Sports Facts">
-          <BulletList topicList={fitnessAndSportsList} />
-        </TextCollapse>
-        <TextCollapse title="Other Facts">
-          <BulletList topicList={otherFactsList} />
-        </TextCollapse>
-        <br />
-        <br />
-        <S.GraySubTitle>What I Use</S.GraySubTitle>
-        <TextCollapse title="Gear">
-          <BulletList topicList={gearList} />
-        </TextCollapse>
-        <TextCollapse title="Software">
-          <BulletList topicList={softwareList} />
-        </TextCollapse>
-        <br />
-        <br />
-        <S.GraySubTitle>What I Study</S.GraySubTitle>
-        <TextCollapse title="Linguistics">
-          <BulletList topicList={studyLinguisticsList} />
-        </TextCollapse>
-        <br />
-        {/* <S.GraySubTitle>What Else</S.GraySubTitle> */}
-        {/* <TextCollapse title="Other Links"> */}
-        {/*   <BulletList otherLinks topicList={otherLinks} /> */}
-        {/* </TextCollapse> */}
       </S.AboutContent>
     </Layout>
   )

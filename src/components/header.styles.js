@@ -39,7 +39,7 @@ export const NavItem = styled.li`
 
   &:nth-child(4) {
     a {
-      margin-right: 0.25rem;
+      margin-right: 0.5rem;
     }
   }
 `
