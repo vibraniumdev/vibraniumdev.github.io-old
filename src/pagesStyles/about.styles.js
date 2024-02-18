@@ -14,6 +14,7 @@ export const TitleContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1rem;
+  padding: 0.25rem;
 `
 
 export const FlexTitle = styled.h3`
