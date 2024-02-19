@@ -42,3 +42,36 @@ export const Subtitle = styled.p`
 export const ItalicParagraph = styled.p`
   font-style: italic;
 `
+
+export const Name = styled.span`
+  color: #000;
+  background: linear-gradient(
+    to right,
+    #000 20%,
+    #6c757d 30%,
+    #6c757d 60%,
+    #000 80%
+  );
+
+  background-size: 200% auto;
+  background-clip: text;
+  color: transparent;
+
+  animation: teste 2s ease-in-out 1;
+
+  @keyframes teste {
+    to {
+      background-position: -200% center;
+    }
+  }
+
+  &:hover {
+    animation: shine 2s ease-in-out 1;
+
+    @keyframes shine {
+      to {
+        background-position: 200% center;
+      }
+    }
+  }
+`
