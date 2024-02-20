@@ -46,22 +46,24 @@ export const ItalicParagraph = styled.p`
 export const Name = styled.span`
   color: #000;
   background: linear-gradient(
-    to right,
-    #000 20%,
+    to left,
+    #000 10%,
     #6c757d 30%,
-    #6c757d 60%,
-    #000 80%
+    #6c757d 70%,
+    #000 90%
   );
 
   background-size: 200% auto;
   background-clip: text;
   color: transparent;
+  animation: before 2s ease-in-out 1;
 
-  animation: teste 2s ease-in-out 1;
-
-  @keyframes teste {
-    to {
+  @keyframes before {
+    from {
       background-position: -200% center;
+    }
+    to {
+      background-position: 0% center;
     }
   }
 
@@ -69,8 +71,11 @@ export const Name = styled.span`
     animation: shine 2s ease-in-out 1;
 
     @keyframes shine {
-      to {
+      from {
         background-position: 200% center;
+      }
+      to {
+        background-position: 400%;
       }
     }
   }
