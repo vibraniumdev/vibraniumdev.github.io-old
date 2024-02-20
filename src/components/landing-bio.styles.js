@@ -42,3 +42,41 @@ export const Subtitle = styled.p`
 export const ItalicParagraph = styled.p`
   font-style: italic;
 `
+
+export const ShinyName = styled.span`
+  color: #000;
+  background: linear-gradient(
+    to left,
+    #000 10%,
+    #6c757d 30%,
+    #6c757d 70%,
+    #000 90%
+  );
+
+  background-size: 200% auto;
+  background-clip: text;
+  color: transparent;
+  animation: before 2s ease-in-out 1;
+
+  @keyframes before {
+    from {
+      background-position: -200% center;
+    }
+    to {
+      background-position: 0% center;
+    }
+  }
+
+  &:hover {
+    animation: shine 2s ease-in-out 1;
+
+    @keyframes shine {
+      from {
+        background-position: 200% center;
+      }
+      to {
+        background-position: 400%;
+      }
+    }
+  }
+`
