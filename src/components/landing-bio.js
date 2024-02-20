@@ -23,7 +23,7 @@ const LandingBio = () => (
           <S.GreetingTitleComma>
             {data.site.siteMetadata.greeting} {/* Hello */}
             {data.site.siteMetadata.title} {/* My name is */}
-            <S.Name>Guilherme</S.Name>
+            <S.ShinyName>Guilherme Teixeira</S.ShinyName>
             <S.GrayStyle>{data.site.siteMetadata.comma}</S.GrayStyle>
           </S.GreetingTitleComma>
           <S.Subtitle>{data.site.siteMetadata.subtitle}</S.Subtitle>

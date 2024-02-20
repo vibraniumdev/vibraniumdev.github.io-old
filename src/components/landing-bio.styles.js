@@ -43,7 +43,7 @@ export const ItalicParagraph = styled.p`
   font-style: italic;
 `
 
-export const Name = styled.span`
+export const ShinyName = styled.span`
   color: #000;
   background: linear-gradient(
     to left,
