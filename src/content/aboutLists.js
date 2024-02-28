@@ -55,7 +55,7 @@ export const gearList = [
   {
     category: "Work Machine",
     name: "Dell Inspiron 7572",
-    link: "",
+    link: "#",
   },
 
   {
@@ -133,7 +133,7 @@ export const softwareList = [
 // WHAT I STUDY
 export const studyLinguisticsList = [
   {
-    name: "As a linguist, my main interests are Generative Syntax and Formal Semantics",
+    name: "As a researcher, my main interests are Generative Syntax and Formal Semantics",
   },
 ]
 
