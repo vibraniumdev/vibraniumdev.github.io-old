@@ -29,7 +29,7 @@ const Header = () => (
       </S.NavItem>
       <S.NavItem>
         <S.NavLink to="/about" activeClassName="active">
-          About
+          About Me
         </S.NavLink>
       </S.NavItem>
     </S.NavLinks>
