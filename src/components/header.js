@@ -14,7 +14,7 @@ const Header = () => (
     <S.NavLinks>
       <S.NavItem>
         <S.NavLink to="/blog" activeClassName="active">
-          Articles
+          Blog
         </S.NavLink>
       </S.NavItem>
       <S.NavItem>
@@ -29,7 +29,7 @@ const Header = () => (
       </S.NavItem>
       <S.NavItem>
         <S.NavLink to="/about" activeClassName="active">
-          About Me
+          About
         </S.NavLink>
       </S.NavItem>
     </S.NavLinks>
