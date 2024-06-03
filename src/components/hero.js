@@ -4,16 +4,23 @@ import {
   faGithub,
   faLinkedin,
   faTwitch,
-  faDev,
-  faMastodon,
   faGoodreads,
+  faStrava,
+  faLastfm,
+  faBluesky,
 } from "@fortawesome/free-brands-svg-icons"
-
 import { faBrain } from "@fortawesome/free-solid-svg-icons"
-
 import * as S from "./hero.styles"
 
 const heroList = [
+  {
+    href: "https://bsky.app/profile/guiteixeira.dev",
+    icon: faBluesky,
+  },
+  {
+    href: "https://www.linkedin.com/in/guiatf",
+    icon: faLinkedin,
+  },
   {
     href: "https://github.com/ggteixeira/",
     icon: faGithub,
@@ -23,24 +30,20 @@ const heroList = [
     icon: faBrain,
   },
   {
-    href: "https://www.linkedin.com/in/guiatf",
-    icon: faLinkedin,
-  },
-  {
-    href: "https://dev.to/guiteixeira",
-    icon: faDev,
-  },
-  {
-    href: "https://mastodon.com.br/@gui",
-    icon: faMastodon,
-  },
-  {
     href: "https://www.goodreads.com/guiemi",
     icon: faGoodreads,
   },
   {
     href: "https://www.twitch.tv/guilhermestreams/",
     icon: faTwitch,
+  },
+  {
+    href: "https://www.strava.com/athletes/guiatf",
+    icon: faStrava,
+  },
+  {
+    href: "https://www.last.fm/user/guirgo",
+    icon: faLastfm,
   },
 ]
 
@@ -53,7 +56,7 @@ const Hero = () => {
             href={item.href}
             target="_blank"
             rel="noopener noreferrer"
-            key={`${item.icon}-${Math.floor(Math.random() * 100)}`}
+            key={`${item.icon}-${Math.floor(Math.random() * 42)}`}
           >
             <FontAwesomeIcon icon={item.icon} />
           </a>

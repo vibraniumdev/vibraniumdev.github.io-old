@@ -1,52 +1,53 @@
 // WHO I AM
 export const codingRelatedList = [
   {
-    name: "I am a keyboard-driven developer",
+    name: "I am keyboard person, which means that I move faster when not using a mouse",
   },
   {
-    name: "I am a touch typist",
+    name: "I am a touch typist, which means that I can type faster than light using 10 fingers",
   },
-  {
-    name: "I am a proud Linux user since 2011. Currently I switch between macOS and Linux",
-  },
+
+  // {
+  //   name: "I am a proud Linux user since 2011. Currently I switch between macOS and Linux",
+  // },
 ]
 
 export const nerdyAndGeekyFactsList = [
   {
-    name: "According to my mom, I taught myself to read before I was 4 years old",
+    name: "Grammar is a piano I play by ear. I taught myself to read when I was 4 years old (quite useful skill)",
   },
   {
-    name: "When I was a kid I was capable of read and write backwards. Unfortunately it turned out to be a quite useless skill",
+    name: "When I was a kid I was capable of read and write backwards (pretty useless skill)",
   },
 ]
 
 export const musicRelatedList = [
   {
-    name: "My favorite musical genre is progressive metal",
+    name: "Progressive metal is both the musical genre I like the most and the least",
   },
   {
     name: "I can play decently (i.e., poorly) about 10 different musical instruments",
   },
 ]
 
-export const fitnessAndSportsList = [
-  {
-    category: "I ride my bike almost every day",
-    name: "check out my Strava profile",
-    link: "https://www.strava.com/athletes/73219146",
-  },
-  {
-    name: "I also enjoy watching NBA",
-  },
-]
+// export const fitnessAndSportsList = [
+//   {
+//     category: "I ride my bike almost every day",
+//     name: "check out my Strava profile",
+//     link: "https://www.strava.com/athletes/73219146",
+//   },
+//   {
+//     name: "I also enjoy watching NBA",
+//   },
+// ]
 
 export const otherFactsList = [
-  { name: "I'm left-handed" },
   {
-    name: "I'm a digital minimalist",
+    name: "Music is the only form of art I truly enjoy",
   },
+  { name: "I am left-handed" },
   {
-    name: "Music is the only form of art I truly enjoy. I usually don't watch TV series or movies",
+    name: "I am a digital minimalist",
   },
 ]
 
@@ -88,12 +89,12 @@ export const gearList = [
 
 export const softwareList = [
   {
-    category: "Main OS",
-    name: "Fedora Workstation 39",
+    category: "Main Operating System",
+    name: "Fedora Workstation",
     link: "https://fedoraproject.org/workstation/",
   },
   {
-    category: "Secondary OS",
+    category: "Secondary Operating System",
     name: "macOS",
     link: "https://www.apple.com/macos/ventura/",
   },
@@ -113,11 +114,25 @@ export const softwareList = [
     link: "https://www.mozilla.org/en-US/firefox/developer/",
   },
   {
-    category: "Note-taking",
+    category: "Writing",
     name: "Obsidian",
     link: "https://obsidian.md/",
   },
-  { category: "To-do list app", name: "Todoist", link: "https://todoist.com/" },
+  {
+    category: "Second Brain",
+    name: "Notion",
+    link: "https://www.notion.so/",
+  },
+  {
+    category: "Note-taking",
+    name: "Apple Notes",
+    link: "https://www.icloud.com/notes",
+  },
+  {
+    category: "To-do list app",
+    name: "Todoist",
+    link: "https://todoist.com/",
+  },
   {
     category: "Journaling",
     name: "Journey",
@@ -125,15 +140,15 @@ export const softwareList = [
   },
   {
     category: "Read-it-later",
-    name: "Pocket",
-    link: "https://getpocket.com/@09bA4g02d817aT9840phY9cp3cT8d831b23Wa4oc5eY4d6AcU0927c1fN47xqb89?src=navbar",
+    name: "Omnivore",
+    link: "https://omnivore.app/",
   },
 ]
 
 // WHAT I STUDY
 export const studyLinguisticsList = [
   {
-    name: "As a researcher, my main interests are Generative Syntax and Formal Semantics",
+    name: "As a linguist, my main interests are Generative Syntax and Formal Semantics",
   },
 ]
 

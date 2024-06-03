@@ -14,7 +14,7 @@ const Header = () => (
     <S.NavLinks>
       <S.NavItem>
         <S.NavLink to="/blog" activeClassName="active">
-          Articles
+          Blog
         </S.NavLink>
       </S.NavItem>
       <S.NavItem>

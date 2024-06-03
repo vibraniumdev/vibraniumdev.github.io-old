@@ -2,13 +2,12 @@ import styled from "@emotion/styled"
 
 export const Container = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-wrap: wrap;
-  align-content: flex-start;
+  align-content: center;
   align-items: center;
 
-  max-width: 768px;
-  width: calc(768px / 2);
+  width: calc(256px * 1.25);
   margin: 0 auto;
   margin-bottom: 1rem;
 
