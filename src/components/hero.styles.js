@@ -1,4 +1,6 @@
 import styled from "@emotion/styled"
+import { theme } from "../theme/theme"
+const { palette } = theme
 
 export const Container = styled.div`
   display: flex;
@@ -19,7 +21,7 @@ export const Container = styled.div`
     font-size: 1.75rem;
 
     :hover {
-      color: #6c757d;
+      color: ${palette.neutral.pure};
       transition-duration: 0.2s;
     }
   }

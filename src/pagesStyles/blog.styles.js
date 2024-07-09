@@ -1,4 +1,6 @@
 import styled from "@emotion/styled"
+import { theme } from "../theme/theme"
+const { palette } = theme
 
 export const Content = styled.div`
   margin: 0 auto;
@@ -28,14 +30,14 @@ export const SimpleHeader = styled.h3`
   transition: 0.4s ease-out;
 
   &.active {
-    color: #6c757d;
+    color: ${palette.neutral.pure};
     :after {
       transform: scaleX(1);
     }
   }
 
   :hover {
-    color: #6c757d;
+    color: ${palette.neutral.pure};
     transition: 0.1s ease-in;
 
     :after {

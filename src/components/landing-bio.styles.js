@@ -1,4 +1,6 @@
 import styled from "@emotion/styled"
+import { theme } from "../theme/theme"
+const { palette } = theme
 
 export const Content = styled.div`
   text-align: center;
@@ -23,14 +25,15 @@ export const GreetingTitleComma = styled.span`
   text-align: center;
   max-width: 768px;
   width: 100%;
+  color: ${palette.neutral.darker};
 `
 export const GrayStyle = styled.span`
-  color: #6c757d;
+  color: ${palette.neutral.pure};
 `
 
 export const Subtitle = styled.p`
   font-size: 1.3rem;
-  color: #6c757d;
+  color: ${palette.neutral.darker};
   text-align: match-parent;
   padding: auto;
   align-self: center;
@@ -46,10 +49,10 @@ export const ItalicParagraph = styled.p`
 export const ShinyName = styled.span`
   background: linear-gradient(
     to left,
-    #333333 10%,
-    #6c757d 30%,
-    #6c757d 70%,
-    #333333 90%
+    ${palette.neutral.dark} 10%,
+    ${palette.neutral.pure} 30%,
+    ${palette.neutral.pure} 70%,
+    ${palette.neutral.dark} 90%
   );
 
   background-size: 200% auto;
