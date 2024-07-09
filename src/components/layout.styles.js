@@ -1,10 +1,14 @@
 import styled from "@emotion/styled"
+import { theme } from "../theme/theme"
+
+const { palette } = theme
 
 export const Content = styled.div`
   margin: 0 auto;
   padding: 0 1.0875rem;
   padding-top: 0;
   width: auto;
+  background-color: ${palette.neutral.white};
 
   @media (max-width: 75vh) {
     width: auto;

@@ -1,5 +1,8 @@
 import { Link } from "gatsby"
 import styled from "@emotion/styled"
+import { theme } from "../theme/theme"
+
+const { palette } = theme
 
 export const NavBar = styled.nav`
   max-width: 768px;
@@ -56,14 +59,14 @@ export const NavLink = styled(Link)`
   transition: 0.4s ease-out;
 
   &.active {
-    color: #6c757d;
+    color: ${palette.neutral.pure};
     :after {
       transform: scalex(1);
     }
   }
 
   :hover {
-    color: #6c757d;
+    color: ${palette.neutral.pure};
     transition: 0.2s ease-in;
 
     :after {

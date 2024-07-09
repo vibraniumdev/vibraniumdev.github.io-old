@@ -1,4 +1,6 @@
 import styled from "@emotion/styled"
+import { theme } from "../theme/theme"
+const { palette } = theme
 
 export const Wrapper = styled.div`
   padding: 2rem 0;
@@ -24,7 +26,7 @@ export const Card = styled.a`
   text-decoration: none;
   padding: 0.5rem;
   margin: 0.5rem;
-  background: #fff;
+  background: ${palette.neutral.white};
   overflow: hidden;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
   display: flex;
@@ -33,7 +35,7 @@ export const Card = styled.a`
   transition: 0.25s;
 
   h4 {
-    color: #212121;
+    color: ${palette.neutral.darker};
     transition: 0.25s;
   }
 
@@ -51,12 +53,13 @@ export const Card = styled.a`
     p {
       opacity: 1;
       transition: 0.25s;
+      color: ${palette.neutral.darker};
     }
 
     h4 {
       transform: translate(1%);
       transition: 0.25s;
-      opacity: 0.5;
+      color: ${palette.neutral.pure};
     }
   }
 `
@@ -69,6 +72,7 @@ export const Content = styled.div`
   p {
     margin-bottom: 0.5rem;
     height: max-content;
+    color: ${palette.neutral.dark};
   }
 `
 
@@ -80,19 +84,17 @@ export const Stats = styled.div`
   margin-bottom: 0.25rem;
 
   div {
+    color: ${palette.neutral.darker};
     display: flex;
     flex-direction: row;
     &:first-of-type {
       margin-right: 0.5rem;
     }
 
-    h4 {
-      margin: 0;
-    }
-
     .icon {
       margin: 0;
       height: auto;
+      color: ${palette.neutral.darker};
     }
 
     span,

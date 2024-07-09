@@ -23,15 +23,15 @@ export const FlexTitle = styled.h3`
   margin-bottom: 0;
 
   &.active {
-    color: #6c757d;
+    color: ${palette.neutral.darker};
     :after {
       transform: scaleX(1);
     }
   }
 
   :hover {
-    color: #6c757d;
-    transition: 0.1s ease-in;
+    color: ${palette.neutral.pure};
+    transition: 0.2s ease-in;
 
     :after {
       transform: scaleX(1);
@@ -41,5 +41,11 @@ export const FlexTitle = styled.h3`
 `
 
 export const GraySubTitle = styled.h2`
-  color: ${palette.primary.main};
+  color: ${palette.neutral.darker};
+  transition: 0.4s ease-out;
+
+  :hover {
+    transition: 0.2s ease-in;
+    color: ${palette.neutral.pure};
+  }
 `
