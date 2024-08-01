@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -17,10 +17,15 @@ import {
 } from "../content/aboutLists"
 
 import * as S from "../pagesStyles/about.styles"
-import { Typography } from "@mui/material"
+import { Typography, Button } from "@mui/material"
 const About = () => {
   const YOE = new Date().getFullYear() - 2018 - 1
   const frontendYOE = new Date().getFullYear() - 2020 - 1
+  const [lightTheme, setLightTheme] = useState(true)
+
+  const handleSwitchTheme = () => {
+    setLightTheme((curr) => !curr)
+  }
 
   return (
     <Layout>
@@ -34,10 +39,11 @@ const About = () => {
           `frontend`,
         ]}
       />
-      <S.AboutContent>
+      <S.AboutContent lightTheme={lightTheme}>
         <S.TitleContainer>
           {/* WHO I AM */}
-          <S.GraySubTitle>Who I Am</S.GraySubTitle>
+          <Button onClick={handleSwitchTheme}>Switch theme</Button>
+          <S.GraySubTitle lightTheme={lightTheme}>Who I Am</S.GraySubTitle>
           <Typography>
             I am a software developer based in Brazil, and I have been working
             in the tech industry for about {YOE} years, {frontendYOE} of which
