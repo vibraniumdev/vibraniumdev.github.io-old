@@ -13,8 +13,18 @@ export const AboutContent = styled.div`
 export const TitleContainer = styled.div`
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 1.5rem;
-  padding: 0.25rem;
+  margin-bottom: 2rem;
+`
+
+export const GraySubTitle = styled.h2`
+  color: ${palette.neutral.darker};
+  transition: 0.4s ease-out;
+  margin-bottom: 1rem;
+
+  :hover {
+    transition: 0.2s ease-in;
+    color: ${palette.neutral.pure};
+  }
 `
 
 export const FlexTitle = styled.h3`
@@ -37,15 +47,5 @@ export const FlexTitle = styled.h3`
       transform: scaleX(1);
       transform-origin: left;
     }
-  }
-`
-
-export const GraySubTitle = styled.h2`
-  color: ${palette.neutral.darker};
-  transition: 0.4s ease-out;
-
-  :hover {
-    transition: 0.2s ease-in;
-    color: ${palette.neutral.pure};
   }
 `

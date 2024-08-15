@@ -1,45 +1,30 @@
 // WHO I AM
 export const codingRelatedList = [
   {
-    name: "I am keyboard person, which means that I move faster when not using a mouse",
+    name: "As a keyboard-driven person, I prefer tiling window managers over desktop environments when it comes to productivity",
   },
   {
-    name: "I am a touch typist, which means that I can type faster than light using 10 fingers",
+    name: "I am a touch typist",
   },
-
-  // {
-  //   name: "I am a proud Linux user since 2011. Currently I switch between macOS and Linux",
-  // },
 ]
 
 export const nerdyAndGeekyFactsList = [
   {
-    name: "Grammar is a piano I play by ear. I taught myself to read when I was 4 years old (quite useful skill)",
+    name: "I taught myself how to read before I was 4 years old",
   },
   {
-    name: "When I was a kid I was capable of read and write backwards (pretty useless skill)",
+    name: "When I was a kid I was capable of read and write sentences backwards",
   },
 ]
 
 export const musicRelatedList = [
   {
-    name: "Progressive metal is both the musical genre I like the most and the least",
+    name: "Progressive Metal is the music genre I enjoy the most",
   },
   {
     name: "I can play decently (i.e., poorly) about 10 different musical instruments",
   },
 ]
-
-// export const fitnessAndSportsList = [
-//   {
-//     category: "I ride my bike almost every day",
-//     name: "check out my Strava profile",
-//     link: "https://www.strava.com/athletes/73219146",
-//   },
-//   {
-//     name: "I also enjoy watching NBA",
-//   },
-// ]
 
 export const otherFactsList = [
   {
@@ -54,13 +39,7 @@ export const otherFactsList = [
 // WHAT I USE
 export const gearList = [
   {
-    category: "Work Machine",
-    name: "Dell Inspiron 7572",
-    link: "#",
-  },
-
-  {
-    category: "Personal Machine",
+    category: "Primary machine",
     name: "MacBook Air M2",
     link: "https://support.apple.com/kb/SP714?viewlocale=pt_BR&locale=en_KW",
   },
@@ -72,16 +51,16 @@ export const gearList = [
   },
   {
     category: "Keyboard",
-    name: "Keychron K2 (V2)",
+    name: "Keychron K2 v2 (hot swappable)",
     link: "https://www.keychron.com/products/keychron-k2-hot-swappable-wireless-mechanical-keyboard",
   },
   {
-    category: "Primary Headphone",
+    category: "Primary Headphones",
     name: "KZ ZS10 Pro X",
     link: "https://kz-audio.com/kz-zs10-pro-x.html",
   },
   {
-    category: "Secondary Headphone",
+    category: "Secondary Headphones",
     name: "Edifier W820BT",
     link: "https://edifier.com.br/headphone-bluetooth-over-ear-edifier-w820bt.html",
   },
@@ -89,27 +68,32 @@ export const gearList = [
 
 export const softwareList = [
   {
-    category: "Main Operating System",
-    name: "Fedora Workstation",
-    link: "https://fedoraproject.org/workstation/",
+    category: "Primary Operating System",
+    name: "macOS Sonoma",
+    link: "https://www.apple.com/macos/sonoma/",
   },
   {
     category: "Secondary Operating System",
-    name: "macOS",
-    link: "https://www.apple.com/macos/ventura/",
+    name: "Arch Linux",
+    link: "https://archlinux.org/",
   },
   {
     category: "Code Editor",
-    name: "Neovim",
+    name: "Neovim (Lazyvim)",
     link: "https://www.lazyvim.org/",
   },
   {
-    category: "Terminal Emulator",
+    category: "Primary Terminal Emulator",
+    name: "iTerm 2",
+    link: "https://iterm2.com/",
+  },
+  {
+    category: "Secondary Terminal Emulator",
     name: "Kitty",
     link: "https://sw.kovidgoyal.net/kitty/",
   },
   {
-    category: "Browser",
+    category: "Web Browser",
     name: "Mozilla Firefox",
     link: "https://www.mozilla.org/en-US/firefox/developer/",
   },
@@ -148,7 +132,7 @@ export const softwareList = [
 // WHAT I STUDY
 export const studyLinguisticsList = [
   {
-    name: "As a linguist, my main interests are Generative Syntax and Formal Semantics",
+    name: "As a linguist, my main interests are Generative Syntax, Natural Language Processing, and Formal Semantics",
   },
 ]
 
