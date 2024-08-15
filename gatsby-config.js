@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     greeting: `Hello! `,
     title: `My name is `,
-    subtitle: `and I am a Software Developer.`,
+    subtitle: `and I am a Software Developer`,
     comma: `,`,
     description: `My personal website`,
     author: `Guilherme Teixeira`,

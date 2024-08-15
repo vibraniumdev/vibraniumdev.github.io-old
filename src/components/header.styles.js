@@ -77,11 +77,11 @@ export const NavLink = styled(Link)`
 `
 
 export const NavLinkBrand = styled(NavLink)`
-  :first-of-type {
-    margin-left: 0.75rem;
-  }
-
   white-space: nowrap;
+
+  :hover {
+    color: ${palette.neutral.dark};
+  }
 `
 
 export const SiteHeader = styled.header`

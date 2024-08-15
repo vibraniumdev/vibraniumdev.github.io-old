@@ -6,7 +6,7 @@ const Header = () => (
   <S.NavBar>
     <S.NavLinks>
       <S.NavItemBrand>
-        <S.NavLinkBrand className="brand" to="/" activeClassName="active">
+        <S.NavLinkBrand className="brand" to="/" >
           Guilherme Teixeira
         </S.NavLinkBrand>
       </S.NavItemBrand>
