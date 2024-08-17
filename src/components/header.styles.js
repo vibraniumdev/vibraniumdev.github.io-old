@@ -79,6 +79,10 @@ export const NavLink = styled(Link)`
 export const NavLinkBrand = styled(NavLink)`
   white-space: nowrap;
 
+  :first-of-type {
+    margin-left: 0.75rem;
+  }
+
   :hover {
     color: ${palette.neutral.dark};
   }
