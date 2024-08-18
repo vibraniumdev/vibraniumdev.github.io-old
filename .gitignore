@@ -71,4 +71,4 @@ package-lock.json
 .sass-cache/
 
 # envs
-.env*
+.env.*
