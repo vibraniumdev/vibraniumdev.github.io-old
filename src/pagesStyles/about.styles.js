@@ -7,7 +7,7 @@ export const AboutContent = styled.div`
   margin: 0 auto;
   max-width: 768px;
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.75rem;
 `
 
 export const TitleContainer = styled.div`
