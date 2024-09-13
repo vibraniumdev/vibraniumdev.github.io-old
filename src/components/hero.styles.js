@@ -8,8 +8,7 @@ export const Container = styled.div`
   flex-wrap: wrap;
   align-content: center;
   align-items: center;
-
-  width: calc(256px * 1.25);
+  width: calc(256px * 1.75);
   margin: 0 auto;
   margin-bottom: 1rem;
 

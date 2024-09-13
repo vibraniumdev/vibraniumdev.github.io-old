@@ -9,7 +9,7 @@ import {
   faLastfm,
   faBluesky,
 } from "@fortawesome/free-brands-svg-icons"
-import { faBrain } from "@fortawesome/free-solid-svg-icons"
+import { faBrain, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import * as S from "./hero.styles"
 
 const heroList = [
@@ -44,6 +44,10 @@ const heroList = [
   {
     href: "https://www.last.fm/user/guirgo",
     icon: faLastfm,
+  },
+  {
+    href: "mailto:hello@guiteixeira.dev",
+    icon: faEnvelope,
   },
 ]
 
