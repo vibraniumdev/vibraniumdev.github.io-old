@@ -69,8 +69,8 @@ export const gearList = [
 export const softwareList = [
   {
     category: "Primary Operating System",
-    name: "macOS Sonoma",
-    link: "https://www.apple.com/macos/sonoma/",
+    name: "macOS",
+    link: "https://www.apple.com/macos",
   },
   {
     category: "Secondary Operating System",
