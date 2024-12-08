@@ -1,4 +1,5 @@
 import styled from "@emotion/styled"
+import { OpenInNew } from "@mui/icons-material"
 import { theme } from "../theme/theme"
 const { palette } = theme
 
@@ -6,6 +7,42 @@ export const Content = styled.div`
   margin: 0 auto;
   max-width: 768px;
   padding-left: 0.75rem;
+`
+
+export const PostContainer = styled.div`
+  margin-bottom: 2rem;
+`
+
+export const PostLink = styled.a`
+  text-decoration: none;
+  color: inherit;
+`
+export const OpenInNewIcon = styled(OpenInNew)`
+  visibility: visible;
+`
+
+export const PostTitle = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  flex-direction: row;
+  align-items: center;
+  transition: 0.4s ease-out;
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  &:hover ${OpenInNewIcon} {
+    visibility: visible;
+    color: ${palette.neutral.pure};
+    transition: 0.1s ease-in;
+  }
+`
+
+export const ReadingTime = styled.h5`
+  display: inline;
+  color: #606060;
 `
 
 export const ArticleDate = styled.h5`
@@ -45,13 +82,4 @@ export const SimpleHeader = styled.h3`
       transform-origin: left;
     }
   }
-`
-
-export const ReadingTime = styled.h5`
-  display: inline;
-  color: #606060;
-`
-export const PostLink = styled.a`
-  text-decoration: none;
-  color: inherit;
 `
