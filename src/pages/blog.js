@@ -6,68 +6,56 @@ import NProgress from "nprogress"
 
 const Blog = () => {
   const [postList, setPostList] = useState([])
-  const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
     const fetchPosts = async () => {
-      setIsLoading(true)
       NProgress.start()
       await fetch(`https://dev.to/api/articles/latest?username=guiteixeira`)
         .then((response) => response.json())
         .then((resultData) => {
           setPostList(resultData)
         })
-
-      setIsLoading(false)
       NProgress.done()
     }
     fetchPosts()
   }, [])
 
-  if (isLoading && !postList) {
-    return <h1>Estou carregandersons</h1>
-  } else {
-    return (
-      <Layout>
-        <Seo title="Articles" />
-        <S.Content>
-          <h1>Articles</h1>
-          <div>
-            {postList.map(
-              (
-                {
-                  url,
-                  title,
-                  readable_publish_date,
-                  reading_time_minutes,
-                  description,
-                },
-                index
-              ) => (
-                <div key={index}>
-                  <S.PostLink
-                    href={url}
-                    rel="noopener noreferrer"
-                    target="_blank"
-                  >
-                    <S.SimpleHeader>{title}</S.SimpleHeader>
-                  </S.PostLink>
-                  <div>
-                    <S.ArticleDate>{readable_publish_date}</S.ArticleDate>
-                    <S.ReadingTime>
-                      {" "}
-                      - {reading_time_minutes} min read
-                    </S.ReadingTime>
-                  </div>
+  return (
+    <Layout>
+      <Seo title="Articles" />
+      <S.Content>
+        <h1>Articles</h1>
+        {postList.map(
+          ({
+            id,
+            url,
+            title,
+            readable_publish_date,
+            reading_time_minutes,
+            description,
+          }) => (
+            <S.PostContainer key={id}>
+              <S.PostLink href={url} rel="noopener noreferrer" target="_blank">
+                <S.PostTitle>
+                  <S.SimpleHeader>{title}</S.SimpleHeader>
+                  <S.OpenInNewIcon fontSize="small" />
+                </S.PostTitle>
+
+                <div>
+                  <S.ArticleDate>{readable_publish_date}</S.ArticleDate>
+                  <S.ReadingTime>
+                    {" "}
+                    - {reading_time_minutes} min read
+                  </S.ReadingTime>
                   <p>{description}</p>
                 </div>
-              )
-            )}
-          </div>
-        </S.Content>
-      </Layout>
-    )
-  }
+              </S.PostLink>
+            </S.PostContainer>
+          )
+        )}
+      </S.Content>
+    </Layout>
+  )
 }
 
 export default Blog
