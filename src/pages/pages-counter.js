@@ -76,11 +76,7 @@ const PagesCounter = () => {
             fullWidth
           />
           <ThemeProvider theme={theme}>
-            <Button
-              color="primary"
-              variant="contained"
-              onClick={handleShowResults}
-            >
+            <Button color="primary" variant="contained" onClick={handleShowResults}>
               Calcular
             </Button>
           </ThemeProvider>
@@ -96,16 +92,14 @@ const PagesCounter = () => {
 
             <Card sx={{ marginBottom: "1rem" }} variant="outlined">
               <Typography sx={{ padding: "1rem" }} paragraph>
-                Você já leu {isResultsShown ? alreadyRead : 0} das {totalPages}{" "}
-                páginas ({isResultsShown ? totalPages - alreadyRead : 0}{" "}
-                restantes)
+                Você já leu {isResultsShown ? alreadyRead : 0} das {totalPages} páginas (
+                {isResultsShown ? totalPages - alreadyRead : 0} restantes)
               </Typography>
             </Card>
 
             <Card sx={{ marginBottom: "1rem" }} variant="outlined">
               <Typography sx={{ padding: "1rem" }} paragraph>
-                Você já leu um total de{" "}
-                {isResultsShown ? percentageRead.toFixed(1) : 0}%
+                Você já leu um total de {isResultsShown ? percentageRead.toFixed(1) : 0}%
               </Typography>
             </Card>
           </S.ContentRow>

@@ -1,12 +1,7 @@
 import React from "react";
 import * as S from "../pagesStyles/about.styles";
 import ExpandMore from "@mui/icons-material/ExpandMore";
-import {
-  Accordion,
-  AccordionSummary,
-  AccordionDetails,
-  Typography,
-} from "@mui/material";
+import { Accordion, AccordionSummary, AccordionDetails, Typography } from "@mui/material";
 
 const TextCollapse = ({ title, children, startsExpanded }) => {
   return (

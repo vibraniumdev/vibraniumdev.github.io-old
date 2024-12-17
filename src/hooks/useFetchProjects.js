@@ -9,9 +9,7 @@ const UseFetchProjects = () => {
     NProgress.start();
     setIsLoading(true);
 
-    await fetch(
-      `https://api.github.com/users/ggteixeira/repos?sort=updated&direction=desc`
-    )
+    await fetch(`https://api.github.com/users/ggteixeira/repos?sort=updated&direction=desc`)
       .then((response) => response.json())
       .then((resultData) => {
         setReposList(resultData);

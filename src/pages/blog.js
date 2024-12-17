@@ -26,14 +26,7 @@ const Blog = () => {
       <S.Content>
         <h1>Articles</h1>
         {postList.map(
-          ({
-            id,
-            url,
-            title,
-            readable_publish_date,
-            reading_time_minutes,
-            description,
-          }) => (
+          ({ id, url, title, readable_publish_date, reading_time_minutes, description }) => (
             <S.PostContainer key={id}>
               <S.PostLink href={url} rel="noopener noreferrer" target="_blank">
                 <S.PostTitle>
@@ -43,10 +36,7 @@ const Blog = () => {
 
                 <div>
                   <S.ArticleDate>{readable_publish_date}</S.ArticleDate>
-                  <S.ReadingTime>
-                    {" "}
-                    - {reading_time_minutes} min read
-                  </S.ReadingTime>
+                  <S.ReadingTime> - {reading_time_minutes} min read</S.ReadingTime>
                   <p>{description}</p>
                 </div>
               </S.PostLink>

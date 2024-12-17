@@ -24,24 +24,16 @@ const About = () => {
     <Layout>
       <Seo
         title="About"
-        keywords={[
-          `javascript`,
-          `programming`,
-          `react`,
-          `linguistics`,
-          `frontend`,
-        ]}
+        keywords={[`javascript`, `programming`, `react`, `linguistics`, `frontend`]}
       />
       <S.AboutContent>
         {/* WHO I AM */}
         <S.TitleContainer>
           <S.GraySubTitle>Who I Am</S.GraySubTitle>
           <Typography>
-            Software Developer with {YOE} years of experience in the industry,{" "}
-            {frontendYOE} of which working as a{" "}
-            <strong>Front-End Developer</strong>. Besides Front-End Systems, I
-            am also interested in Security & Privacy, Open-Source, and
-            Functional Programming
+            Software Developer with {YOE} years of experience in the industry, {frontendYOE} of
+            which working as a <strong>Front-End Developer</strong>. Besides Front-End Systems, I am
+            also interested in Security & Privacy, Open-Source, and Functional Programming
           </Typography>
 
           <br />

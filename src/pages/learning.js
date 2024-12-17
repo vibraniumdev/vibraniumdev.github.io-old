@@ -6,11 +6,8 @@ import Seo from "../components/seo";
 import UseFetchLearningCenterProjects from "../hooks/useFetchLearningCenterProjects";
 
 const Learning = () => {
-  const {
-    fetchLearningCenterProjects,
-    learningCenterReposList,
-    isLearningCenterLoading,
-  } = UseFetchLearningCenterProjects();
+  const { fetchLearningCenterProjects, learningCenterReposList, isLearningCenterLoading } =
+    UseFetchLearningCenterProjects();
 
   useEffect(() => {
     fetchLearningCenterProjects();
@@ -18,14 +15,8 @@ const Learning = () => {
 
   return (
     <Layout>
-      <Seo
-        title="LearningCenter"
-        keywords={[`gatsby`, `application`, `react`]}
-      />
-      <ProjectCard
-        isLoading={isLearningCenterLoading}
-        reposList={learningCenterReposList}
-      />
+      <Seo title="LearningCenter" keywords={[`gatsby`, `application`, `react`]} />
+      <ProjectCard isLoading={isLearningCenterLoading} reposList={learningCenterReposList} />
     </Layout>
   );
 };

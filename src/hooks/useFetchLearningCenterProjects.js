@@ -9,9 +9,7 @@ const UseFetchLearningCenterProjects = () => {
     NProgress.start();
     setIsLearningCenterLoading(true);
 
-    await fetch(
-      `https://api.github.com/orgs/divertimentos/repos?sort=updated&direction=desc`
-    )
+    await fetch(`https://api.github.com/orgs/divertimentos/repos?sort=updated&direction=desc`)
       .then((response) => response.json())
       .then((resultData) => {
         setLearningCenterReposList(resultData);
