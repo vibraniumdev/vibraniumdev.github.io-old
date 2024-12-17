@@ -1,6 +1,6 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
-import * as S from "./landing-bio.styles"
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
+import * as S from "./landing-bio.styles";
 
 const LandingBio = () => (
   <StaticQuery
@@ -31,6 +31,6 @@ const LandingBio = () => (
       </S.Content>
     )}
   />
-)
+);
 
-export default LandingBio
+export default LandingBio;

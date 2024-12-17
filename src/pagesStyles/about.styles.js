@@ -1,20 +1,20 @@
-import styled from "@emotion/styled"
-import { theme } from "../theme/theme"
+import styled from "@emotion/styled";
+import { theme } from "../theme/theme";
 
-const { palette } = theme
+const { palette } = theme;
 
 export const AboutContent = styled.div`
   margin: 0 auto;
   max-width: 768px;
   width: 100%;
   padding: 0.75rem;
-`
+`;
 
 export const TitleContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
-`
+`;
 
 export const GraySubTitle = styled.h2`
   color: ${palette.neutral.darker};
@@ -25,7 +25,7 @@ export const GraySubTitle = styled.h2`
     transition: 0.2s ease-in;
     color: ${palette.neutral.pure};
   }
-`
+`;
 
 export const FlexTitle = styled.h3`
   display: inline;
@@ -48,4 +48,4 @@ export const FlexTitle = styled.h3`
       transform-origin: left;
     }
   }
-`
+`;

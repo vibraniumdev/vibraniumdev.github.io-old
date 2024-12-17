@@ -1,24 +1,24 @@
-import React, { useEffect, useState } from "react"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import * as S from "../pagesStyles/blog.styles"
-import NProgress from "nprogress"
+import React, { useEffect, useState } from "react";
+import Layout from "../components/layout";
+import Seo from "../components/seo";
+import * as S from "../pagesStyles/blog.styles";
+import NProgress from "nprogress";
 
 const Blog = () => {
-  const [postList, setPostList] = useState([])
+  const [postList, setPostList] = useState([]);
 
   useEffect(() => {
     const fetchPosts = async () => {
-      NProgress.start()
+      NProgress.start();
       await fetch(`https://dev.to/api/articles/latest?username=guiteixeira`)
         .then((response) => response.json())
         .then((resultData) => {
-          setPostList(resultData)
-        })
-      NProgress.done()
-    }
-    fetchPosts()
-  }, [])
+          setPostList(resultData);
+        });
+      NProgress.done();
+    };
+    fetchPosts();
+  }, []);
 
   return (
     <Layout>
@@ -55,7 +55,7 @@ const Blog = () => {
         )}
       </S.Content>
     </Layout>
-  )
-}
+  );
+};
 
-export default Blog
+export default Blog;

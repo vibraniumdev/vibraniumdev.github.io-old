@@ -1,7 +1,7 @@
-import React from "react"
-import * as S from "./projectCard.styles"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faCode, faStar } from "@fortawesome/free-solid-svg-icons"
+import React from "react";
+import * as S from "./projectCard.styles";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode, faStar } from "@fortawesome/free-solid-svg-icons";
 
 const ProjectCard = ({ reposList, isLoading }) => {
   return (
@@ -54,6 +54,6 @@ const ProjectCard = ({ reposList, isLoading }) => {
           )
         )}
     </S.Wrapper>
-  )
-}
-export default ProjectCard
+  );
+};
+export default ProjectCard;

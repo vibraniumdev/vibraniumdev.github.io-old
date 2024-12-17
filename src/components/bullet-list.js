@@ -1,5 +1,5 @@
-import React, { Fragment } from "react"
-import * as S from "./bullet-list.styles"
+import React, { Fragment } from "react";
+import * as S from "./bullet-list.styles";
 
 const BulletList = ({ topicList }) => {
   return topicList.map(({ category, name, link, subcategory }) => (
@@ -20,11 +20,11 @@ const BulletList = ({ topicList }) => {
                   <li>{name}</li>
                 </a>
               </ul>
-            )
+            );
           })}
       </S.ThinUl>
     </Fragment>
-  ))
-}
+  ));
+};
 
-export default BulletList
+export default BulletList;

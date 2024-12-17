@@ -1,4 +1,4 @@
-import { createTheme } from "@mui/material/styles"
+import { createTheme } from "@mui/material/styles";
 
 // Palette Source: https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529
 
@@ -21,4 +21,4 @@ export const theme = createTheme({
       darker: "#212529",
     },
   },
-})
+});

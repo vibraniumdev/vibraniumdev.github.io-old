@@ -1,5 +1,5 @@
-import React from "react"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faLinkedin,
@@ -8,10 +8,10 @@ import {
   faStrava,
   faLastfm,
   faBluesky,
-} from "@fortawesome/free-brands-svg-icons"
-import { faBrain, faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import * as S from "./hero.styles"
-import { Tooltip } from "@mui/material"
+} from "@fortawesome/free-brands-svg-icons";
+import { faBrain, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import * as S from "./hero.styles";
+import { Tooltip } from "@mui/material";
 
 const heroList = [
   {
@@ -59,7 +59,7 @@ const heroList = [
     icon: faEnvelope,
     name: "E-mail",
   },
-]
+];
 
 const Hero = () => {
   return (
@@ -76,10 +76,10 @@ const Hero = () => {
               <FontAwesomeIcon icon={item.icon} />
             </a>
           </Tooltip>
-        )
+        );
       })}
     </S.Container>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

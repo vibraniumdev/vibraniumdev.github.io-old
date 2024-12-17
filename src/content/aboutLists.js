@@ -6,7 +6,7 @@ export const codingRelatedList = [
   {
     name: "I am a touch typist",
   },
-]
+];
 
 export const nerdyAndGeekyFactsList = [
   {
@@ -15,7 +15,7 @@ export const nerdyAndGeekyFactsList = [
   {
     name: "When I was a kid I was capable of read and write sentences backwards",
   },
-]
+];
 
 export const musicRelatedList = [
   {
@@ -24,7 +24,7 @@ export const musicRelatedList = [
   {
     name: "I can play decently (i.e., poorly) about 10 different musical instruments",
   },
-]
+];
 
 export const otherFactsList = [
   {
@@ -34,7 +34,7 @@ export const otherFactsList = [
   {
     name: "I am a digital minimalist",
   },
-]
+];
 
 // WHAT I USE
 export const gearList = [
@@ -64,7 +64,7 @@ export const gearList = [
     name: "Edifier W820BT",
     link: "https://edifier.com.br/headphone-bluetooth-over-ear-edifier-w820bt.html",
   },
-]
+];
 
 export const softwareList = [
   {
@@ -127,14 +127,14 @@ export const softwareList = [
     name: "Omnivore",
     link: "https://omnivore.app/",
   },
-]
+];
 
 // WHAT I STUDY
 export const studyLinguisticsList = [
   {
     name: "As a linguist, my main interests are Generative Syntax, Natural Language Processing, and Formal Semantics",
   },
-]
+];
 
 // WHAT ELSE
-export const otherLinks = []
+export const otherLinks = [];

@@ -1,6 +1,6 @@
-import styled from "@emotion/styled"
-import { theme } from "../theme/theme"
-const { palette } = theme
+import styled from "@emotion/styled";
+import { theme } from "../theme/theme";
+const { palette } = theme;
 
 export const Container = styled.div`
   display: flex;
@@ -24,4 +24,4 @@ export const Container = styled.div`
       transition-duration: 0.2s;
     }
   }
-`
+`;

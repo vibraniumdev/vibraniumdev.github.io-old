@@ -1,25 +1,25 @@
-import styled from "@emotion/styled"
-import { OpenInNew } from "@mui/icons-material"
-import { theme } from "../theme/theme"
-const { palette } = theme
+import styled from "@emotion/styled";
+import { OpenInNew } from "@mui/icons-material";
+import { theme } from "../theme/theme";
+const { palette } = theme;
 
 export const Content = styled.div`
   margin: 0 auto;
   max-width: 768px;
   padding-left: 0.75rem;
-`
+`;
 
 export const PostContainer = styled.div`
   margin-bottom: 2rem;
-`
+`;
 
 export const PostLink = styled.a`
   text-decoration: none;
   color: inherit;
-`
+`;
 export const OpenInNewIcon = styled(OpenInNew)`
   visibility: visible;
-`
+`;
 
 export const PostTitle = styled.div`
   display: flex;
@@ -38,17 +38,17 @@ export const PostTitle = styled.div`
     color: ${palette.neutral.pure};
     transition: 0.1s ease-in;
   }
-`
+`;
 
 export const ReadingTime = styled.h5`
   display: inline;
   color: #606060;
-`
+`;
 
 export const ArticleDate = styled.h5`
   display: inline;
   color: #606060;
-`
+`;
 
 export const MarkerHeader = styled.h3`
   display: inline;
@@ -59,7 +59,7 @@ export const MarkerHeader = styled.h3`
     rgba(144, 224, 239, 0.8) 100%,
     rgba(144, 224, 239, 0.25)
   );
-`
+`;
 
 export const SimpleHeader = styled.h3`
   display: inline;
@@ -82,4 +82,4 @@ export const SimpleHeader = styled.h3`
       transform-origin: left;
     }
   }
-`
+`;

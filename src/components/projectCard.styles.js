@@ -1,6 +1,6 @@
-import styled from "@emotion/styled"
-import { theme } from "../theme/theme"
-const { palette } = theme
+import styled from "@emotion/styled";
+import { theme } from "../theme/theme";
+const { palette } = theme;
 
 export const Wrapper = styled.div`
   padding: 2rem 0;
@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
     width: 90%;
     grid-template-columns: 2fr 2fr 2fr;
   }
-`
+`;
 
 export const Card = styled.a`
   text-decoration: none;
@@ -62,7 +62,7 @@ export const Card = styled.a`
       color: ${palette.neutral.pure};
     }
   }
-`
+`;
 
 export const Content = styled.div`
   padding: 0.25rem;
@@ -74,7 +74,7 @@ export const Content = styled.div`
     height: max-content;
     color: ${palette.neutral.dark};
   }
-`
+`;
 
 export const Stats = styled.div`
   padding: 0.25rem;
@@ -105,4 +105,4 @@ export const Stats = styled.div`
       font-size: 0.75rem;
     }
   }
-`
+`;

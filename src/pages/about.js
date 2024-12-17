@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
 
-import BulletList from "../components/bullet-list"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import TextCollapse from "../components/text-collapse"
+import BulletList from "../components/bullet-list";
+import Layout from "../components/layout";
+import Seo from "../components/seo";
+import TextCollapse from "../components/text-collapse";
 
 import {
   codingRelatedList,
@@ -12,13 +12,13 @@ import {
   nerdyAndGeekyFactsList,
   otherFactsList,
   softwareList,
-} from "../content/aboutLists"
+} from "../content/aboutLists";
 
-import { Typography } from "@mui/material"
-import * as S from "../pagesStyles/about.styles"
+import { Typography } from "@mui/material";
+import * as S from "../pagesStyles/about.styles";
 const About = () => {
-  const YOE = new Date().getFullYear() - 2018
-  const frontendYOE = new Date().getFullYear() - 2020
+  const YOE = new Date().getFullYear() - 2018;
+  const frontendYOE = new Date().getFullYear() - 2020;
 
   return (
     <Layout>
@@ -80,7 +80,7 @@ const About = () => {
         </S.TitleContainer>
       </S.AboutContent>
     </Layout>
-  )
-}
+  );
+};
 
-export default About
+export default About;

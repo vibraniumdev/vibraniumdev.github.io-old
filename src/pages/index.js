@@ -1,9 +1,9 @@
-import React from "react"
+import React from "react";
 
-import LandingBio from "../components/landing-bio"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import Hero from "../components/hero"
+import LandingBio from "../components/landing-bio";
+import Layout from "../components/layout";
+import Seo from "../components/seo";
+import Hero from "../components/hero";
 
 const IndexPage = () => {
   return (
@@ -12,7 +12,7 @@ const IndexPage = () => {
       <LandingBio />
       <Hero />
     </Layout>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;

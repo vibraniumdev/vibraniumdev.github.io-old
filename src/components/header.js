@@ -1,7 +1,7 @@
-import PropTypes from "prop-types"
-import React from "react"
+import PropTypes from "prop-types";
+import React from "react";
 
-import * as S from "./header.styles"
+import * as S from "./header.styles";
 const Header = () => (
   <S.NavBar>
     <S.NavLinks>
@@ -34,14 +34,14 @@ const Header = () => (
       </S.NavItem>
     </S.NavLinks>
   </S.NavBar>
-)
+);
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
-}
+};
 
 Header.defaultProps = {
   siteTitle: ``,
-}
+};
 
-export default Header
+export default Header;

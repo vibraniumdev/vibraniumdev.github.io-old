@@ -1,6 +1,6 @@
-import styled from "@emotion/styled"
-import { theme } from "../theme/theme"
-const { palette } = theme
+import styled from "@emotion/styled";
+import { theme } from "../theme/theme";
+const { palette } = theme;
 
 export const Content = styled.div`
   text-align: center;
@@ -9,14 +9,14 @@ export const Content = styled.div`
   align-content: center;
   padding: 1rem;
   margin-bottom: 2rem;
-`
+`;
 
 export const GreetingTitleCommaContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 1rem;
-`
+`;
 export const GreetingTitleComma = styled.span`
   align-self: center;
   font-size: 2.5rem;
@@ -26,10 +26,10 @@ export const GreetingTitleComma = styled.span`
   max-width: 768px;
   width: 100%;
   color: ${palette.neutral.darker};
-`
+`;
 export const GrayStyle = styled.span`
   color: ${palette.neutral.pure};
-`
+`;
 
 export const Subtitle = styled.p`
   font-size: 1.3rem;
@@ -40,11 +40,11 @@ export const Subtitle = styled.p`
   margin-bottom: 1rem;
   max-width: 384px;
   width: 100%;
-`
+`;
 
 export const ItalicParagraph = styled.p`
   font-style: italic;
-`
+`;
 
 export const ShinyName = styled.span`
   background: linear-gradient(
@@ -81,4 +81,4 @@ export const ShinyName = styled.span`
       }
     }
   }
-`
+`;

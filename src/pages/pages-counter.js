@@ -1,43 +1,43 @@
-import React, { useState, useEffect } from "react"
-import { theme } from "../theme/theme"
+import React, { useState, useEffect } from "react";
+import { theme } from "../theme/theme";
 
-import Layout from "../components/layout"
-import * as S from "../pagesStyles/pagesCounter.styles"
-import { Button, Card, TextField, Typography } from "@mui/material"
+import Layout from "../components/layout";
+import * as S from "../pagesStyles/pagesCounter.styles";
+import { Button, Card, TextField, Typography } from "@mui/material";
 
-import { ThemeProvider } from "@mui/material/styles"
+import { ThemeProvider } from "@mui/material/styles";
 
 const PagesCounter = () => {
-  const [initialPage, setInitialPage] = useState(0)
-  const [lastPage, setLastPage] = useState(343)
-  const [totalPagesToRead, setTotalPagesToRead] = useState(0)
-  const [currentPage, setCurrentPage] = useState(282)
-  const [percentageRead, setPercentageRead] = useState(0)
-  const [isResultsShown, setIsResultsShown] = useState(false)
+  const [initialPage, setInitialPage] = useState(0);
+  const [lastPage, setLastPage] = useState(343);
+  const [totalPagesToRead, setTotalPagesToRead] = useState(0);
+  const [currentPage, setCurrentPage] = useState(282);
+  const [percentageRead, setPercentageRead] = useState(0);
+  const [isResultsShown, setIsResultsShown] = useState(false);
 
   useEffect(() => {
-    setTotalPagesToRead(lastPage - initialPage)
-  }, [lastPage, initialPage])
+    setTotalPagesToRead(lastPage - initialPage);
+  }, [lastPage, initialPage]);
 
   useEffect(() => {
-    setPercentageRead(((currentPage - initialPage) * 100) / totalPagesToRead)
-  }, [currentPage, initialPage, totalPagesToRead])
+    setPercentageRead(((currentPage - initialPage) * 100) / totalPagesToRead);
+  }, [currentPage, initialPage, totalPagesToRead]);
 
-  const alreadyRead = currentPage - initialPage
-  const totalPages = lastPage - initialPage
+  const alreadyRead = currentPage - initialPage;
+  const totalPages = lastPage - initialPage;
 
-  const handleInitialPage = ({ target: { value } }) => setInitialPage(value)
+  const handleInitialPage = ({ target: { value } }) => setInitialPage(value);
 
-  const handleLastPage = ({ target: { value } }) => setLastPage(value)
+  const handleLastPage = ({ target: { value } }) => setLastPage(value);
 
   const handleCurrentPage = ({ target: { value } }) => {
-    setIsResultsShown(false)
-    setCurrentPage(value)
-  }
+    setIsResultsShown(false);
+    setCurrentPage(value);
+  };
 
   const handleShowResults = () => {
-    setIsResultsShown((currState) => !currState)
-  }
+    setIsResultsShown((currState) => !currState);
+  };
 
   return (
     <Layout>
@@ -112,7 +112,7 @@ const PagesCounter = () => {
         </Card>
       </S.Content>
     </Layout>
-  )
-}
+  );
+};
 
-export default PagesCounter
+export default PagesCounter;

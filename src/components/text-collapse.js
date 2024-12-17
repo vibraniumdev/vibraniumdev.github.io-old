@@ -1,12 +1,12 @@
-import React from "react"
-import * as S from "../pagesStyles/about.styles"
-import ExpandMore from "@mui/icons-material/ExpandMore"
+import React from "react";
+import * as S from "../pagesStyles/about.styles";
+import ExpandMore from "@mui/icons-material/ExpandMore";
 import {
   Accordion,
   AccordionSummary,
   AccordionDetails,
   Typography,
-} from "@mui/material"
+} from "@mui/material";
 
 const TextCollapse = ({ title, children, startsExpanded }) => {
   return (
@@ -34,7 +34,7 @@ const TextCollapse = ({ title, children, startsExpanded }) => {
         <Typography>{children}</Typography>
       </AccordionDetails>
     </Accordion>
-  )
-}
+  );
+};
 
-export default TextCollapse
+export default TextCollapse;

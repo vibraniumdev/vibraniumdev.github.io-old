@@ -1,20 +1,20 @@
-import React, { useEffect } from "react"
+import React, { useEffect } from "react";
 
-import Layout from "../components/layout"
-import ProjectCard from "../components/projectCard"
-import Seo from "../components/seo"
-import UseFetchLearningCenterProjects from "../hooks/useFetchLearningCenterProjects"
+import Layout from "../components/layout";
+import ProjectCard from "../components/projectCard";
+import Seo from "../components/seo";
+import UseFetchLearningCenterProjects from "../hooks/useFetchLearningCenterProjects";
 
 const Learning = () => {
   const {
     fetchLearningCenterProjects,
     learningCenterReposList,
     isLearningCenterLoading,
-  } = UseFetchLearningCenterProjects()
+  } = UseFetchLearningCenterProjects();
 
   useEffect(() => {
-    fetchLearningCenterProjects()
-  }, [])
+    fetchLearningCenterProjects();
+  }, []);
 
   return (
     <Layout>
@@ -27,7 +27,7 @@ const Learning = () => {
         reposList={learningCenterReposList}
       />
     </Layout>
-  )
-}
+  );
+};
 
-export default Learning
+export default Learning;

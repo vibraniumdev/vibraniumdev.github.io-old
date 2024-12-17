@@ -1,8 +1,8 @@
-import { Link } from "gatsby"
-import styled from "@emotion/styled"
-import { theme } from "../theme/theme"
+import { Link } from "gatsby";
+import styled from "@emotion/styled";
+import { theme } from "../theme/theme";
 
-const { palette } = theme
+const { palette } = theme;
 
 export const NavBar = styled.nav`
   max-width: 768px;
@@ -14,7 +14,7 @@ export const NavBar = styled.nav`
   text-align: center;
   align-content: center;
   margin-bottom: 1rem;
-`
+`;
 
 export const NavLinks = styled.ul`
   display: flex;
@@ -28,7 +28,7 @@ export const NavLinks = styled.ul`
     margin-left: 0rem;
     padding-left: 0rem;
   }
-`
+`;
 
 export const NavItem = styled.li`
   text-align: center;
@@ -45,12 +45,12 @@ export const NavItem = styled.li`
       margin-right: 0.5rem;
     }
   }
-`
+`;
 
 export const NavItemBrand = styled.li`
   text-align: center;
   margin: auto;
-`
+`;
 
 export const NavLink = styled(Link)`
   text-decoration: none;
@@ -74,7 +74,7 @@ export const NavLink = styled(Link)`
       transform-origin: left;
     }
   }
-`
+`;
 
 export const NavLinkBrand = styled(NavLink)`
   white-space: nowrap;
@@ -86,17 +86,17 @@ export const NavLinkBrand = styled(NavLink)`
   :hover {
     color: ${palette.neutral.dark};
   }
-`
+`;
 
 export const SiteHeader = styled.header`
   background: transparent;
   display: flex;
   align-content: center;
   justify-content: center;
-`
+`;
 
 export const Content = styled.div`
   max-width: 860px;
   padding: 1rem 1.0875rem;
   font-size: 1.2rem;
-`
+`;
